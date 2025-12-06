@@ -13,16 +13,23 @@
   <header class="site-header">
     <nav class="nav">
       <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
-      <ul class="nav-links">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/tutorials' | relative_url }}">Tutorials</a></li>
-        <li><a href="https://github.com/BellaBe/lean-os" target="_blank">LeanOS</a></li>
-        <li><a href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a></li>
-      </ul>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <span class="icon-moon">&#9790;</span>
-        <span class="icon-sun">&#9788;</span>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="{{ '/' | relative_url }}">Writing</a></li>
+        <li><a href="{{ '/about' | relative_url }}">About</a></li>
+        <li><a href="{{ site.author.github }}" target="_blank">GitHub</a></li>
+        <li><a href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <span class="icon-moon">&#9790;</span>
+            <span class="icon-sun">&#9788;</span>
+          </button>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -39,6 +46,7 @@
   </footer>
 
   <script>
+    // Theme toggle
     const toggle = document.getElementById('theme-toggle');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const stored = localStorage.getItem('theme');
@@ -50,6 +58,15 @@
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('dark');
       localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
     });
   </script>
 </body>

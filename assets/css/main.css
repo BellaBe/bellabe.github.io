@@ -82,6 +82,7 @@ a:hover {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   list-style: none;
 }
@@ -108,6 +109,38 @@ a:hover {
 .icon-sun { display: none; }
 body.dark .icon-moon { display: none; }
 body.dark .icon-sun { display: inline; }
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
 
 /* Main Content */
 .main-content {
@@ -303,14 +336,90 @@ body.dark .icon-sun { display: inline; }
   color: var(--text);
 }
 
+/* Home intro */
+.home-intro {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.intro-text a {
+  color: var(--text);
+}
+
+.post-excerpt {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.empty-state {
+  color: var(--text-muted);
+}
+
+/* About page */
+.about-page h1 {
+  margin-bottom: 1.5rem;
+}
+
+.about-page h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.about-page p {
+  margin-bottom: 1rem;
+}
+
+.about-page ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-page li {
+  margin-bottom: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   body {
     font-size: 16px;
   }
 
+  .menu-toggle {
+    display: flex;
+  }
+
   .nav-links {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.5rem 0;
   }
 
   .post-title {

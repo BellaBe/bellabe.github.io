@@ -3,12 +3,10 @@ layout: default
 title: Home
 ---
 <section class="home-intro">
-  <h1>Bella Belgarokova</h1>
-  <p>Building AI systems. Engineering precision. Creator of <a href="https://github.com/BellaBe/lean-os">LeanOS</a>.</p>
+  <p class="intro-text">Building AI systems. Engineering precision. Creator of <a href="https://github.com/BellaBe/lean-os">LeanOS</a>.</p>
 </section>
 
 <section class="posts-section">
-  <h2>Tutorials</h2>
   <ul class="post-list">
     {% for post in site.posts %}
     <li>
@@ -17,11 +15,14 @@ title: Home
         {{ post.date | date: "%B %d, %Y" }}
         {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
       </p>
+      {% if post.description %}
+      <p class="post-excerpt">{{ post.description }}</p>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
 
   {% if site.posts.size == 0 %}
-  <p style="color: var(--text-muted);">Tutorials coming soon.</p>
+  <p class="empty-state">Writing coming soon.</p>
   {% endif %}
 </section>
