@@ -1,0 +1,37 @@
+# Site settings
+title: Bella Belgarokova
+description: Building AI systems. Engineering precision. LeanOS creator.
+url: "https://bellabe.github.io"
+baseurl: ""
+
+# Author
+author:
+  name: Bella Belgarokova
+  email: bella@bellabe.com
+  linkedin: https://www.linkedin.com/in/bellabelgarokova/
+  github: https://github.com/BellaBe
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Bella Belgarokova"
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

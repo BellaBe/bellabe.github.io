@@ -1,0 +1,30 @@
+---
+layout: default
+title: Tutorials
+---
+<section class="home-intro">
+  <h1>Tutorials</h1>
+  <p>Actionable guides from building LeanOS and AI systems.</p>
+</section>
+
+<section class="posts-section">
+  <ul class="post-list">
+    {% assign tutorials = site.posts | where_exp: "post", "post.tags contains 'tutorial'" %}
+    {% for post in tutorials %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-meta">
+        {{ post.date | date: "%B %d, %Y" }}
+        {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
+      </p>
+      {% if post.description %}
+      <p style="color: var(--text-muted); margin-top: 0.5rem;">{{ post.description }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if tutorials.size == 0 %}
+  <p style="color: var(--text-muted);">Tutorials coming soon. Check back or follow on <a href="{{ site.author.linkedin }}">LinkedIn</a> for updates.</p>
+  {% endif %}
+</section>

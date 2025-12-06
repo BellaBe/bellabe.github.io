@@ -1,16 +1,55 @@
-## Hi there 👋
+# bellabe.github.io
 
-<!--
-**BellaBe/BellaBe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Personal blog and technical tutorials.
 
-Here are some ideas to get you started:
+## Structure
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```
+├── _config.yml          # Site configuration
+├── _layouts/            # Page templates
+│   ├── default.html     # Base layout
+│   └── post.html        # Post/tutorial layout
+├── _posts/              # Blog posts (YYYY-MM-DD-title.md)
+├── assets/css/          # Stylesheets
+├── index.html           # Home page
+└── tutorials.html       # Tutorials listing
+```
+
+## Writing a Post
+
+Create a new file in `_posts/` with the format `YYYY-MM-DD-title.md`:
+
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: 2025-12-06
+description: "Brief description for SEO and listings"
+reading_time: 10
+tags: [tutorial, claude, ai]
+leanos_ref: ".claude/skills"  # Optional: link to LeanOS code
+---
+
+Your content here...
+```
+
+## Local Development
+
+```bash
+# Install Jekyll
+gem install bundler jekyll
+
+# Run locally
+bundle exec jekyll serve
+
+# View at http://localhost:4000
+```
+
+## Deployment
+
+Push to `master` branch. GitHub Pages builds automatically.
+
+## Links
+
+- [LeanOS](https://github.com/BellaBe/lean-os)
+- [LinkedIn](https://www.linkedin.com/in/bellabelgarokova/)
