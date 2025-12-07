@@ -1,0 +1,30 @@
+---
+layout: default
+title: Writing
+---
+
+<section class="page-header">
+  <h1>Writing</h1>
+  <p class="page-intro">On building AI systems, engineering decisions, and running lean operations.</p>
+</section>
+
+<section class="posts-section">
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-meta">
+        {{ post.date | date: "%B %d, %Y" }}
+        {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
+      </p>
+      {% if post.description %}
+      <p class="post-excerpt">{{ post.description }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if site.posts.size == 0 %}
+  <p class="empty-state">Articles coming soon.</p>
+  {% endif %}
+</section>

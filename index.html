@@ -2,27 +2,70 @@
 layout: default
 title: Home
 ---
-<section class="home-intro">
-  <p class="intro-text">Building AI systems. Engineering precision. Creator of <a href="https://github.com/BellaBe/lean-os">LeanOS</a>.</p>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Bella Belgarokova</h1>
+  <p class="tagline">Building AI systems that run business operations. Engineering precision for early-stage teams.</p>
+  <div class="hero-links">
+    <a href="{{ '/projects' | relative_url }}" class="btn btn-primary">Projects</a>
+    <a href="{{ '/writing' | relative_url }}" class="btn btn-secondary">Writing</a>
+  </div>
 </section>
 
-<section class="posts-section">
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="post-meta">
-        {{ post.date | date: "%B %d, %Y" }}
-        {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
-      </p>
-      {% if post.description %}
-      <p class="post-excerpt">{{ post.description }}</p>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+<!-- Introduction -->
+<section class="intro">
+  <p>I design and build AI-native systems for startups that need leverage, not headcount. My focus is on systematic approaches to business operations - where engineering precision meets strategic execution.</p>
+</section>
 
-  {% if site.posts.size == 0 %}
-  <p class="empty-state">Writing coming soon.</p>
+<!-- Featured Projects -->
+<section class="featured-section">
+  <h2>Projects</h2>
+  <div class="featured-grid">
+    <div class="featured-item">
+      <h3><a href="https://github.com/BellaBe/lean-os">LeanOS</a></h3>
+      <p>AI-native operating system for small teams. 19 Claude skills running sales, marketing, and engineering operations.</p>
+    </div>
+    <div class="featured-item">
+      <h3>ChromlyOS</h3>
+      <p>AI fashion tech - fit and color analysis from a single selfie. API-first architecture for e-commerce integration.</p>
+    </div>
+    <div class="featured-item">
+      <h3>Detekta</h3>
+      <p>Automated breach report generation for GCC financial institutions. Regulatory compliance through AI.</p>
+    </div>
+  </div>
+  <p class="section-link"><a href="{{ '/projects' | relative_url }}">View all projects →</a></p>
+</section>
+
+<!-- Featured Writing -->
+<section class="featured-section">
+  <h2>Writing</h2>
+  <div class="featured-list">
+    {% for post in site.posts limit:3 %}
+    <div class="featured-item">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% if site.posts.size > 3 %}
+  <p class="section-link"><a href="{{ '/writing' | relative_url }}">Browse all articles →</a></p>
   {% endif %}
+  {% if site.posts.size == 0 %}
+  <p class="empty-state">Articles coming soon.</p>
+  {% endif %}
+</section>
+
+<!-- Mini About -->
+<section class="mini-about">
+  <p>Currently building LeanOS and advising early-stage founders on system architecture and AI integration. I care about problems where engineering rigor creates compounding leverage.</p>
+  <p class="section-link"><a href="{{ '/about' | relative_url }}">More about me →</a></p>
+</section>
+
+<!-- Fractional CTO CTA -->
+<section class="cta-section">
+  <h2>Fractional CTO / Advisory</h2>
+  <p>I help founders and early-stage teams with system architecture, technical strategy, and building AI-native operations. If you're making build-vs-hire decisions or need engineering leadership without full-time overhead.</p>
+  <a href="https://tally.so/r/RGKy6j" class="btn btn-primary" target="_blank">Request a Conversation</a>
 </section>
