@@ -729,12 +729,12 @@ body.light .icon-sun { display: inline; }
 }
 
 .subtle-cta a {
-  color: var(--text-secondary);
+  color: var(--accent-primary);
   transition: color 0.3s var(--ease-out-expo);
 }
 
 .subtle-cta a:hover {
-  color: var(--accent-primary);
+  color: var(--accent-warm);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
