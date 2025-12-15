@@ -5,7 +5,7 @@ date: 2025-12-15
 description: "From a failed London startup in 2014 to building LeanOS in Dubai - the journey from scattered operations to a system that actually runs"
 reading_time: 7
 tags: [founder, leanos, ai, startup]
-leanos_ref: "CLAUDE.md"
+leanos_ref: "README.md"
 ---
 
 I didn't set out to build an operating system. I was drowning in two products, no sales pipeline, and a co-founder relationship that wasn't working. Something had to change.
