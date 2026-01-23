@@ -1,0 +1,290 @@
+---
+layout: default
+title: Design System
+description: "Visual design system documentation for bellabe.github.io"
+---
+
+<section class="hero" style="padding: 4rem 0 3rem;">
+  <span class="hero-label">Documentation</span>
+  <h1>Design System</h1>
+  <p class="tagline">Fira Code · 4px grid · Dark-first · Technical identity</p>
+</section>
+
+<!-- Colors -->
+<section class="projects-section animate-on-scroll">
+  <h2>Colors</h2>
+
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Background</h3>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--color-bg-primary); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">bg-primary</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--color-bg-secondary); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">bg-secondary</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--color-bg-tertiary); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">bg-tertiary</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--color-bg-elevated); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">bg-elevated</code>
+    </div>
+  </div>
+
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Text</h3>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem;">
+    <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+      <p style="color: var(--text-primary); font-size: 1.25rem; margin-bottom: 0.5rem;">Primary</p>
+      <code style="font-size: 0.7rem; color: var(--text-tertiary);">#f4f4f5 · 18:1</code>
+    </div>
+    <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+      <p style="color: var(--text-secondary); font-size: 1.25rem; margin-bottom: 0.5rem;">Secondary</p>
+      <code style="font-size: 0.7rem; color: var(--text-tertiary);">#a1a1aa · 7:1</code>
+    </div>
+    <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+      <p style="color: var(--text-tertiary); font-size: 1.25rem; margin-bottom: 0.5rem;">Tertiary</p>
+      <code style="font-size: 0.7rem; color: var(--text-tertiary);">#71717a · 4.6:1</code>
+    </div>
+  </div>
+
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Accent</h3>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--accent-primary); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">accent-primary</code><br>
+      <code style="font-size: 0.65rem; color: var(--text-tertiary);">#22d3ee</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--accent-secondary); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">accent-secondary</code><br>
+      <code style="font-size: 0.65rem; color: var(--text-tertiary);">#06b6d4</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: var(--accent-warm); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">accent-warm</code><br>
+      <code style="font-size: 0.65rem; color: var(--text-tertiary);">#f59e0b</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 80px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">gradient-accent</code>
+    </div>
+  </div>
+
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Semantic</h3>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 60px; background: #10b981; border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">success</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 60px; background: #f59e0b; border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">warning</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 60px; background: #ef4444; border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">error</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 100%; height: 60px; background: #3b82f6; border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">info</code>
+    </div>
+  </div>
+</section>
+
+<!-- Typography -->
+<section class="projects-section animate-on-scroll">
+  <h2>Typography</h2>
+
+  <div class="mini-about" style="margin-bottom: 2rem;">
+    <p style="margin-bottom: 0.5rem;"><strong>Font:</strong> Fira Code (monospace everywhere)</p>
+    <p style="margin-bottom: 0;"><strong>Scale:</strong> Major Third (1.25 ratio)</p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">60px</code>
+      <span style="font-size: 3.75rem; font-weight: 700; line-height: 1.2;">Display</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">48px</code>
+      <span style="font-size: 3rem; font-weight: 700; line-height: 1.2;">Heading 1</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">36px</code>
+      <span style="font-size: 2.25rem; font-weight: 600; line-height: 1.2;">Heading 2</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">30px</code>
+      <span style="font-size: 1.875rem; font-weight: 600; line-height: 1.3;">Heading 3</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">24px</code>
+      <span style="font-size: 1.5rem; font-weight: 600; line-height: 1.4;">Heading 4</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">16px</code>
+      <span style="font-size: 1rem; font-weight: 400; line-height: 1.6; color: var(--text-secondary);">Body text for paragraphs and descriptions</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">14px</code>
+      <span style="font-size: 0.875rem; font-weight: 400; color: var(--text-secondary);">Small text and captions</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 2rem;">
+      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">12px</code>
+      <span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-primary);">Label Text</span>
+    </div>
+  </div>
+</section>
+
+<!-- Spacing -->
+<section class="projects-section animate-on-scroll">
+  <h2>Spacing</h2>
+
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Base unit: 4px</p>
+
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">4px</code>
+      <div style="width: 4px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-1</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">8px</code>
+      <div style="width: 8px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-2</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">12px</code>
+      <div style="width: 12px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-3</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">16px</code>
+      <div style="width: 16px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-4</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">24px</code>
+      <div style="width: 24px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-6</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">32px</code>
+      <div style="width: 32px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-8</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">48px</code>
+      <div style="width: 48px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-12</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">64px</code>
+      <div style="width: 64px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.85rem;">space-16</span>
+    </div>
+  </div>
+</section>
+
+<!-- Components -->
+<section class="projects-section animate-on-scroll">
+  <h2>Components</h2>
+
+  <!-- Buttons -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Buttons</h3>
+  <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;">
+    <a href="#" class="btn btn-primary"><span>Primary Button</span></a>
+    <a href="#" class="btn btn-secondary">Secondary Button</a>
+  </div>
+
+  <!-- Cards -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Cards</h3>
+  <div class="featured-grid" style="margin-bottom: 3rem;">
+    <div class="featured-item">
+      <h3>Card Title</h3>
+      <p>Card description with secondary text color and comfortable line height for readability.</p>
+      <span class="project-meta">Meta label</span>
+    </div>
+    <div class="featured-item" style="border-color: var(--accent-primary);">
+      <h3>Featured Card</h3>
+      <p>This card has an accent border to indicate special status or selection.</p>
+      <span class="project-meta">Featured</span>
+    </div>
+  </div>
+
+  <!-- Section Headers -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Section Headers</h3>
+  <div style="margin-bottom: 3rem;">
+    <h2 style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.15em; display: flex; align-items: center; gap: 1rem;">
+      Section Title
+      <span style="flex: 1; height: 1px; background: linear-gradient(90deg, var(--border-medium), transparent);"></span>
+    </h2>
+  </div>
+
+  <!-- Border Radius -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Border Radius</h3>
+  <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 3rem;">
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 4px;"></div>
+      <code style="font-size: 0.7rem;">4px</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 6px;"></div>
+      <code style="font-size: 0.7rem;">6px</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 12px;"></div>
+      <code style="font-size: 0.7rem;">12px</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 20px;"></div>
+      <code style="font-size: 0.7rem;">20px</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 9999px;"></div>
+      <code style="font-size: 0.7rem;">full</code>
+    </div>
+  </div>
+
+  <!-- Shadows -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Elevation</h3>
+  <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+    <div style="text-align: center;">
+      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-sm);"></div>
+      <code style="font-size: 0.7rem;">shadow-sm</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-md);"></div>
+      <code style="font-size: 0.7rem;">shadow-md</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-lg);"></div>
+      <code style="font-size: 0.7rem;">shadow-lg</code>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-glow);"></div>
+      <code style="font-size: 0.7rem;">shadow-glow</code>
+    </div>
+  </div>
+</section>
+
+<!-- Principles -->
+<section class="projects-section animate-on-scroll">
+  <h2>Principles</h2>
+  <div class="about-content">
+    <ul>
+      <li><strong>Technical identity</strong> — Fira Code monospace everywhere</li>
+      <li><strong>Dark-first</strong> — Dark theme default, light theme supported</li>
+      <li><strong>4px grid</strong> — All spacing derives from 4px base unit</li>
+      <li><strong>Accessible</strong> — WCAG AA contrast, 44px touch targets</li>
+      <li><strong>Minimal motion</strong> — 50ms base, respects reduced-motion</li>
+    </ul>
+  </div>
+</section>
+
+<section class="subtle-cta animate-on-scroll">
+  <p>Full design system spec at <code style="font-size: 0.85rem;">artifacts/design-system/</code></p>
+</section>
