@@ -14,82 +14,92 @@ description: "Visual design system documentation for bellabe.github.io"
 <section class="projects-section animate-on-scroll">
   <h2>Colors</h2>
 
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Background</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Background</h3>
   <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--color-bg-primary); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">bg-primary</code>
+      <div style="width: 100%; height: 80px; background: #0a0a0b; border: 1px solid var(--color-border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-bg-primary</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#0a0a0b</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--color-bg-secondary); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">bg-secondary</code>
+      <div style="width: 100%; height: 80px; background: #111113; border: 1px solid var(--color-border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-bg-secondary</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#111113</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--color-bg-tertiary); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">bg-tertiary</code>
+      <div style="width: 100%; height: 80px; background: #18181b; border: 1px solid var(--color-border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-bg-tertiary</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#18181b</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--color-bg-elevated); border: 1px solid var(--border-medium); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">bg-elevated</code>
+      <div style="width: 100%; height: 80px; background: #1f1f23; border: 1px solid var(--color-border-medium); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-bg-elevated</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#1f1f23</code>
     </div>
   </div>
 
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Text</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Text</h3>
   <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem;">
-    <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
-      <p style="color: var(--text-primary); font-size: 1.25rem; margin-bottom: 0.5rem;">Primary</p>
-      <code style="font-size: 0.7rem; color: var(--text-tertiary);">#f4f4f5 · 18:1</code>
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <p style="color: var(--color-text-primary); font-size: 1.25rem; margin-bottom: 0.5rem;">Primary</p>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">#f4f4f5 · 18:1</code>
     </div>
-    <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
-      <p style="color: var(--text-secondary); font-size: 1.25rem; margin-bottom: 0.5rem;">Secondary</p>
-      <code style="font-size: 0.7rem; color: var(--text-tertiary);">#a1a1aa · 7:1</code>
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <p style="color: var(--color-text-secondary); font-size: 1.25rem; margin-bottom: 0.5rem;">Secondary</p>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">#a1a1aa · 7:1</code>
     </div>
-    <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
-      <p style="color: var(--text-tertiary); font-size: 1.25rem; margin-bottom: 0.5rem;">Tertiary</p>
-      <code style="font-size: 0.7rem; color: var(--text-tertiary);">#71717a · 4.6:1</code>
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <p style="color: var(--color-text-tertiary); font-size: 1.25rem; margin-bottom: 0.5rem;">Tertiary</p>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">#71717a · 4.6:1*</code>
     </div>
   </div>
+  <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 2rem;">*Tertiary passes AA for large text (18px+) only</p>
 
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Accent</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Accent</h3>
   <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--accent-primary); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">accent-primary</code><br>
-      <code style="font-size: 0.65rem; color: var(--text-tertiary);">#22d3ee</code>
+      <div style="width: 100%; height: 80px; background: var(--color-accent-primary); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-accent-primary</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#22d3ee</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--accent-secondary); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">accent-secondary</code><br>
-      <code style="font-size: 0.65rem; color: var(--text-tertiary);">#06b6d4</code>
+      <div style="width: 100%; height: 80px; background: var(--color-accent-secondary); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-accent-secondary</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#06b6d4</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: var(--accent-warm); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">accent-warm</code><br>
-      <code style="font-size: 0.65rem; color: var(--text-tertiary);">#f59e0b</code>
+      <div style="width: 100%; height: 80px; background: var(--color-accent-warm); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-accent-warm</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#f59e0b</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 80px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">gradient-accent</code>
+      <div style="width: 100%; height: 80px; background: var(--gradient-accent); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--gradient-accent</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">135deg cyan</code>
     </div>
   </div>
 
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Semantic</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Semantic</h3>
   <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
     <div style="text-align: center;">
-      <div style="width: 100%; height: 60px; background: #10b981; border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">success</code>
+      <div style="width: 100%; height: 60px; background: var(--color-success); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-success</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#10b981</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 60px; background: #f59e0b; border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">warning</code>
+      <div style="width: 100%; height: 60px; background: var(--color-warning); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-warning</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#f59e0b</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 60px; background: #ef4444; border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">error</code>
+      <div style="width: 100%; height: 60px; background: var(--color-error); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-error</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#ef4444</code>
     </div>
     <div style="text-align: center;">
-      <div style="width: 100%; height: 60px; background: #3b82f6; border-radius: 8px;"></div>
-      <code style="font-size: 0.75rem;">info</code>
+      <div style="width: 100%; height: 60px; background: var(--color-info); border-radius: 8px;"></div>
+      <code style="font-size: 0.75rem;">--color-info</code><br>
+      <code style="font-size: 0.65rem; color: var(--color-text-tertiary);">#3b82f6</code>
     </div>
   </div>
 </section>
@@ -104,37 +114,45 @@ description: "Visual design system documentation for bellabe.github.io"
   </div>
 
   <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">60px</code>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">60px</code>
       <span style="font-size: 3.75rem; font-weight: 700; line-height: 1.2;">Display</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">700 · 1.2</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">48px</code>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">48px</code>
       <span style="font-size: 3rem; font-weight: 700; line-height: 1.2;">Heading 1</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">700 · 1.2</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">36px</code>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">36px</code>
       <span style="font-size: 2.25rem; font-weight: 600; line-height: 1.2;">Heading 2</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">600 · 1.2</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">30px</code>
-      <span style="font-size: 1.875rem; font-weight: 600; line-height: 1.3;">Heading 3</span>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">30px</code>
+      <span style="font-size: 1.875rem; font-weight: 600; line-height: 1.4;">Heading 3</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">600 · 1.4</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">24px</code>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">24px</code>
       <span style="font-size: 1.5rem; font-weight: 600; line-height: 1.4;">Heading 4</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">600 · 1.4</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">16px</code>
-      <span style="font-size: 1rem; font-weight: 400; line-height: 1.6; color: var(--text-secondary);">Body text for paragraphs and descriptions</span>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">17px</code>
+      <span style="font-size: 1.0625rem; font-weight: 400; line-height: 1.6; color: var(--color-text-secondary);">Body text for paragraphs and descriptions</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">400 · 1.6</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">14px</code>
-      <span style="font-size: 0.875rem; font-weight: 400; color: var(--text-secondary);">Small text and captions</span>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle);">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">14px</code>
+      <span style="font-size: 0.875rem; font-weight: 400; color: var(--color-text-secondary);">Small text and captions</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">400 · 1.6</code>
     </div>
-    <div style="display: flex; align-items: baseline; gap: 2rem;">
-      <code style="width: 80px; font-size: 0.75rem; color: var(--text-tertiary);">12px</code>
-      <span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-primary);">Label Text</span>
+    <div style="display: grid; grid-template-columns: 80px 1fr auto; align-items: baseline; gap: 1.5rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">12px</code>
+      <span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-accent-primary);">Label Text</span>
+      <code style="font-size: 0.7rem; color: var(--color-text-tertiary);">600 · 1 · 0.15em</code>
     </div>
   </div>
 </section>
@@ -143,49 +161,86 @@ description: "Visual design system documentation for bellabe.github.io"
 <section class="projects-section animate-on-scroll">
   <h2>Spacing</h2>
 
-  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Base unit: 4px</p>
+  <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">Base unit: 4px</p>
 
   <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">4px</code>
-      <div style="width: 4px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-1</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">4px</code>
+      <div style="width: 4px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-1 — icon gaps</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">8px</code>
-      <div style="width: 8px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-2</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">8px</code>
+      <div style="width: 8px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-2 — tight grouping, inline elements</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">12px</code>
-      <div style="width: 12px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-3</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">12px</code>
+      <div style="width: 12px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-3 — button padding, small gaps</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">16px</code>
-      <div style="width: 16px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-4</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">16px</code>
+      <div style="width: 16px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-4 — standard gaps, paragraph spacing</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">24px</code>
-      <div style="width: 24px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-6</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">24px</code>
+      <div style="width: 24px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-6 — card padding, grid gaps</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">32px</code>
-      <div style="width: 32px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-8</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">32px</code>
+      <div style="width: 32px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-8 — page padding, large gaps</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">48px</code>
-      <div style="width: 48px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-12</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">48px</code>
+      <div style="width: 48px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-12 — section padding</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <code style="width: 60px; font-size: 0.75rem; color: var(--text-tertiary);">64px</code>
-      <div style="width: 64px; height: 24px; background: var(--accent-primary); border-radius: 2px;"></div>
-      <span style="font-size: 0.85rem;">space-16</span>
+    <div style="display: grid; grid-template-columns: 50px 70px 1fr; align-items: center; gap: 1rem;">
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">64px</code>
+      <div style="width: 64px; height: 24px; background: var(--color-accent-primary); border-radius: 2px;"></div>
+      <span style="font-size: 0.8rem; color: var(--color-text-tertiary);">space-16 — section breaks</span>
     </div>
+  </div>
+</section>
+
+<!-- Motion -->
+<section class="projects-section animate-on-scroll">
+  <h2>Motion</h2>
+
+  <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">Base: 50ms · Technical personality = fast, minimal</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px;">
+      <code style="font-size: 0.85rem; color: var(--color-accent-primary);">100ms</code>
+      <p style="font-size: 0.85rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">--duration-fast</p>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0;">Color changes, opacity</p>
+    </div>
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px;">
+      <code style="font-size: 0.85rem; color: var(--color-accent-primary);">150ms</code>
+      <p style="font-size: 0.85rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">--duration-normal</p>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0;">Hover states, focus</p>
+    </div>
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px;">
+      <code style="font-size: 0.85rem; color: var(--color-accent-primary);">200ms</code>
+      <p style="font-size: 0.85rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">--duration-slow</p>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0;">Transforms, shadows</p>
+    </div>
+    <div style="padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px;">
+      <code style="font-size: 0.85rem; color: var(--color-accent-primary);">500ms</code>
+      <p style="font-size: 0.85rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">--duration-slowest</p>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0;">Page animations</p>
+    </div>
+  </div>
+
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1rem;">Easing</h3>
+  <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem;">--ease-out</code>
+    <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem;">--ease-out-expo</code>
+    <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem;">--ease-in-out</code>
   </div>
 </section>
 
@@ -194,79 +249,129 @@ description: "Visual design system documentation for bellabe.github.io"
   <h2>Components</h2>
 
   <!-- Buttons -->
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Buttons</h3>
-  <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;">
-    <a href="#" class="btn btn-primary"><span>Primary Button</span></a>
-    <a href="#" class="btn btn-secondary">Secondary Button</a>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Buttons</h3>
+  <div style="margin-bottom: 1.5rem;">
+    <p style="font-size: 0.8rem; color: var(--color-text-tertiary); margin-bottom: 1rem;">Default state</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="#" class="btn btn-primary"><span>Primary Button</span></a>
+      <a href="#" class="btn btn-secondary">Secondary Button</a>
+    </div>
+  </div>
+  <div style="margin-bottom: 3rem;">
+    <p style="font-size: 0.8rem; color: var(--color-text-tertiary); margin-bottom: 1rem;">Hover: lift + shadow (primary gets gradient)</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="#" class="btn btn-primary" style="transform: translateY(-2px); box-shadow: var(--shadow-lg);"><span style="position: relative; z-index: 1;">Primary Hovered</span></a>
+      <a href="#" class="btn btn-secondary" style="border-color: var(--color-accent-primary); color: var(--color-accent-primary); box-shadow: var(--shadow-glow);">Secondary Hovered</a>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Links</h3>
+  <div style="margin-bottom: 3rem; padding: 1.5rem; background: var(--color-bg-secondary); border-radius: 8px;">
+    <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+      Links use <a href="#" style="color: var(--color-accent-primary);">accent-primary (#22d3ee)</a> by default,
+      switching to <a href="#" style="color: var(--color-accent-warm);">accent-warm (#f59e0b)</a> on hover.
+    </p>
+    <p style="font-size: 0.8rem; color: var(--color-text-tertiary); margin: 0;">In post content: underline with --color-border-accent, full color on hover</p>
+  </div>
+
+  <!-- Input -->
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Input</h3>
+  <div style="margin-bottom: 3rem; max-width: 400px;">
+    <input type="text" placeholder="Text input..." style="width: 100%; padding: 0.75rem 1rem; background: var(--color-bg-secondary); border: 1px solid var(--color-border-medium); border-radius: 6px; font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-text-primary); outline: none; transition: border-color 150ms ease, box-shadow 150ms ease;" onfocus="this.style.borderColor='var(--color-accent-primary)'; this.style.boxShadow='var(--shadow-glow)';" onblur="this.style.borderColor='var(--color-border-medium)'; this.style.boxShadow='none';">
+    <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 0.5rem;">Focus: accent border + glow shadow</p>
   </div>
 
   <!-- Cards -->
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Cards</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Cards</h3>
   <div class="featured-grid" style="margin-bottom: 3rem;">
     <div class="featured-item">
       <h3>Card Title</h3>
       <p>Card description with secondary text color and comfortable line height for readability.</p>
       <span class="project-meta">Meta label</span>
     </div>
-    <div class="featured-item" style="border-color: var(--accent-primary);">
+    <div class="featured-item" style="border-color: var(--color-border-accent);">
       <h3>Featured Card</h3>
-      <p>This card has an accent border to indicate special status or selection.</p>
+      <p>Accent border indicates special status. Hover adds glow + lift + top gradient bar.</p>
       <span class="project-meta">Featured</span>
     </div>
   </div>
 
-  <!-- Section Headers -->
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Section Headers</h3>
-  <div style="margin-bottom: 3rem;">
-    <h2 style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.15em; display: flex; align-items: center; gap: 1rem;">
-      Section Title
-      <span style="flex: 1; height: 1px; background: linear-gradient(90deg, var(--border-medium), transparent);"></span>
-    </h2>
-  </div>
-
   <!-- Border Radius -->
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Border Radius</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Border Radius</h3>
   <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 3rem;">
     <div style="text-align: center;">
-      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 4px;"></div>
+      <div style="width: 60px; height: 60px; background: var(--color-bg-tertiary); border: 1px solid var(--color-border-medium); border-radius: 4px;"></div>
       <code style="font-size: 0.7rem;">4px</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">tags, code</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 6px;"></div>
+      <div style="width: 60px; height: 60px; background: var(--color-bg-tertiary); border: 1px solid var(--color-border-medium); border-radius: 6px;"></div>
       <code style="font-size: 0.7rem;">6px</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">buttons, inputs</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 12px;"></div>
+      <div style="width: 60px; height: 60px; background: var(--color-bg-tertiary); border: 1px solid var(--color-border-medium); border-radius: 12px;"></div>
       <code style="font-size: 0.7rem;">12px</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">cards</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 20px;"></div>
+      <div style="width: 60px; height: 60px; background: var(--color-bg-tertiary); border: 1px solid var(--color-border-medium); border-radius: 20px;"></div>
       <code style="font-size: 0.7rem;">20px</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">CTA sections</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 60px; height: 60px; background: var(--bg-tertiary); border: 1px solid var(--border-medium); border-radius: 9999px;"></div>
+      <div style="width: 60px; height: 60px; background: var(--color-bg-tertiary); border: 1px solid var(--color-border-medium); border-radius: 9999px;"></div>
       <code style="font-size: 0.7rem;">full</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">avatars, pills</p>
     </div>
   </div>
 
   <!-- Shadows -->
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Elevation</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Elevation</h3>
   <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
     <div style="text-align: center;">
-      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-sm);"></div>
+      <div style="width: 80px; height: 80px; background: var(--color-bg-secondary); border-radius: 8px; box-shadow: var(--shadow-sm);"></div>
       <code style="font-size: 0.7rem;">shadow-sm</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">subtle lift</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-md);"></div>
+      <div style="width: 80px; height: 80px; background: var(--color-bg-secondary); border-radius: 8px; box-shadow: var(--shadow-md);"></div>
       <code style="font-size: 0.7rem;">shadow-md</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">cards</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-lg);"></div>
+      <div style="width: 80px; height: 80px; background: var(--color-bg-secondary); border-radius: 8px; box-shadow: var(--shadow-lg);"></div>
       <code style="font-size: 0.7rem;">shadow-lg</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">hover states</p>
     </div>
     <div style="text-align: center;">
-      <div style="width: 80px; height: 80px; background: var(--bg-secondary); border-radius: 8px; box-shadow: var(--shadow-glow);"></div>
+      <div style="width: 80px; height: 80px; background: var(--color-bg-secondary); border-radius: 8px; box-shadow: var(--shadow-glow);"></div>
       <code style="font-size: 0.7rem;">shadow-glow</code>
+      <p style="font-size: 0.65rem; color: var(--color-text-tertiary); margin: 0;">CTAs, focus</p>
+    </div>
+  </div>
+</section>
+
+<!-- Breakpoints -->
+<section class="projects-section animate-on-scroll">
+  <h2>Breakpoints</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+    <div style="padding: 1rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <code style="font-size: 1rem; color: var(--color-accent-primary);">480px</code>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">Mobile</p>
+    </div>
+    <div style="padding: 1rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <code style="font-size: 1rem; color: var(--color-accent-primary);">768px</code>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">Tablet</p>
+    </div>
+    <div style="padding: 1rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <code style="font-size: 1rem; color: var(--color-accent-primary);">1024px</code>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">Desktop</p>
+    </div>
+    <div style="padding: 1rem; background: var(--color-bg-secondary); border-radius: 8px; text-align: center;">
+      <code style="font-size: 1rem; color: var(--color-accent-primary);">1200px</code>
+      <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin: 0.5rem 0 0;">Max container</p>
     </div>
   </div>
 </section>
@@ -276,11 +381,12 @@ description: "Visual design system documentation for bellabe.github.io"
   <h2>Principles</h2>
   <div class="about-content">
     <ul>
-      <li><strong>Technical identity</strong> — Fira Code monospace everywhere</li>
-      <li><strong>Dark-first</strong> — Dark theme default, light theme supported</li>
-      <li><strong>4px grid</strong> — All spacing derives from 4px base unit</li>
-      <li><strong>Accessible</strong> — WCAG AA contrast, 44px touch targets</li>
-      <li><strong>Minimal motion</strong> — 50ms base, respects reduced-motion</li>
+      <li><strong>Technical identity</strong> — Fira Code monospace everywhere reinforces precision</li>
+      <li><strong>Dark-first</strong> — Dark theme default, light theme adapts colors appropriately</li>
+      <li><strong>4px grid</strong> — All spacing derives from 4px base unit for consistency</li>
+      <li><strong>Accessible</strong> — WCAG AA contrast (7:1+ for body text), 44px touch targets</li>
+      <li><strong>Minimal motion</strong> — 50ms base, fast interactions, respects prefers-reduced-motion</li>
+      <li><strong>Focus visible</strong> — 2px accent outline with 2px offset for keyboard navigation</li>
     </ul>
   </div>
 </section>
