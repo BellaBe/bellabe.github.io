@@ -407,6 +407,21 @@ body.light .icon-sun { display: inline; }
   animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) 0.2s both;
 }
 
+/* Hero Proof: Subtle social proof below CTA */
+.hero-proof {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-4);
+  animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) 0.25s both;
+}
+
+/* Section CTA: Centered call-to-action within a section */
+.section-cta {
+  text-align: center;
+  margin-top: var(--breathing-meso);
+}
+
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
