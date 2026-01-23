@@ -1,19 +1,17 @@
 /* =============================================================================
-   BELLA BELGAROKOVA - Personal Site
-   Aesthetic: Precision Engineering meets Editorial Clarity
+   MAIN STYLES
+   Bella Belgarokova · bellabe.github.io
 
-   This file contains component styles and layout.
-   Design tokens are defined in design-tokens.css (loaded first).
-
-   Font loading is handled via preload/preconnect in default.html layout.
-   DO NOT use @import for fonts here - it causes render blocking.
+   Components using design tokens from design-tokens.css
    ============================================================================= */
 
 /* -----------------------------------------------------------------------------
-   Reset & Base
+   RESET & BASE
    ----------------------------------------------------------------------------- */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +21,6 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Prevent font size inflation on mobile */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -31,26 +28,22 @@ html {
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-md);
-  line-height: var(--line-height-relaxed);
+  line-height: var(--line-height-normal);
   color: var(--color-text-primary);
   background: var(--color-bg-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  /* Ensure consistent text rendering while fonts load */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
 
-/* Subtle noise texture overlay */
+/* Subtle noise texture */
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   opacity: 0.02;
   pointer-events: none;
@@ -65,21 +58,20 @@ body::before {
 a {
   color: var(--color-accent-primary);
   text-decoration: none;
-  transition: color var(--duration-normal) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
 }
 
 a:hover {
   color: var(--color-accent-warm);
 }
 
-/* Focus styles for accessibility */
 :focus-visible {
   outline: 2px solid var(--color-accent-primary);
   outline-offset: 2px;
 }
 
 /* -----------------------------------------------------------------------------
-   Header & Navigation
+   NAVIGATION
    ----------------------------------------------------------------------------- */
 
 .site-header {
@@ -88,9 +80,8 @@ a:hover {
   left: 0;
   right: 0;
   z-index: var(--z-fixed);
-  padding: 0;
   background: transparent;
-  transition: all var(--duration-slower) var(--ease-out-expo);
+  transition: all var(--duration-slow) var(--ease-out);
 }
 
 .site-header.scrolled {
@@ -122,7 +113,7 @@ body.light .site-header.scrolled {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
 }
 
 .logo::before {
@@ -159,7 +150,7 @@ body.light .site-header.scrolled {
   color: var(--color-text-secondary);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-md);
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
   position: relative;
 }
 
@@ -173,7 +164,7 @@ body.light .site-header.scrolled {
   background: var(--color-accent-primary);
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform var(--duration-slow) var(--ease-out-expo);
+  transition: transform var(--duration-normal) var(--ease-out);
 }
 
 .nav-links li a:hover {
@@ -186,6 +177,7 @@ body.light .site-header.scrolled {
   transform-origin: left;
 }
 
+/* Theme Toggle */
 .theme-toggle {
   background: var(--color-bg-tertiary);
   border: 1px solid var(--color-border-medium);
@@ -194,7 +186,7 @@ body.light .site-header.scrolled {
   font-size: var(--font-size-base);
   color: var(--color-text-secondary);
   padding: var(--space-2) var(--space-3);
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: all var(--duration-normal) var(--ease-out);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,7 +202,7 @@ body.light .site-header.scrolled {
 body.light .icon-moon { display: none; }
 body.light .icon-sun { display: inline; }
 
-/* Mobile menu toggle */
+/* Mobile Menu */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -229,7 +221,7 @@ body.light .icon-sun { display: inline; }
   height: 2px;
   background: var(--color-text-primary);
   border-radius: 2px;
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: all var(--duration-normal) var(--ease-out);
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -246,7 +238,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Main Content Container
+   MAIN CONTENT
    ----------------------------------------------------------------------------- */
 
 .main-content {
@@ -258,7 +250,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Hero Section
+   HERO
    ----------------------------------------------------------------------------- */
 
 .hero {
@@ -266,7 +258,6 @@ body.light .icon-sun { display: inline; }
   padding: var(--space-24) 0 var(--space-20);
   margin-bottom: var(--space-16);
   text-align: left;
-  border-bottom: none;
 }
 
 .hero::before {
@@ -295,7 +286,7 @@ body.light .icon-sun { display: inline; }
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(var(--font-size-4xl), 5vw, var(--font-size-5xl));
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-tight);
   margin-bottom: var(--space-6);
@@ -338,7 +329,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Buttons
+   BUTTONS
    ----------------------------------------------------------------------------- */
 
 .btn {
@@ -351,7 +342,7 @@ body.light .icon-sun { display: inline; }
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
   letter-spacing: var(--letter-spacing-normal);
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: all var(--duration-normal) var(--ease-out);
   position: relative;
   overflow: hidden;
 }
@@ -368,7 +359,7 @@ body.light .icon-sun { display: inline; }
   inset: 0;
   background: var(--gradient-accent);
   opacity: 0;
-  transition: opacity var(--duration-slow) var(--ease-out-expo);
+  transition: opacity var(--duration-normal) var(--ease-out);
 }
 
 .btn-primary:hover {
@@ -401,7 +392,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Introduction
+   SECTIONS
    ----------------------------------------------------------------------------- */
 
 .intro {
@@ -420,10 +411,6 @@ body.light .icon-sun { display: inline; }
   color: var(--color-text-primary);
   font-weight: var(--font-weight-medium);
 }
-
-/* -----------------------------------------------------------------------------
-   Section Headers
-   ----------------------------------------------------------------------------- */
 
 .featured-section,
 .projects-section,
@@ -450,11 +437,11 @@ body.light .icon-sun { display: inline; }
   content: '';
   flex: 1;
   height: 1px;
-  background: var(--gradient-text);
+  background: var(--gradient-fade);
 }
 
 /* -----------------------------------------------------------------------------
-   Featured Grid (Projects)
+   CARDS
    ----------------------------------------------------------------------------- */
 
 .featured-grid {
@@ -471,7 +458,7 @@ body.light .icon-sun { display: inline; }
   background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
-  transition: all var(--duration-slower) var(--ease-out-expo);
+  transition: all var(--duration-slow) var(--ease-out);
   overflow: hidden;
 }
 
@@ -486,7 +473,7 @@ body.light .icon-sun { display: inline; }
   background: var(--gradient-accent);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform var(--duration-slower) var(--ease-out-expo);
+  transition: transform var(--duration-slow) var(--ease-out);
 }
 
 .featured-item:hover,
@@ -505,14 +492,14 @@ body.light .icon-sun { display: inline; }
 .project-item h3 {
   font-family: var(--font-display);
   font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-3);
 }
 
 .featured-item h3 a,
 .project-item h3 a {
   color: var(--color-text-primary);
-  transition: color var(--duration-slow) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
 }
 
 .featured-item h3 a:hover,
@@ -540,10 +527,7 @@ body.light .icon-sun { display: inline; }
   letter-spacing: var(--letter-spacing-wide);
 }
 
-/* -----------------------------------------------------------------------------
-   Featured List (Writing)
-   ----------------------------------------------------------------------------- */
-
+/* Featured List */
 .featured-list {
   margin-bottom: var(--space-6);
 }
@@ -567,7 +551,7 @@ body.light .icon-sun { display: inline; }
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: all var(--duration-normal) var(--ease-out);
 }
 
 .section-link a:hover {
@@ -576,7 +560,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Mini About
+   MINI ABOUT
    ----------------------------------------------------------------------------- */
 
 .mini-about {
@@ -614,7 +598,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   CTA Section
+   CTA SECTIONS
    ----------------------------------------------------------------------------- */
 
 .cta-section {
@@ -644,7 +628,7 @@ body.light .icon-sun { display: inline; }
 .cta-section h2 {
   font-family: var(--font-display);
   font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-4);
   position: relative;
 }
@@ -661,10 +645,7 @@ body.light .icon-sun { display: inline; }
   position: relative;
 }
 
-/* -----------------------------------------------------------------------------
-   Subtle CTA (bottom of page)
-   ----------------------------------------------------------------------------- */
-
+/* Subtle CTA */
 .subtle-cta {
   text-align: center;
   padding: var(--space-12) 0;
@@ -679,17 +660,14 @@ body.light .icon-sun { display: inline; }
 
 .subtle-cta a {
   color: var(--color-accent-primary);
-  transition: color var(--duration-slow) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
 }
 
 .subtle-cta a:hover {
   color: var(--color-accent-warm);
 }
 
-/* -----------------------------------------------------------------------------
-   Elegant CTA (boxed, refined)
-   ----------------------------------------------------------------------------- */
-
+/* Elegant CTA */
 .elegant-cta {
   text-align: center;
   padding: var(--space-12) var(--space-10);
@@ -702,7 +680,7 @@ body.light .icon-sun { display: inline; }
 .elegant-cta h3 {
   font-family: var(--font-display);
   font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-3);
   color: var(--color-text-primary);
 }
@@ -721,7 +699,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Page Header (About, Projects, Writing)
+   PAGE HEADER
    ----------------------------------------------------------------------------- */
 
 .page-header {
@@ -733,7 +711,7 @@ body.light .icon-sun { display: inline; }
 .page-header h1 {
   font-family: var(--font-display);
   font-size: clamp(var(--font-size-4xl), 6vw, var(--font-size-6xl));
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-tight);
   margin-bottom: var(--space-3);
   animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) both;
@@ -747,7 +725,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Project List (Projects Page)
+   PROJECT LIST
    ----------------------------------------------------------------------------- */
 
 .project-list {
@@ -757,7 +735,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Post List (Writing Page)
+   POST LIST
    ----------------------------------------------------------------------------- */
 
 .post-list {
@@ -768,7 +746,7 @@ body.light .icon-sun { display: inline; }
   margin-bottom: var(--space-8);
   padding-bottom: var(--space-8);
   border-bottom: 1px solid var(--color-border-subtle);
-  animation: fadeSlideUp 0.6s var(--ease-out-expo) both;
+  animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) both;
 }
 
 .post-list li:nth-child(1) { animation-delay: 0.1s; }
@@ -786,13 +764,13 @@ body.light .icon-sun { display: inline; }
 .post-list h3 {
   font-family: var(--font-display);
   font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-2);
 }
 
 .post-list h3 a {
   color: var(--color-text-primary);
-  transition: color var(--duration-slow) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
 }
 
 .post-list h3 a:hover {
@@ -818,7 +796,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Single Post
+   SINGLE POST
    ----------------------------------------------------------------------------- */
 
 .post {
@@ -834,7 +812,7 @@ body.light .icon-sun { display: inline; }
 .post-title {
   font-family: var(--font-display);
   font-size: clamp(var(--font-size-4xl), 5vw, var(--font-size-5xl));
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-snug);
   letter-spacing: var(--letter-spacing-tight);
   margin-bottom: var(--space-4);
@@ -862,7 +840,7 @@ body.light .icon-sun { display: inline; }
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
   color: var(--color-text-secondary);
-  transition: all var(--duration-slow) var(--ease-out-expo);
+  transition: all var(--duration-normal) var(--ease-out);
 }
 
 .tag:hover {
@@ -871,7 +849,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Post Content
+   POST CONTENT
    ----------------------------------------------------------------------------- */
 
 .post-content {
@@ -886,7 +864,7 @@ body.light .icon-sun { display: inline; }
 .post-content h2 {
   font-family: var(--font-display);
   font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   margin-top: var(--space-12);
   margin-bottom: var(--space-5);
   color: var(--color-text-primary);
@@ -895,7 +873,7 @@ body.light .icon-sun { display: inline; }
 .post-content h3 {
   font-family: var(--font-display);
   font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   margin-top: var(--space-10);
   margin-bottom: var(--space-4);
   color: var(--color-text-primary);
@@ -919,9 +897,9 @@ body.light .icon-sun { display: inline; }
 .post-content a {
   color: var(--color-accent-primary);
   text-decoration: underline;
-  text-decoration-color: rgba(34, 211, 238, 0.3);
+  text-decoration-color: var(--color-border-accent);
   text-underline-offset: 3px;
-  transition: text-decoration-color var(--duration-slow) var(--ease-out-expo);
+  transition: text-decoration-color var(--duration-normal) var(--ease-out);
 }
 
 .post-content a:hover {
@@ -949,8 +927,8 @@ body.light .icon-sun { display: inline; }
   font-size: 0.9em;
   background: var(--color-bg-tertiary);
   border: 1px solid var(--color-border-subtle);
-  padding: 0.15rem 0.4rem;
-  border-radius: 4px;
+  padding: var(--space-0-5) var(--space-2);
+  border-radius: var(--radius-sm);
   color: var(--color-accent-primary);
 }
 
@@ -995,14 +973,11 @@ body.light .icon-sun { display: inline; }
 .post-content hr {
   border: none;
   height: 1px;
-  background: var(--gradient-text);
+  background: var(--gradient-fade);
   margin: var(--space-12) 0;
 }
 
-/* -----------------------------------------------------------------------------
-   LeanOS Reference Box
-   ----------------------------------------------------------------------------- */
-
+/* LeanOS Reference Box */
 .leanos-reference {
   background: var(--gradient-card);
   border: 1px solid var(--color-border-accent);
@@ -1029,7 +1004,7 @@ body.light .icon-sun { display: inline; }
   font-weight: var(--font-weight-semibold);
   color: var(--color-accent-primary);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: var(--letter-spacing-wider);
   margin-bottom: var(--space-2);
   padding-left: var(--space-6);
 }
@@ -1040,10 +1015,7 @@ body.light .icon-sun { display: inline; }
   padding-left: var(--space-6);
 }
 
-/* -----------------------------------------------------------------------------
-   Post Footer
-   ----------------------------------------------------------------------------- */
-
+/* Post Footer */
 .post-footer {
   padding-top: var(--space-8);
   border-top: 1px solid var(--color-border-subtle);
@@ -1052,7 +1024,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   About Page Content
+   ABOUT PAGE
    ----------------------------------------------------------------------------- */
 
 .about-content {
@@ -1063,7 +1035,7 @@ body.light .icon-sun { display: inline; }
 .about-content h2 {
   font-family: var(--font-display);
   font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   margin-top: var(--space-12);
   margin-bottom: var(--space-4);
   color: var(--color-text-primary);
@@ -1104,7 +1076,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Site Footer
+   FOOTER
    ----------------------------------------------------------------------------- */
 
 .site-footer {
@@ -1122,7 +1094,7 @@ body.light .icon-sun { display: inline; }
 
 .site-footer a {
   color: var(--color-text-tertiary);
-  transition: color var(--duration-slow) var(--ease-out-expo);
+  transition: color var(--duration-normal) var(--ease-out);
 }
 
 .site-footer a:hover {
@@ -1130,7 +1102,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Scroll Animations
+   ANIMATIONS
    ----------------------------------------------------------------------------- */
 
 .animate-on-scroll {
@@ -1145,7 +1117,7 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Responsive Design
+   RESPONSIVE
    ----------------------------------------------------------------------------- */
 
 @media (max-width: 768px) {
@@ -1261,13 +1233,17 @@ body.light .icon-sun { display: inline; }
 }
 
 /* -----------------------------------------------------------------------------
-   Print Styles
+   PRINT
    ----------------------------------------------------------------------------- */
 
 @media print {
   body {
     background: white;
     color: black;
+  }
+
+  body::before {
+    display: none;
   }
 
   .site-header,

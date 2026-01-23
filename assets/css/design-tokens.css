@@ -1,108 +1,86 @@
 /* =============================================================================
-   BELLA BELGAROKOVA DESIGN SYSTEM
-   Design Tokens & Typography Foundation
+   DESIGN TOKENS
+   Bella Belgarokova · bellabe.github.io
+
+   Generated from: /artifacts/design-system/tokens/
+   Font: Fira Code · Base: 4px · Scale: 1.25
    ============================================================================= */
 
-/* -----------------------------------------------------------------------------
-   FONT FACE DEFINITIONS
-
-   These @font-face rules use font-display: swap for performance while
-   providing size-adjusted fallbacks to minimize Cumulative Layout Shift (CLS).
-
-   The fonts are loaded via Google Fonts in the HTML head with preconnect
-   and preload for optimal loading performance.
-   ----------------------------------------------------------------------------- */
-
-/* Fallback font with metric adjustments to match Fira Code */
+/* Fallback font with metric adjustments */
 @font-face {
   font-family: 'Fira Code Fallback';
-  src: local('SF Mono'), local('Monaco'), local('Consolas'), local('Liberation Mono'), local('monospace');
+  src: local('SF Mono'), local('Monaco'), local('Consolas'), local('Liberation Mono');
   ascent-override: 93%;
   descent-override: 27%;
   line-gap-override: 0%;
-  size-adjust: 100%;
 }
 
-/* -----------------------------------------------------------------------------
-   CSS CUSTOM PROPERTIES (Design Tokens)
-
-   Organized by category for maintainability:
-   1. Color Tokens (theme-aware)
-   2. Typography Tokens
-   3. Spacing Tokens
-   4. Layout Tokens
-   5. Effect Tokens (shadows, gradients)
-   6. Motion Tokens
-   ----------------------------------------------------------------------------- */
-
 :root {
-  /* -------------------------------------------------------------------------
-     COLOR TOKENS - Dark Theme (Default)
+  /* ---------------------------------------------------------------------------
+     COLORS - Dark Theme (Default)
+     --------------------------------------------------------------------------- */
 
-     Semantic naming allows theme switching without component changes.
-     ------------------------------------------------------------------------- */
-
-  /* Background Colors - Layered for depth */
+  /* Background */
   --color-bg-primary: #0a0a0b;
   --color-bg-secondary: #111113;
   --color-bg-tertiary: #18181b;
   --color-bg-elevated: #1f1f23;
 
-  /* Text Colors - High contrast for accessibility */
+  /* Text */
   --color-text-primary: #f4f4f5;
   --color-text-secondary: #a1a1aa;
   --color-text-tertiary: #71717a;
 
-  /* Accent Colors - Brand identity */
-  --color-accent-primary: #22d3ee;      /* Electric cyan - primary actions */
-  --color-accent-secondary: #06b6d4;    /* Cyan - secondary elements */
+  /* Accent - Electric Cyan */
+  --color-accent-primary: #22d3ee;
+  --color-accent-secondary: #06b6d4;
   --color-accent-glow: rgba(34, 211, 238, 0.15);
-  --color-accent-warm: #f59e0b;         /* Amber - highlights, warnings */
+
+  /* Accent - Amber (warm) */
+  --color-accent-warm: #f59e0b;
   --color-accent-warm-glow: rgba(245, 158, 11, 0.1);
 
-  /* Border Colors */
+  /* Border */
   --color-border-subtle: rgba(255, 255, 255, 0.06);
   --color-border-medium: rgba(255, 255, 255, 0.1);
   --color-border-accent: rgba(34, 211, 238, 0.3);
 
-  /* Semantic Colors */
+  /* Semantic */
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #3b82f6;
 
-  /* -------------------------------------------------------------------------
-     TYPOGRAPHY TOKENS
+  /* ---------------------------------------------------------------------------
+     TYPOGRAPHY
+     Font: Fira Code everywhere · Scale: Major Third (1.25)
+     --------------------------------------------------------------------------- */
 
-     Font stacks include metric-adjusted fallbacks to prevent layout shift.
-     Scale based on 1.25 ratio (Major Third) for editorial feel.
-     ------------------------------------------------------------------------- */
-
-  /* Font Families - Fira Code everywhere for unified technical identity */
+  /* Font Families */
   --font-display: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
   --font-body: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
   --font-mono: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
 
-  /* Font Sizes - Major Third Scale (1.25) */
-  --font-size-xs: 0.75rem;     /* 12px */
-  --font-size-sm: 0.875rem;    /* 14px */
-  --font-size-base: 1rem;      /* 16px - Body text minimum */
-  --font-size-md: 1.0625rem;   /* 17px - Comfortable reading */
-  --font-size-lg: 1.125rem;    /* 18px */
-  --font-size-xl: 1.25rem;     /* 20px */
-  --font-size-2xl: 1.5rem;     /* 24px */
-  --font-size-3xl: 1.875rem;   /* 30px */
-  --font-size-4xl: 2.25rem;    /* 36px */
-  --font-size-5xl: 3rem;       /* 48px */
-  --font-size-6xl: 3.75rem;    /* 60px */
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-md: 1.0625rem;    /* 17px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 1.875rem;    /* 30px */
+  --font-size-4xl: 2.25rem;     /* 36px */
+  --font-size-5xl: 3rem;        /* 48px */
+  --font-size-6xl: 3.75rem;     /* 60px */
 
-  /* Line Heights - Optimized for readability */
+  /* Line Heights */
   --line-height-none: 1;
-  --line-height-tight: 1.15;   /* Headings */
-  --line-height-snug: 1.3;     /* Subheadings */
-  --line-height-normal: 1.5;   /* UI text */
-  --line-height-relaxed: 1.7;  /* Body copy */
-  --line-height-loose: 1.8;    /* Long-form reading */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 1.9;
 
   /* Letter Spacing */
   --letter-spacing-tighter: -0.03em;
@@ -118,38 +96,40 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  /* -------------------------------------------------------------------------
-     SPACING TOKENS
-
-     4px base unit for dense, precise layouts.
-     Scale: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96
-     ------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------
+     SPACING
+     Base unit: 4px
+     --------------------------------------------------------------------------- */
 
   --space-0: 0;
-  --space-1: 0.25rem;    /* 4px */
-  --space-2: 0.5rem;     /* 8px */
-  --space-3: 0.75rem;    /* 12px */
-  --space-4: 1rem;       /* 16px */
-  --space-5: 1.25rem;    /* 20px */
-  --space-6: 1.5rem;     /* 24px */
-  --space-8: 2rem;       /* 32px */
-  --space-10: 2.5rem;    /* 40px */
-  --space-12: 3rem;      /* 48px */
-  --space-16: 4rem;      /* 64px */
-  --space-20: 5rem;      /* 80px */
-  --space-24: 6rem;      /* 96px */
-  --space-32: 8rem;      /* 128px */
+  --space-px: 1px;
+  --space-0-5: 2px;
+  --space-1: 0.25rem;     /* 4px */
+  --space-1-5: 0.375rem;  /* 6px */
+  --space-2: 0.5rem;      /* 8px */
+  --space-2-5: 0.625rem;  /* 10px */
+  --space-3: 0.75rem;     /* 12px */
+  --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
+  --space-6: 1.5rem;      /* 24px */
+  --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
+  --space-12: 3rem;       /* 48px */
+  --space-16: 4rem;       /* 64px */
+  --space-20: 5rem;       /* 80px */
+  --space-24: 6rem;       /* 96px */
+  --space-32: 8rem;       /* 128px */
 
-  /* -------------------------------------------------------------------------
-     LAYOUT TOKENS
-     ------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------
+     LAYOUT
+     --------------------------------------------------------------------------- */
 
-  /* Container Widths */
+  /* Container */
   --container-sm: 640px;
   --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1200px;
-  --container-prose: 720px;   /* Optimal reading width */
+  --container-prose: 720px;
 
   /* Border Radius */
   --radius-none: 0;
@@ -159,7 +139,7 @@
   --radius-xl: 20px;
   --radius-full: 9999px;
 
-  /* Z-Index Scale */
+  /* Z-Index */
   --z-base: 0;
   --z-dropdown: 10;
   --z-sticky: 20;
@@ -168,11 +148,11 @@
   --z-modal: 50;
   --z-toast: 60;
 
-  /* -------------------------------------------------------------------------
-     EFFECT TOKENS
-     ------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------
+     EFFECTS
+     --------------------------------------------------------------------------- */
 
-  /* Shadows */
+  /* Shadows - Dark theme */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
@@ -184,94 +164,59 @@
   --gradient-hero: linear-gradient(135deg, var(--color-bg-primary) 0%, #0d1117 50%, var(--color-bg-primary) 100%);
   --gradient-card: linear-gradient(145deg, var(--color-bg-secondary) 0%, var(--color-bg-tertiary) 100%);
   --gradient-accent: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-secondary) 100%);
-  --gradient-text: linear-gradient(90deg, var(--color-border-medium), transparent);
+  --gradient-fade: linear-gradient(90deg, var(--color-border-medium), transparent);
 
-  /* -------------------------------------------------------------------------
-     MOTION TOKENS
-     ------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------
+     MOTION
+     Base: 50ms (technical/fast)
+     --------------------------------------------------------------------------- */
 
-  /* Durations */
   --duration-instant: 0ms;
-  --duration-fast: 150ms;
-  --duration-normal: 200ms;
-  --duration-slow: 300ms;
-  --duration-slower: 400ms;
-  --duration-slowest: 800ms;
+  --duration-50: 50ms;
+  --duration-fast: 100ms;
+  --duration-normal: 150ms;
+  --duration-slow: 200ms;
+  --duration-slower: 300ms;
+  --duration-slowest: 500ms;
 
-  /* Easing Functions */
+  /* Easing */
   --ease-linear: linear;
   --ease-in: cubic-bezier(0.4, 0, 1, 1);
   --ease-out: cubic-bezier(0, 0, 0.2, 1);
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
-
-  /* -------------------------------------------------------------------------
-     LEGACY ALIASES
-
-     For backwards compatibility with existing styles.
-     Prefer semantic tokens in new code.
-     ------------------------------------------------------------------------- */
-
-  --bg-primary: var(--color-bg-primary);
-  --bg-secondary: var(--color-bg-secondary);
-  --bg-tertiary: var(--color-bg-tertiary);
-  --bg-elevated: var(--color-bg-elevated);
-  --text-primary: var(--color-text-primary);
-  --text-secondary: var(--color-text-secondary);
-  --text-tertiary: var(--color-text-tertiary);
-  --accent-primary: var(--color-accent-primary);
-  --accent-secondary: var(--color-accent-secondary);
-  --accent-glow: var(--color-accent-glow);
-  --accent-warm: var(--color-accent-warm);
-  --accent-warm-glow: var(--color-accent-warm-glow);
-  --border-subtle: var(--color-border-subtle);
-  --border-medium: var(--color-border-medium);
-  --border-accent: var(--color-border-accent);
-  --gradient-hero: var(--gradient-hero);
-  --gradient-card: var(--gradient-card);
-  --gradient-accent: var(--gradient-accent);
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --shadow-glow: var(--shadow-glow);
-  --radius-sm: var(--radius-md);
-  --radius-md: var(--radius-lg);
-  --radius-lg: var(--radius-xl);
 }
 
 /* -----------------------------------------------------------------------------
-   LIGHT THEME OVERRIDES
-
-   Applied when body has .light class.
-   Only color tokens change; typography, spacing, and effects remain consistent.
+   LIGHT THEME
    ----------------------------------------------------------------------------- */
 
 body.light {
-  /* Background Colors */
+  /* Background */
   --color-bg-primary: #fafafa;
   --color-bg-secondary: #ffffff;
   --color-bg-tertiary: #f4f4f5;
   --color-bg-elevated: #ffffff;
 
-  /* Text Colors */
+  /* Text */
   --color-text-primary: #18181b;
   --color-text-secondary: #52525b;
   --color-text-tertiary: #71717a;
 
-  /* Accent Colors - Adjusted for light backgrounds */
+  /* Accent - darker for light bg */
   --color-accent-primary: #0891b2;
   --color-accent-secondary: #06b6d4;
   --color-accent-glow: rgba(8, 145, 178, 0.1);
   --color-accent-warm: #d97706;
   --color-accent-warm-glow: rgba(217, 119, 6, 0.08);
 
-  /* Border Colors */
+  /* Border */
   --color-border-subtle: rgba(0, 0, 0, 0.04);
   --color-border-medium: rgba(0, 0, 0, 0.08);
   --color-border-accent: rgba(8, 145, 178, 0.2);
 
-  /* Shadows - Lighter for light theme */
+  /* Shadows - lighter */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -285,147 +230,7 @@ body.light {
 }
 
 /* -----------------------------------------------------------------------------
-   TYPOGRAPHY UTILITY CLASSES
-
-   Ready-to-use typography patterns that combine tokens.
-   ----------------------------------------------------------------------------- */
-
-/* Display Text - Large headlines */
-.text-display-xl {
-  font-family: var(--font-display);
-  font-size: clamp(var(--font-size-4xl), 6vw, var(--font-size-6xl));
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
-}
-
-.text-display-lg {
-  font-family: var(--font-display);
-  font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
-}
-
-.text-display-md {
-  font-family: var(--font-display);
-  font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
-}
-
-/* Heading Text */
-.text-heading-xl {
-  font-family: var(--font-display);
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-snug);
-  letter-spacing: var(--letter-spacing-tight);
-}
-
-.text-heading-lg {
-  font-family: var(--font-display);
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-snug);
-  letter-spacing: var(--letter-spacing-tight);
-}
-
-.text-heading-md {
-  font-family: var(--font-display);
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-snug);
-}
-
-.text-heading-sm {
-  font-family: var(--font-display);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-snug);
-}
-
-/* Body Text */
-.text-body-lg {
-  font-family: var(--font-body);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-loose);
-}
-
-.text-body-md {
-  font-family: var(--font-body);
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-relaxed);
-}
-
-.text-body-sm {
-  font-family: var(--font-body);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-relaxed);
-}
-
-/* UI Text - Labels, captions */
-.text-ui-lg {
-  font-family: var(--font-body);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-}
-
-.text-ui-md {
-  font-family: var(--font-body);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-}
-
-.text-ui-sm {
-  font-family: var(--font-body);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-}
-
-/* Mono Text - Code, technical */
-.text-mono-lg {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-normal);
-}
-
-.text-mono-md {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-normal);
-}
-
-.text-mono-sm {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-normal);
-}
-
-/* Label Text - Section headers, categories */
-.text-label {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing-widest);
-  text-transform: uppercase;
-}
-
-/* -----------------------------------------------------------------------------
-   REDUCED MOTION SUPPORT
-
-   Respects user preferences for reduced motion.
+   ACCESSIBILITY
    ----------------------------------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
@@ -437,10 +242,6 @@ body.light {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* -----------------------------------------------------------------------------
-   HIGH CONTRAST MODE SUPPORT
-   ----------------------------------------------------------------------------- */
 
 @media (prefers-contrast: more) {
   :root {
