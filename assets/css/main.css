@@ -817,6 +817,30 @@ body.light .icon-sun { display: inline; }
   margin-top: var(--breathing-micro);
 }
 
+/* Profile Photo */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--breathing-meso);
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 96px;
+    height: 96px;
+  }
+}
+
 .project-meta {
   display: inline-block;
   margin-top: var(--space-4);
