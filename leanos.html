@@ -4,26 +4,30 @@ title: LeanOS
 description: "Know Your Agent. Own Your Agent. AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible. Every skill modifiable."
 ---
 
+<!-- TODO: Replace GUMROAD_URL_HERE with actual Gumroad link before launch -->
+{% assign gumroad_url = "GUMROAD_URL_HERE" %}
+
 <!-- Hero: Spacious, 3 type levels, one primary CTA -->
 <section class="hero leanos-hero">
   <span class="hero-label">AI Operating System for Founders</span>
   <h1>Know Your Agent. <span class="accent">Own Your Agent.</span></h1>
   <p class="tagline">LeanOS — AI Operating System for Founders</p>
   <p class="hero-mono">181 skills. 30+ agents. Every prompt visible. Every skill modifiable.</p>
-  <p class="hero-price">$500 once. Yours forever.</p>
+  <p class="hero-price">$500 once — not $200+/month in AI subscriptions.</p>
   <div class="hero-links cta-primary">
     <a href="#pricing" class="btn btn-primary"><span>Get Pro</span></a>
     <a href="https://github.com/BellaBe/lean-os" class="btn btn-secondary" target="_blank" rel="noopener">Try Core Free</a>
   </div>
 </section>
 
-<!-- The Problem: Compact section -->
+<!-- The Problem: Loss framing with quantification -->
 <section class="projects-section animate-on-scroll">
   <h2>The Problem</h2>
   <div class="mini-about">
     <p class="prose-lead">
-      You're stacking AI subscriptions. Writing. Sales. Support. Planning. Code. Different tools. Different logins. No context between them.
+      You're stacking AI subscriptions. Writing. Sales. Support. Planning. Code. Different tools. Different logins.
     </p>
+    <p class="loss-frame">Every tool switch = lost context. Your AI tools don't talk to each other. You're paying for knowledge that disappears between every login.</p>
   </div>
 </section>
 
@@ -82,26 +86,28 @@ description: "Know Your Agent. Own Your Agent. AI Operating System for Founders.
   </div>
 </section>
 
-<!-- Pricing: Single focal point -->
+<!-- Pricing: Single focal point with social proof -->
 <section class="projects-section animate-on-scroll" id="pricing">
   <h2>Pricing</h2>
   <div class="pricing-card">
     <h3 class="pricing-title">LeanOS Pro</h3>
     <p class="pricing-amount">$500 once</p>
+    <p class="pricing-anchor">Not $200+/month in scattered AI tools.</p>
     <p class="pricing-note">Not a subscription. Yours forever.</p>
     <p class="pricing-guarantee">30-day money back guarantee.</p>
-    <a href="#" class="btn btn-primary"><span>Get Pro on Gumroad</span></a>
+    <a href="{{ gumroad_url }}" class="btn btn-primary"><span>Get Pro on Gumroad</span></a>
+    <p class="social-proof">Built by the creator. Used daily to run real businesses.</p>
   </div>
 </section>
 
-<!-- For Whom: 3 bullet points (odd number) -->
+<!-- For Whom: 3 bullet points with specific scenarios -->
 <section class="projects-section animate-on-scroll">
   <h2>For Whom</h2>
   <div class="about-content">
     <ul>
-      <li><strong>Solo founders</strong> who need team-level capabilities without the team</li>
-      <li><strong>Technical operators</strong> who think in systems, not tasks</li>
-      <li><strong>Builders using Claude</strong> who want structured, reusable skills</li>
+      <li><strong>Solo founders</strong> who need team-level capabilities without hiring — you have a product idea but can't afford $150k/year engineers</li>
+      <li><strong>Technical operators</strong> who think in systems, not tasks — you want AI that compounds, not fragments</li>
+      <li><strong>Builders using Claude</strong> who want structured, reusable skills — you're tired of rewriting the same prompts</li>
     </ul>
   </div>
 </section>

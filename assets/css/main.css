@@ -787,6 +787,36 @@ body.light .icon-sun { display: inline; }
   position: relative;
 }
 
+/* Pricing Anchor: Comparison text */
+.pricing-anchor {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+  position: relative;
+}
+
+/* Social Proof */
+.social-proof {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  margin-top: var(--breathing-meso);
+  padding-top: var(--breathing-micro);
+  border-top: 1px solid var(--color-border-subtle);
+  position: relative;
+}
+
+/* Loss Frame: Emphasis on cost of inaction */
+.loss-frame {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-accent-warm);
+  margin-top: var(--breathing-micro);
+}
+
 .project-meta {
   display: inline-block;
   margin-top: var(--space-4);
