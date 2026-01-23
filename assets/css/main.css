@@ -71,6 +71,84 @@ a:hover {
 }
 
 /* -----------------------------------------------------------------------------
+   COMPOSITION RULES
+   Visual Hierarchy · Spacing Rhythm · Content Density
+   ----------------------------------------------------------------------------- */
+
+/* Prose: Constrain line length to 45-75 characters */
+.prose {
+  max-width: var(--max-prose-width, 65ch);
+}
+
+/* Breathing Room Utilities */
+.breathing-micro { gap: var(--breathing-micro); }
+.breathing-meso { gap: var(--breathing-meso); }
+.breathing-macro { gap: var(--breathing-macro); }
+
+/* Section Spacing: Alternate dense/sparse for pacing */
+.section-spacious { padding-block: var(--breathing-section); }
+.section-comfortable { padding-block: var(--breathing-macro); }
+.section-compact { padding-block: var(--breathing-meso); }
+
+/* Proximity: Group spacing */
+.group-tight { gap: var(--proximity-intra); }
+.group-loose { gap: var(--proximity-inter); }
+
+/* Grid: Odd number columns (3 preferred) */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--breathing-meso);
+}
+
+.grid-3-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--breathing-meso);
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Typography Hierarchy: Max 3 levels per section */
+.type-hero { font-size: var(--font-size-5xl); }    /* Level 1: 48px */
+.type-section { font-size: var(--font-size-lg); }  /* Level 2: 18px */
+.type-body { font-size: var(--font-size-md); }     /* Level 3: 17px */
+
+/* Visual Weight Balance */
+.weight-heavy {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+.weight-medium {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+}
+.weight-light {
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-tertiary);
+}
+
+/* Single Primary CTA styling */
+.cta-primary {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.cta-primary .btn-primary {
+  /* Primary stands out */
+}
+
+.cta-primary .btn-secondary {
+  /* Secondary recedes */
+  opacity: 0.9;
+}
+
+/* -----------------------------------------------------------------------------
    NAVIGATION
    ----------------------------------------------------------------------------- */
 
@@ -253,11 +331,13 @@ body.light .icon-sun { display: inline; }
    HERO
    ----------------------------------------------------------------------------- */
 
+/* Hero: Spacious (low density), high impact, 3 type levels max */
 .hero {
   position: relative;
-  padding: var(--space-24) 0 var(--space-20);
-  margin-bottom: var(--space-16);
+  padding: var(--breathing-section) 0 var(--breathing-macro);  /* 96px / 64px */
+  margin-bottom: var(--breathing-macro);
   text-align: left;
+  max-width: var(--container-prose);  /* Constrain for readability */
 }
 
 .hero::before {
@@ -301,14 +381,24 @@ body.light .icon-sun { display: inline; }
   background-clip: text;
 }
 
+/* Tagline: Level 2 in hierarchy, constrained line length */
 .tagline {
   font-family: var(--font-body);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-lg);  /* 18px = ~1.1x body (level 2) */
   color: var(--color-text-secondary);
-  max-width: 550px;
+  max-width: var(--max-prose-width, 65ch);  /* Optimal line length */
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--breathing-meso);  /* 24px */
   animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) 0.1s both;
+}
+
+/* Hero Mono: Accent text, level 2 */
+.hero-mono {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-lg);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--breathing-micro);
+  animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) 0.15s both;
 }
 
 .hero-links {
@@ -412,10 +502,20 @@ body.light .icon-sun { display: inline; }
   font-weight: var(--font-weight-medium);
 }
 
+/* Section Pacing: Alternate dense/sparse for rhythm */
 .featured-section,
 .projects-section,
 .posts-section {
-  margin-bottom: var(--space-20);
+  margin-bottom: var(--breathing-macro);  /* 64px between sections */
+}
+
+/* Odd sections more spacious, even sections denser */
+.projects-section:nth-of-type(odd) {
+  padding-block: var(--space-4);
+}
+
+.projects-section:nth-of-type(even) {
+  padding-block: var(--space-2);
 }
 
 .featured-section h2,
@@ -444,17 +544,30 @@ body.light .icon-sun { display: inline; }
    CARDS
    ----------------------------------------------------------------------------- */
 
+/* Featured Grid: Prefer odd numbers (3) for natural feel */
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--space-6);
-  margin-bottom: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--breathing-meso);  /* 24px - meso spacing */
+  margin-bottom: var(--breathing-meso);
 }
 
+/* Force 2-column for comparison layouts */
+.featured-grid.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 640px) {
+  .featured-grid.grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards: Meso internal padding, micro spacing within */
 .featured-item,
 .project-item {
   position: relative;
-  padding: var(--space-8);
+  padding: var(--breathing-meso);  /* 24px - meso breathing room */
   background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
@@ -515,6 +628,165 @@ body.light .icon-sun { display: inline; }
   margin: 0;
 }
 
+/* Card Components: Composition-compliant */
+.card-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--breathing-micro);
+}
+
+.card-stats {
+  margin: var(--breathing-meso) 0;
+}
+
+.stat-primary {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--space-1);
+}
+
+.stat-secondary {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
+
+.card-action {
+  margin-top: var(--breathing-meso);
+  padding-top: var(--breathing-meso);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.card-action .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Featured Item Primary: Accent border */
+.featured-item--primary {
+  border-color: var(--color-accent-primary);
+}
+
+.featured-item--primary .stat-primary {
+  color: var(--color-accent-primary);
+}
+
+/* Connect Links: 3 items centered */
+.connect-links {
+  display: flex;
+  gap: var(--breathing-meso);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.connect-links a {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.connect-links a:hover {
+  color: var(--color-accent-primary);
+}
+
+/* Hero Price: Accent emphasis */
+.hero-price {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-lg);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--breathing-meso);
+  animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) 0.2s both;
+}
+
+/* Prose Lead: Larger intro text */
+.prose-lead {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-loose);
+}
+
+/* Solution Styles */
+.solution-headline {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--breathing-micro);
+}
+
+.solution-pillars {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-base);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--breathing-micro);
+}
+
+/* Section Intro */
+.section-intro {
+  margin-bottom: var(--breathing-meso);
+}
+
+/* Pricing Card: Focal point styling */
+.pricing-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--breathing-macro) var(--breathing-meso);
+  max-width: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background:
+    radial-gradient(ellipse 300px 200px at 30% 30%, var(--color-accent-glow), transparent),
+    radial-gradient(ellipse 200px 150px at 70% 70%, var(--color-accent-warm-glow), transparent);
+  pointer-events: none;
+}
+
+.pricing-title {
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2);
+  position: relative;
+}
+
+.pricing-amount {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-4xl);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.pricing-note {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-1);
+  position: relative;
+}
+
+.pricing-guarantee {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--breathing-meso);
+  position: relative;
+}
+
+.pricing-card .btn {
+  position: relative;
+}
+
 .project-meta {
   display: inline-block;
   margin-top: var(--space-4);
@@ -563,14 +835,16 @@ body.light .icon-sun { display: inline; }
    MINI ABOUT
    ----------------------------------------------------------------------------- */
 
+/* Mini About: Constrained width, meso padding */
 .mini-about {
-  margin-bottom: var(--space-16);
-  padding: var(--space-10);
+  margin-bottom: var(--breathing-macro);
+  padding: var(--breathing-meso);  /* 24px - meso breathing room */
   background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   position: relative;
   overflow: hidden;
+  max-width: var(--container-prose);  /* Constrain line length */
 }
 
 .mini-about::before {
@@ -601,14 +875,15 @@ body.light .icon-sun { display: inline; }
    CTA SECTIONS
    ----------------------------------------------------------------------------- */
 
+/* CTA Section: One primary action, generous whitespace */
 .cta-section {
   position: relative;
   text-align: center;
-  padding: var(--space-16) var(--space-12);
+  padding: var(--breathing-macro) var(--breathing-meso);  /* 64px / 24px */
   background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--breathing-meso);
   overflow: hidden;
 }
 
@@ -1027,9 +1302,10 @@ body.light .icon-sun { display: inline; }
    ABOUT PAGE
    ----------------------------------------------------------------------------- */
 
+/* About Content: Constrained for readability (45-75 chars) */
 .about-content {
-  max-width: 700px;
-  margin-bottom: var(--space-16);
+  max-width: var(--container-prose);  /* 720px ~ 65 chars */
+  margin-bottom: var(--breathing-macro);
 }
 
 .about-content h2 {

@@ -4,48 +4,46 @@ title: Home
 description: "Bella Belgarokova — Building LeanOS, an AI Operating System for Founders. 181 skills, 30+ agents. Know Your Agent. Own Your Agent."
 ---
 
-<!-- Hero Section -->
+<!-- Hero Section: Spacious, 3 type levels, one focal point -->
 <section class="hero">
   <h1>Bella Belgarokova</h1>
-  <p class="tagline" style="font-size: 1.25rem; margin-bottom: 1rem;">Building LeanOS — AI Operating System for Founders</p>
-  <p style="font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 1rem;">
-    Know Your Agent. Own Your Agent.
-  </p>
+  <p class="tagline">Building LeanOS — AI Operating System for Founders</p>
+  <p class="hero-mono">Know Your Agent. Own Your Agent.</p>
   <p class="hero-label">Dubai-based. Building solo with AI leverage.</p>
 </section>
 
-<!-- Two Paths Section -->
+<!-- Two Paths Section: 2-column comparison (acceptable for A/B choice) -->
 <section class="projects-section animate-on-scroll">
   <h2>Two Paths</h2>
-  <div class="featured-grid">
-    <div class="featured-item" style="border-color: var(--accent-primary);">
-      <span class="hero-label" style="margin-bottom: 1rem; display: block;">For Technical Founders</span>
+  <div class="featured-grid grid-2">
+    <div class="featured-item featured-item--primary">
+      <span class="card-label">For Technical Founders</span>
       <h3>LeanOS Pro</h3>
-      <div style="margin: 1.5rem 0;">
-        <p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--accent-primary); margin-bottom: 0.5rem;">181 skills, 30+ agents</p>
-        <p style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">$500 once, yours forever</p>
+      <div class="card-stats">
+        <p class="stat-primary">181 skills, 30+ agents</p>
+        <p class="stat-secondary">$500 once, yours forever</p>
       </div>
       <p>AI operating system you own. Every prompt visible. Every skill modifiable. Build, sell, serve, plan, grow.</p>
-      <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
-        <a href="{{ '/leanos' | relative_url }}" class="btn btn-primary" style="width: 100%; justify-content: center;"><span>Explore LeanOS</span></a>
+      <div class="card-action">
+        <a href="{{ '/leanos' | relative_url }}" class="btn btn-primary"><span>Explore LeanOS</span></a>
       </div>
     </div>
     <div class="featured-item">
-      <span class="hero-label" style="margin-bottom: 1rem; display: block;">For Non-Technical Founders</span>
+      <span class="card-label">For Non-Technical Founders</span>
       <h3>Fractional CTO</h3>
-      <div style="margin: 1.5rem 0;">
-        <p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem;">Technical partner + AI execution</p>
-        <p style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">Systems that scale without headcount</p>
+      <div class="card-stats">
+        <p class="stat-primary">Technical partner + AI execution</p>
+        <p class="stat-secondary">Systems that scale without headcount</p>
       </div>
       <p>CTO-level strategy and AI-powered execution. No black boxes. No lock-in. Built for independence.</p>
-      <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
-        <a href="{{ '/services' | relative_url }}" class="btn btn-secondary" style="width: 100%; justify-content: center;">View Services</a>
+      <div class="card-action">
+        <a href="{{ '/services' | relative_url }}" class="btn btn-secondary">View Services</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Recent Writing Section -->
+<!-- Recent Writing Section: 3 items (odd number) -->
 <section class="featured-section animate-on-scroll">
   <h2>Recent Writing</h2>
   {% if site.posts.size > 0 %}
@@ -67,14 +65,12 @@ description: "Bella Belgarokova — Building LeanOS, an AI Operating System for 
   {% endif %}
 </section>
 
-<!-- Connect Section -->
+<!-- Connect Section: 3 links (odd number) -->
 <section class="projects-section animate-on-scroll">
   <h2>Connect</h2>
-  <div class="about-content" style="text-align: center;">
-    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
-      <a href="https://github.com/BellaBe" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 1rem;">GitHub</a>
-      <a href="https://linkedin.com/in/bellabelgarokova/" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 1rem;">LinkedIn</a>
-      <a href="https://x.com/bellabelga" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 1rem;">X</a>
-    </div>
+  <div class="connect-links">
+    <a href="https://github.com/BellaBe" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/bellabelgarokova/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/bellabelga" target="_blank" rel="noopener">X</a>
   </div>
 </section>

@@ -129,7 +129,37 @@
   --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1200px;
-  --container-prose: 720px;
+  --container-prose: 720px;  /* Optimal 45-75 chars at 16px */
+
+  /* ---------------------------------------------------------------------------
+     COMPOSITION - Breathing Room & Proximity
+     Base: 4px · Inter-group ratio: 2-3x intra-group
+     --------------------------------------------------------------------------- */
+
+  /* Breathing Room Hierarchy */
+  --breathing-micro: var(--space-2);     /* 8px - within components */
+  --breathing-meso: var(--space-6);      /* 24px - between related elements */
+  --breathing-macro: var(--space-16);    /* 64px - between sections */
+  --breathing-section: var(--space-24);  /* 96px - major section breaks */
+
+  /* Proximity Ratios (for grouping) */
+  --proximity-intra: var(--space-2);     /* 8px - within a group */
+  --proximity-inter: var(--space-6);     /* 24px - between groups (3x) */
+
+  /* Typography Composition */
+  --heading-ratio: 3;                    /* Hero h1 = 3x body */
+  --subheading-ratio: 1.5;              /* Subhead = 1.5x body */
+  --max-prose-width: 65ch;              /* Optimal line length */
+
+  /* Visual Hierarchy - Size Contrast */
+  --size-primary: 1;                     /* Primary elements */
+  --size-secondary: 0.4;                /* Secondary = ~40% of primary */
+  --size-tertiary: 0.25;                /* Tertiary = ~25% of primary */
+
+  /* Content Density (60-30-10 rule) */
+  --density-dominant: 60%;              /* Background, primary content */
+  --density-secondary: 30%;             /* Supporting content */
+  --density-accent: 10%;                /* CTAs, highlights */
 
   /* Border Radius */
   --radius-none: 0;
