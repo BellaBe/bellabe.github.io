@@ -12,7 +12,7 @@ title: Typography Samples
   <!-- All font families for comparison -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=JetBrains+Mono:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Fira+Code:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&family=Azeret+Mono:wght@400;500;600;700&family=Martian+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -113,35 +113,41 @@ title: Typography Samples
       border: 1px solid rgba(255,255,255,0.1);
     }
 
-    /* Option A: Inter */
-    .opt-inter .sample-hero { font-family: 'Inter', sans-serif; }
-    .opt-inter .sample-tagline { font-family: 'Inter', sans-serif; }
-    .opt-inter .sample-stats { font-family: 'JetBrains Mono', monospace; }
-    .opt-inter .sample-btn { font-family: 'JetBrains Mono', monospace; }
+    /* Space Mono - geometric, retro-futuristic */
+    .opt-space .sample-hero { font-family: 'Space Mono', monospace; font-weight: 700; }
+    .opt-space .sample-tagline { font-family: 'Space Mono', monospace; font-weight: 400; }
+    .opt-space .sample-stats { font-family: 'Space Mono', monospace; }
+    .opt-space .sample-btn { font-family: 'Space Mono', monospace; }
 
-    /* Option B: Geist (using Inter as proxy - Geist not on Google Fonts) */
-    .opt-geist .sample-hero { font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: -0.02em; }
-    .opt-geist .sample-tagline { font-family: 'Inter', sans-serif; }
-    .opt-geist .sample-stats { font-family: 'JetBrains Mono', monospace; }
-    .opt-geist .sample-btn { font-family: 'Inter', sans-serif; letter-spacing: -0.01em; }
+    /* Fira Code - Mozilla, ligatures */
+    .opt-fira .sample-hero { font-family: 'Fira Code', monospace; font-weight: 600; }
+    .opt-fira .sample-tagline { font-family: 'Fira Code', monospace; font-weight: 400; }
+    .opt-fira .sample-stats { font-family: 'Fira Code', monospace; }
+    .opt-fira .sample-btn { font-family: 'Fira Code', monospace; font-weight: 500; }
 
-    /* Option C: IBM Plex */
-    .opt-plex .sample-hero { font-family: 'IBM Plex Sans', sans-serif; }
-    .opt-plex .sample-tagline { font-family: 'IBM Plex Sans', sans-serif; }
-    .opt-plex .sample-stats { font-family: 'IBM Plex Mono', monospace; }
-    .opt-plex .sample-btn { font-family: 'IBM Plex Mono', monospace; }
+    /* Source Code Pro - Adobe, professional */
+    .opt-source .sample-hero { font-family: 'Source Code Pro', monospace; font-weight: 700; }
+    .opt-source .sample-tagline { font-family: 'Source Code Pro', monospace; font-weight: 400; }
+    .opt-source .sample-stats { font-family: 'Source Code Pro', monospace; }
+    .opt-source .sample-btn { font-family: 'Source Code Pro', monospace; font-weight: 500; }
 
-    /* Option D: All Mono */
-    .opt-mono .sample-hero { font-family: 'JetBrains Mono', monospace; font-weight: 700; letter-spacing: -0.02em; }
-    .opt-mono .sample-tagline { font-family: 'JetBrains Mono', monospace; font-weight: 400; }
-    .opt-mono .sample-stats { font-family: 'JetBrains Mono', monospace; }
-    .opt-mono .sample-btn { font-family: 'JetBrains Mono', monospace; }
+    /* Azeret Mono - modern, geometric */
+    .opt-azeret .sample-hero { font-family: 'Azeret Mono', monospace; font-weight: 600; letter-spacing: -0.02em; }
+    .opt-azeret .sample-tagline { font-family: 'Azeret Mono', monospace; font-weight: 400; }
+    .opt-azeret .sample-stats { font-family: 'Azeret Mono', monospace; }
+    .opt-azeret .sample-btn { font-family: 'Azeret Mono', monospace; font-weight: 500; }
 
-    /* Current (for comparison) */
-    .opt-current .sample-hero { font-family: 'Instrument Serif', serif; font-weight: 400; }
-    .opt-current .sample-tagline { font-family: 'DM Sans', sans-serif; }
-    .opt-current .sample-stats { font-family: 'JetBrains Mono', monospace; }
-    .opt-current .sample-btn { font-family: 'JetBrains Mono', monospace; }
+    /* Martian Mono - branding focused, wide */
+    .opt-martian .sample-hero { font-family: 'Martian Mono', monospace; font-weight: 700; letter-spacing: -0.03em; }
+    .opt-martian .sample-tagline { font-family: 'Martian Mono', monospace; font-weight: 400; }
+    .opt-martian .sample-stats { font-family: 'Martian Mono', monospace; }
+    .opt-martian .sample-btn { font-family: 'Martian Mono', monospace; font-weight: 500; }
+
+    /* JetBrains Mono - for reference */
+    .opt-jetbrains .sample-hero { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+    .opt-jetbrains .sample-tagline { font-family: 'JetBrains Mono', monospace; font-weight: 400; }
+    .opt-jetbrains .sample-stats { font-family: 'JetBrains Mono', monospace; }
+    .opt-jetbrains .sample-btn { font-family: 'JetBrains Mono', monospace; }
 
     .divider {
       border: none;
@@ -168,11 +174,11 @@ title: Typography Samples
   <h1>Typography Samples — Choose Your Direction</h1>
 
   <div class="grid">
-    <!-- Current -->
-    <div class="sample opt-current">
+    <!-- Space Mono -->
+    <div class="sample opt-space">
       <div class="sample-label">
-        Current (Mixed)
-        <span>Instrument Serif + DM Sans + JetBrains</span>
+        Space Mono
+        <span>Geometric, retro-futuristic</span>
       </div>
       <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
       <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
@@ -181,11 +187,11 @@ title: Typography Samples
       <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
     </div>
 
-    <!-- Option A: Inter -->
-    <div class="sample opt-inter">
+    <!-- Fira Code -->
+    <div class="sample opt-fira">
       <div class="sample-label">
-        Option A: Inter
-        <span>Inter + JetBrains Mono</span>
+        Fira Code
+        <span>Mozilla, has ligatures</span>
       </div>
       <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
       <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
@@ -194,11 +200,11 @@ title: Typography Samples
       <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
     </div>
 
-    <!-- Option C: IBM Plex -->
-    <div class="sample opt-plex">
+    <!-- Source Code Pro -->
+    <div class="sample opt-source">
       <div class="sample-label">
-        Option C: IBM Plex
-        <span>IBM Plex Sans + IBM Plex Mono</span>
+        Source Code Pro
+        <span>Adobe, professional</span>
       </div>
       <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
       <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
@@ -207,11 +213,37 @@ title: Typography Samples
       <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
     </div>
 
-    <!-- Option D: All Mono -->
-    <div class="sample opt-mono">
+    <!-- Azeret Mono -->
+    <div class="sample opt-azeret">
       <div class="sample-label">
-        Option D: All Mono
-        <span>JetBrains Mono everywhere</span>
+        Azeret Mono
+        <span>Modern, geometric</span>
+      </div>
+      <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
+      <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
+      <div class="sample-stats">$500 once · Yours forever</div>
+      <a href="#" class="sample-btn">Get Pro</a>
+      <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
+    </div>
+
+    <!-- Martian Mono -->
+    <div class="sample opt-martian">
+      <div class="sample-label">
+        Martian Mono
+        <span>Branding focused, wide</span>
+      </div>
+      <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
+      <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
+      <div class="sample-stats">$500 once · Yours forever</div>
+      <a href="#" class="sample-btn">Get Pro</a>
+      <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
+    </div>
+
+    <!-- JetBrains Mono (reference) -->
+    <div class="sample opt-jetbrains">
+      <div class="sample-label">
+        JetBrains Mono
+        <span>Reference (current code font)</span>
       </div>
       <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
       <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
@@ -224,9 +256,15 @@ title: Typography Samples
   <hr class="divider">
 
   <div class="note">
-    <p><strong>Note:</strong> Geist (Option B) isn't on Google Fonts — would need self-hosting. Inter shown as proxy since they're similar.</p>
+    <p><strong>All monospace options.</strong> Each has different character:</p>
     <br>
-    <p><strong>Recommendation:</strong> Option D (All Mono) is most aligned with "technical, precise, transparent" — but may be too intense for marketing. Option A (Inter) or C (IBM Plex) balance technical feel with readability.</p>
+    <p>• <strong>Space Mono</strong> — Most distinctive, retro-futuristic vibe</p>
+    <p>• <strong>Fira Code</strong> — Developer favorite, ligatures for code</p>
+    <p>• <strong>Source Code Pro</strong> — Most readable for long text</p>
+    <p>• <strong>Azeret Mono</strong> — Modern, trendy, geometric</p>
+    <p>• <strong>Martian Mono</strong> — Wide, bold presence, designed for branding</p>
+    <br>
+    <p><strong>Self-hosted alternatives:</strong> Geist Mono (Vercel), Monaspace (GitHub), Berkeley Mono (paid $75)</p>
   </div>
 </body>
 </html>
