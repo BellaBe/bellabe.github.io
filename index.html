@@ -1,56 +1,54 @@
 ---
 layout: default
 title: Home
-description: "Bella Belgarokova — Software engineer building AI systems that run business operations. Creator of LeanOS, an AI operating system with 63 skills and 12 agents for founders and small teams."
+description: "Bella Belgarokova — Building LeanOS, an AI Operating System for Founders. 181 skills, 30+ agents. Know Your Agent. Own Your Agent."
 ---
 
 <!-- Hero Section -->
 <section class="hero">
-  <p class="hero-label">Software Engineer · Dubai</p>
-  <h1>Building AI systems that run business operations</h1>
-  <p class="tagline">Engineering precision for founders and small teams. I create infrastructure that lets you operate with the velocity of a much larger organization.</p>
-  <div class="hero-links">
-    <a href="{{ '/projects' | relative_url }}" class="btn btn-primary"><span>View Projects</span></a>
-    <a href="{{ '/writing' | relative_url }}" class="btn btn-secondary">Read Writing</a>
-  </div>
+  <h1>Bella Belgarokova</h1>
+  <p class="tagline" style="font-size: 1.25rem; margin-bottom: 1rem;">Building LeanOS — AI Operating System for Founders</p>
+  <p style="font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 1rem;">
+    Know Your Agent. Own Your Agent.
+  </p>
+  <p class="hero-label">Dubai-based. Building solo with AI leverage.</p>
 </section>
 
-<!-- Introduction -->
-<section class="intro animate-on-scroll">
-  <p>I build <strong>AI-native businesses</strong> using LeanOS — an AI operating system I created. 63 skills, 12 agents. Currently running two ventures on this infrastructure: Chromly (FashionTech) and Detekta (RegTech). Same operational backbone, different industries.</p>
-</section>
-
-<!-- Featured: LeanOS -->
-<section class="featured-section animate-on-scroll">
-  <h2>LeanOS</h2>
+<!-- Two Paths Section -->
+<section class="projects-section animate-on-scroll">
+  <h2>Two Paths</h2>
   <div class="featured-grid">
-    <div class="featured-item" style="border-color: var(--accent-primary); grid-column: 1 / -1;">
-      <h3><a href="{{ '/leanos' | relative_url }}">AI Operating System for Founders</a></h3>
-      <p>63 specialized Claude skills and 12 orchestrating agents. Sales, marketing, engineering, operations — running autonomously. Core is free. Pro unlocks the complete system.</p>
-      <p style="margin-top: 1rem;"><a href="{{ '/leanos' | relative_url }}" class="btn btn-secondary" style="padding: 0.6rem 1.25rem;">Explore LeanOS →</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- Ventures on LeanOS -->
-<section class="featured-section animate-on-scroll">
-  <h2>Running on LeanOS</h2>
-  <div class="featured-grid">
-    <div class="featured-item">
-      <h3>Chromly</h3>
-      <p>AI fashion tech — fit analysis and seasonal color matching from a single selfie. API-first architecture for e-commerce integration. Built and operated on LeanOS.</p>
+    <div class="featured-item" style="border-color: var(--accent-primary);">
+      <span class="hero-label" style="margin-bottom: 1rem; display: block;">For Technical Founders</span>
+      <h3>LeanOS Pro</h3>
+      <div style="margin: 1.5rem 0;">
+        <p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--accent-primary); margin-bottom: 0.5rem;">181 skills, 30+ agents</p>
+        <p style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">$500 once, yours forever</p>
+      </div>
+      <p>AI operating system you own. Every prompt visible. Every skill modifiable. Build, sell, serve, plan, grow.</p>
+      <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+        <a href="{{ '/leanos' | relative_url }}" class="btn btn-primary" style="width: 100%; justify-content: center;"><span>Explore LeanOS</span></a>
+      </div>
     </div>
     <div class="featured-item">
-      <h3>Detekta</h3>
-      <p>AI assistant for breach report generation, expanding to full compliance workflows for financial institutions in GCC. Built and operated on LeanOS.</p>
+      <span class="hero-label" style="margin-bottom: 1rem; display: block;">For Non-Technical Founders</span>
+      <h3>Fractional CTO</h3>
+      <div style="margin: 1.5rem 0;">
+        <p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem;">Technical partner + AI execution</p>
+        <p style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">Systems that scale without headcount</p>
+      </div>
+      <p>CTO-level strategy and AI-powered execution. No black boxes. No lock-in. Built for independence.</p>
+      <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+        <a href="{{ '/services' | relative_url }}" class="btn btn-secondary" style="width: 100%; justify-content: center;">View Services</a>
+      </div>
     </div>
   </div>
-  <p class="section-link"><a href="{{ '/projects' | relative_url }}">View all projects →</a></p>
 </section>
 
-<!-- Featured Writing -->
+<!-- Recent Writing Section -->
 <section class="featured-section animate-on-scroll">
-  <h2>Writing</h2>
+  <h2>Recent Writing</h2>
+  {% if site.posts.size > 0 %}
   <div class="featured-list">
     {% for post in site.posts limit:3 %}
     <div class="featured-item">
@@ -60,14 +58,23 @@ description: "Bella Belgarokova — Software engineer building AI systems that r
     {% endfor %}
   </div>
   {% if site.posts.size > 3 %}
-  <p class="section-link"><a href="{{ '/writing' | relative_url }}">Browse all articles →</a></p>
+  <p class="section-link"><a href="{{ '/writing' | relative_url }}">Browse all articles</a></p>
   {% endif %}
-  {% if site.posts.size == 0 %}
-  <p class="empty-state">Articles coming soon.</p>
+  {% else %}
+  <div class="mini-about">
+    <p>Building in public. Articles coming soon.</p>
+  </div>
   {% endif %}
 </section>
 
-<!-- Subtle CTA -->
-<section class="subtle-cta animate-on-scroll">
-  <p>Available for fractional CTO and advisory work. <a href="https://tally.so/r/RGKy6j" target="_blank" rel="noopener">Let's talk →</a></p>
+<!-- Connect Section -->
+<section class="projects-section animate-on-scroll">
+  <h2>Connect</h2>
+  <div class="about-content" style="text-align: center;">
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://github.com/BellaBe" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 1rem;">GitHub</a>
+      <a href="https://linkedin.com/in/bellabelgarokova/" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 1rem;">LinkedIn</a>
+      <a href="https://x.com/bellabelga" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 1rem;">X</a>
+    </div>
+  </div>
 </section>
