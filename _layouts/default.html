@@ -24,25 +24,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload critical font files (most important weights/styles) -->
-  <!-- Instrument Serif Regular - Display headings -->
+  <!-- Preload critical font files - Fira Code (all weights used) -->
   <link rel="preload" as="font" type="font/woff2"
-        href="https://fonts.gstatic.com/s/instrumentserif/v4/jizBRFtNs2ka5fXjeivQ4LroWlx-2zIZj1SJWA.woff2"
+        href="https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7MOzlojwUKQ.woff2"
         crossorigin>
 
-  <!-- DM Sans Regular - Body text -->
-  <link rel="preload" as="font" type="font/woff2"
-        href="https://fonts.gstatic.com/s/dmsans/v15/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2"
-        crossorigin>
-
-  <!-- JetBrains Mono Regular - Code/mono -->
-  <link rel="preload" as="font" type="font/woff2"
-        href="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
-        crossorigin>
-
-  <!-- Load full Google Fonts stylesheet (non-blocking with preconnect) -->
+  <!-- Load Fira Code from Google Fonts -->
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap">
 
   <!-- Design system tokens (includes fallback font definitions) -->
   <link rel="stylesheet" href="{{ '/assets/css/design-tokens.css' | relative_url }}">
@@ -55,17 +44,9 @@
 
   <!-- Inline critical font-display override for extra safety -->
   <style>
-    /* Ensure fonts display immediately with fallback, then swap */
+    /* Ensure Fira Code displays immediately with fallback, then swap */
     @font-face {
-      font-family: 'Instrument Serif';
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'DM Sans';
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'JetBrains Mono';
+      font-family: 'Fira Code';
       font-display: swap;
     }
   </style>

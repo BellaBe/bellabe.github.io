@@ -13,32 +13,14 @@
    and preload for optimal loading performance.
    ----------------------------------------------------------------------------- */
 
-/* Fallback fonts with metric adjustments to match web fonts */
+/* Fallback font with metric adjustments to match Fira Code */
 @font-face {
-  font-family: 'Instrument Serif Fallback';
-  src: local('Georgia');
-  ascent-override: 95%;
-  descent-override: 25%;
+  font-family: 'Fira Code Fallback';
+  src: local('SF Mono'), local('Monaco'), local('Consolas'), local('Liberation Mono'), local('monospace');
+  ascent-override: 93%;
+  descent-override: 27%;
   line-gap-override: 0%;
-  size-adjust: 105%;
-}
-
-@font-face {
-  font-family: 'DM Sans Fallback';
-  src: local('system-ui'), local('-apple-system'), local('BlinkMacSystemFont'), local('Segoe UI'), local('sans-serif');
-  ascent-override: 94%;
-  descent-override: 26%;
-  line-gap-override: 0%;
-  size-adjust: 102%;
-}
-
-@font-face {
-  font-family: 'JetBrains Mono Fallback';
-  src: local('SF Mono'), local('Monaco'), local('Consolas'), local('monospace');
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-  size-adjust: 98%;
+  size-adjust: 100%;
 }
 
 /* -----------------------------------------------------------------------------
@@ -96,10 +78,10 @@
      Scale based on 1.25 ratio (Major Third) for editorial feel.
      ------------------------------------------------------------------------- */
 
-  /* Font Families */
-  --font-display: 'Instrument Serif', 'Instrument Serif Fallback', Georgia, 'Times New Roman', serif;
-  --font-body: 'DM Sans', 'DM Sans Fallback', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', 'SF Mono', Monaco, Consolas, 'Liberation Mono', monospace;
+  /* Font Families - Fira Code everywhere for unified technical identity */
+  --font-display: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
+  --font-body: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
+  --font-mono: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
 
   /* Font Sizes - Major Third Scale (1.25) */
   --font-size-xs: 0.75rem;     /* 12px */
