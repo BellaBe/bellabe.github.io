@@ -1,0 +1,232 @@
+---
+layout: null
+title: Typography Samples
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography Samples — LeanOS</title>
+
+  <!-- All font families for comparison -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=JetBrains+Mono:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0b;
+      color: #f4f4f5;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #22d3ee;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .sample {
+      background: #111113;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: border-color 0.3s;
+    }
+
+    .sample:hover {
+      border-color: #22d3ee;
+    }
+
+    .sample-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: #22d3ee;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sample-label span {
+      color: #71717a;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .sample-hero {
+      font-size: 1.75rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #f4f4f5;
+    }
+
+    .sample-tagline {
+      font-size: 1rem;
+      color: #a1a1aa;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .sample-stats {
+      font-size: 0.85rem;
+      color: #71717a;
+      margin-bottom: 1.5rem;
+    }
+
+    .sample-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #f4f4f5;
+      color: #0a0a0b;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-right: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sample-btn-secondary {
+      background: transparent;
+      color: #f4f4f5;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Option A: Inter */
+    .opt-inter .sample-hero { font-family: 'Inter', sans-serif; }
+    .opt-inter .sample-tagline { font-family: 'Inter', sans-serif; }
+    .opt-inter .sample-stats { font-family: 'JetBrains Mono', monospace; }
+    .opt-inter .sample-btn { font-family: 'JetBrains Mono', monospace; }
+
+    /* Option B: Geist (using Inter as proxy - Geist not on Google Fonts) */
+    .opt-geist .sample-hero { font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: -0.02em; }
+    .opt-geist .sample-tagline { font-family: 'Inter', sans-serif; }
+    .opt-geist .sample-stats { font-family: 'JetBrains Mono', monospace; }
+    .opt-geist .sample-btn { font-family: 'Inter', sans-serif; letter-spacing: -0.01em; }
+
+    /* Option C: IBM Plex */
+    .opt-plex .sample-hero { font-family: 'IBM Plex Sans', sans-serif; }
+    .opt-plex .sample-tagline { font-family: 'IBM Plex Sans', sans-serif; }
+    .opt-plex .sample-stats { font-family: 'IBM Plex Mono', monospace; }
+    .opt-plex .sample-btn { font-family: 'IBM Plex Mono', monospace; }
+
+    /* Option D: All Mono */
+    .opt-mono .sample-hero { font-family: 'JetBrains Mono', monospace; font-weight: 700; letter-spacing: -0.02em; }
+    .opt-mono .sample-tagline { font-family: 'JetBrains Mono', monospace; font-weight: 400; }
+    .opt-mono .sample-stats { font-family: 'JetBrains Mono', monospace; }
+    .opt-mono .sample-btn { font-family: 'JetBrains Mono', monospace; }
+
+    /* Current (for comparison) */
+    .opt-current .sample-hero { font-family: 'Instrument Serif', serif; font-weight: 400; }
+    .opt-current .sample-tagline { font-family: 'DM Sans', sans-serif; }
+    .opt-current .sample-stats { font-family: 'JetBrains Mono', monospace; }
+    .opt-current .sample-btn { font-family: 'JetBrains Mono', monospace; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin: 3rem 0;
+    }
+
+    .note {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: #71717a;
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    .note strong {
+      color: #22d3ee;
+    }
+
+    .accent { color: #22d3ee; }
+  </style>
+</head>
+<body>
+  <h1>Typography Samples — Choose Your Direction</h1>
+
+  <div class="grid">
+    <!-- Current -->
+    <div class="sample opt-current">
+      <div class="sample-label">
+        Current (Mixed)
+        <span>Instrument Serif + DM Sans + JetBrains</span>
+      </div>
+      <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
+      <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
+      <div class="sample-stats">$500 once · Yours forever</div>
+      <a href="#" class="sample-btn">Get Pro</a>
+      <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
+    </div>
+
+    <!-- Option A: Inter -->
+    <div class="sample opt-inter">
+      <div class="sample-label">
+        Option A: Inter
+        <span>Inter + JetBrains Mono</span>
+      </div>
+      <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
+      <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
+      <div class="sample-stats">$500 once · Yours forever</div>
+      <a href="#" class="sample-btn">Get Pro</a>
+      <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
+    </div>
+
+    <!-- Option C: IBM Plex -->
+    <div class="sample opt-plex">
+      <div class="sample-label">
+        Option C: IBM Plex
+        <span>IBM Plex Sans + IBM Plex Mono</span>
+      </div>
+      <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
+      <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
+      <div class="sample-stats">$500 once · Yours forever</div>
+      <a href="#" class="sample-btn">Get Pro</a>
+      <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
+    </div>
+
+    <!-- Option D: All Mono -->
+    <div class="sample opt-mono">
+      <div class="sample-label">
+        Option D: All Mono
+        <span>JetBrains Mono everywhere</span>
+      </div>
+      <div class="sample-hero">Know Your Agent. <span class="accent">Own Your Agent.</span></div>
+      <div class="sample-tagline">LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Every prompt visible.</div>
+      <div class="sample-stats">$500 once · Yours forever</div>
+      <a href="#" class="sample-btn">Get Pro</a>
+      <a href="#" class="sample-btn sample-btn-secondary">Try Core Free</a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="note">
+    <p><strong>Note:</strong> Geist (Option B) isn't on Google Fonts — would need self-hosting. Inter shown as proxy since they're similar.</p>
+    <br>
+    <p><strong>Recommendation:</strong> Option D (All Mono) is most aligned with "technical, precise, transparent" — but may be too intense for marketing. Option A (Inter) or C (IBM Plex) balance technical feel with readability.</p>
+  </div>
+</body>
+</html>
