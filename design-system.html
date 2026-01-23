@@ -14,7 +14,8 @@ description: "Visual design system documentation for bellabe.github.io"
 <section class="projects-section animate-on-scroll">
   <h2>Colors</h2>
 
-  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Background</h3>
+  <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">Background</h3>
+  <p style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 1.5rem;">Showing dark theme values. Light theme: #fafafa, #ffffff, #f4f4f5, #ffffff</p>
   <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
     <div style="text-align: center;">
       <div style="width: 100%; height: 80px; background: #0a0a0b; border: 1px solid var(--color-border-medium); border-radius: 8px;"></div>
@@ -110,7 +111,8 @@ description: "Visual design system documentation for bellabe.github.io"
 
   <div class="mini-about" style="margin-bottom: 2rem;">
     <p style="margin-bottom: 0.5rem;"><strong>Font:</strong> Fira Code (monospace everywhere)</p>
-    <p style="margin-bottom: 0;"><strong>Scale:</strong> Major Third (1.25 ratio)</p>
+    <p style="margin-bottom: 0.5rem;"><strong>Scale:</strong> Major Third (1.25 ratio)</p>
+    <p style="margin-bottom: 0; font-size: 0.85rem; color: var(--color-text-tertiary);"><strong>Weights:</strong> 400 regular · 500 medium · 600 semibold · 700 bold</p>
   </div>
 
   <div style="display: flex; flex-direction: column; gap: 1.5rem;">
@@ -237,10 +239,19 @@ description: "Visual design system documentation for bellabe.github.io"
   </div>
 
   <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1rem;">Easing</h3>
-  <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-    <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem;">--ease-out</code>
-    <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem;">--ease-out-expo</code>
-    <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem;">--ease-in-out</code>
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem; min-width: 140px;">--ease-out</code>
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">cubic-bezier(0, 0, 0.2, 1)</code>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem; min-width: 140px;">--ease-out-expo</code>
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">cubic-bezier(0.16, 1, 0.3, 1)</code>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <code style="padding: 0.5rem 1rem; background: var(--color-bg-secondary); border-radius: 6px; font-size: 0.8rem; min-width: 140px;">--ease-in-out</code>
+      <code style="font-size: 0.75rem; color: var(--color-text-tertiary);">cubic-bezier(0.4, 0, 0.2, 1)</code>
+    </div>
   </div>
 </section>
 
@@ -257,11 +268,18 @@ description: "Visual design system documentation for bellabe.github.io"
       <a href="#" class="btn btn-secondary">Secondary Button</a>
     </div>
   </div>
-  <div style="margin-bottom: 3rem;">
+  <div style="margin-bottom: 1.5rem;">
     <p style="font-size: 0.8rem; color: var(--color-text-tertiary); margin-bottom: 1rem;">Hover: lift + shadow (primary gets gradient)</p>
     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
       <a href="#" class="btn btn-primary" style="transform: translateY(-2px); box-shadow: var(--shadow-lg);"><span style="position: relative; z-index: 1;">Primary Hovered</span></a>
       <a href="#" class="btn btn-secondary" style="border-color: var(--color-accent-primary); color: var(--color-accent-primary); box-shadow: var(--shadow-glow);">Secondary Hovered</a>
+    </div>
+  </div>
+  <div style="margin-bottom: 3rem;">
+    <p style="font-size: 0.8rem; color: var(--color-text-tertiary); margin-bottom: 1rem;">Disabled: reduced opacity, no pointer events</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <span class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed;"><span>Primary Disabled</span></span>
+      <span class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;">Secondary Disabled</span>
     </div>
   </div>
 
