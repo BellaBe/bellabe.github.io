@@ -1,31 +1,41 @@
 ---
 layout: default
 title: Writing
-description: "Articles on building AI systems, engineering decisions, and running lean operations. By Bella Belgarokova."
+description: "Building in public. AI systems, technical leadership, founder lessons."
 ---
 
-<section class="page-header">
-  <h1>Writing</h1>
-  <p class="page-intro">On building AI systems, engineering decisions, and running lean operations.</p>
-</section>
+<div class="minimal-main">
+  <!-- Top bar -->
+  <div class="top-bar">
+    <a href="{{ '/' | relative_url }}">← Home</a>
+  </div>
 
-<section class="posts-section">
-  <ul class="post-list">
+  <!-- Hero -->
+  <div class="minimal-hero">
+    <div class="hero-label">Building in Public</div>
+    <h1>Writing</h1>
+    <p class="hero-sub">AI systems, technical leadership, founder lessons.</p>
+  </div>
+
+  <!-- Posts -->
+  {% if site.posts.size > 0 %}
+  <div class="stacked-posts">
     {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="post-meta">
-        {{ post.date | date: "%B %d, %Y" }}
-        {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
-      </p>
-      {% if post.description %}
-      <p class="post-excerpt">{{ post.description }}</p>
-      {% endif %}
-    </li>
+    <a href="{{ post.url | relative_url }}" class="stacked-post">
+      <div class="post-title">{{ post.title }}</div>
+      <div class="post-date">{{ post.date | date: "%b %Y" }}</div>
+    </a>
     {% endfor %}
-  </ul>
-
-  {% if site.posts.size == 0 %}
-  <p class="empty-state">Articles coming soon.</p>
+  </div>
+  {% else %}
+  <div class="empty-posts">
+    Articles coming soon.
+  </div>
   {% endif %}
-</section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Footer note -->
+  <p class="footer-note">Also on <a href="https://linkedin.com/in/bellabelgarokova/" target="_blank" rel="noopener">LinkedIn</a></p>
+</div>

@@ -1,163 +1,68 @@
 ---
 layout: default
 title: LeanOS
-description: "LeanOS — One AI system for your entire business. 181 skills, 30+ agents. Every prompt visible. $500 once."
+description: "AI operating system for tech-savvy founders. 181 skills, 30+ agents. Runs in VSCode."
 ---
 
-<!-- TODO: Replace GUMROAD_URL_HERE with actual Gumroad link before launch -->
-{% assign gumroad_url = "GUMROAD_URL_HERE" %}
+{% assign gumroad_url = "https://bellabe.gumroad.com/l/leanos" %}
 
-<!-- Hero: Differentiator (visitor already understands the problem from homepage) -->
-<section class="hero leanos-hero">
-  <p class="hero-label">181 skills · 30+ agents · $500 once</p>
-  <h1>Know Your Agent. <span class="accent">Own Your Agent.</span></h1>
-  <p class="tagline">Every prompt visible. Every skill modifiable. Yours forever.</p>
-  <div class="hero-links cta-primary">
-    <a href="#pricing" class="btn btn-primary"><span>Get Pro</span></a>
-    <a href="https://github.com/BellaBe/lean-os" class="btn btn-secondary" target="_blank" rel="noopener">Try Core Free</a>
+<div class="minimal-main">
+  <!-- Top bar -->
+  <div class="top-bar">
+    <a href="{{ '/' | relative_url }}">← Home</a>
+    <span class="version">v3.0</span>
   </div>
-</section>
 
-<!-- What is LeanOS: Quick explanation -->
-<section class="projects-section animate-on-scroll">
-  <h2>What is LeanOS?</h2>
-  <div class="mini-about">
-    <p class="solution-headline">A complete AI system for running your business.</p>
-    <p>Product specs. Code generation. Sales outreach. Customer health. Content creation. All in one place, all connected. When Claude sees your whole business, it produces dramatically better results.</p>
+  <!-- Hero: Outcome focused -->
+  <div class="minimal-hero">
+    <div class="hero-label">LeanOS Pro</div>
+    <h1>One person.<br><span class="accent">Five-person output.</span></h1>
+    <p class="hero-sub">AI operating system for tech-savvy founders. Runs in VSCode with Claude.</p>
   </div>
-  <div class="featured-grid">
-    <div class="featured-item">
-      <h3>Build</h3>
-      <p>Spec → production code. Design systems. Engineering handoffs.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Sell</h3>
-      <p>Outbound sequences. Lead scoring. Pipeline without a sales team.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Serve</h3>
-      <p>Customer health. Churn prevention. Onboarding automation.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Plan</h3>
-      <p>Market research. Business models. GTM strategy.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Grow</h3>
-      <p>Activation flows. Conversion optimization. Referral programs.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Think</h3>
-      <p>6 reasoning modes. Structured problem-solving. Decision frameworks.</p>
-    </div>
-  </div>
-</section>
 
-<!-- Example Skills: Make "181 skills" concrete -->
-<section class="projects-section animate-on-scroll">
-  <h2>Example Skills</h2>
-  <div class="mini-about">
-    <p>181 skills means 181 specific capabilities. Here's what that looks like:</p>
+  <!-- Proof bar -->
+  <div class="proof-bar">
+    <span class="proof-item">181 Claude Skills</span>
+    <span class="proof-item">12 Domains</span>
+    <span class="proof-item">Runs in VSCode</span>
   </div>
-  <div class="featured-grid">
-    <div class="featured-item">
-      <span class="card-label">Sales</span>
-      <h3>outreach-personalizing</h3>
-      <p>Takes a LinkedIn profile and your offer. Outputs a personalized message that doesn't sound like a template.</p>
-    </div>
-    <div class="featured-item">
-      <span class="card-label">Engineering</span>
-      <h3>python-codegen</h3>
-      <p>Takes a spec. Outputs production FastAPI with tests, types, and documentation.</p>
-    </div>
-    <div class="featured-item">
-      <span class="card-label">Customer</span>
-      <h3>churn-diagnosing</h3>
-      <p>Takes usage signals. Identifies at-risk accounts and recommends interventions.</p>
-    </div>
-  </div>
-</section>
 
-<!-- Know Your Agent: The transparency differentiator -->
-<section class="projects-section animate-on-scroll">
-  <h2>Why "Know Your Agent"?</h2>
-  <div class="about-content">
-    <p class="section-intro">Most AI tools are black boxes. You pay monthly. You can't see the prompts. You can't change them. You can't leave without losing everything.</p>
-    <p class="solution-headline">LeanOS is different:</p>
-    <ul>
-      <li><strong>Every prompt readable</strong> — plain markdown files, no hidden instructions</li>
-      <li><strong>Every skill modifiable</strong> — adapt to your domain, your workflow, your voice</li>
-      <li><strong>You own it forever</strong> — one payment, no subscription, no lock-in</li>
+  <!-- Terminal -->
+  <div class="terminal">
+    <span class="terminal-prompt">$</span> <span class="terminal-cmd">cp -r leanos-pro/.claude your-project/</span><br>
+    <span class="terminal-prompt">$</span> <span class="terminal-cmd">claude</span>
+  </div>
+
+  <!-- What You Get -->
+  <div class="minimal-section">
+    <div class="label">What You Get</div>
+    <ul class="minimal-list">
+      <li>181 skills (markdown files)</li>
+      <li>30+ agent configurations</li>
+      <li>Setup guide + documentation</li>
+      <li>GitHub repo access</li>
+      <li>Updates included</li>
     </ul>
+    <p class="requires-note">Requires: VSCode + Claude Pro ($20/mo) or API</p>
   </div>
-</section>
 
-<!-- What's Included: 2-column comparison (Core vs Pro) -->
-<section class="projects-section animate-on-scroll">
-  <h2>What's Included</h2>
-  <div class="featured-grid grid-2">
-    <div class="featured-item">
-      <h3>Core (Free)</h3>
-      <div class="card-stats">
-        <p class="stat-primary">15 skills</p>
-        <p class="stat-secondary">2 agents</p>
-      </div>
-      <p>Reasoning frameworks and foundations. Enough to see how it works.</p>
-      <div class="card-action">
-        <a href="https://github.com/BellaBe/lean-os" class="btn btn-secondary" target="_blank" rel="noopener">Try on GitHub</a>
-      </div>
+  <!-- Pricing -->
+  <div class="pricing-box">
+    <p class="anchor">5 hires × $150k = $750k/year.<br>Or one system. Once.</p>
+
+    <div class="price-row">
+      <span class="price-amount">$499</span>
+      <span class="price-note">one-time</span>
     </div>
-    <div class="featured-item featured-item--primary">
-      <h3>Pro ($500 once)</h3>
-      <div class="card-stats">
-        <p class="stat-primary">181 skills</p>
-        <p class="stat-secondary">30+ agents</p>
-      </div>
-      <p>Complete business operations. Build, sell, serve, plan, grow, think.</p>
-      <div class="card-action">
-        <a href="#pricing" class="btn btn-primary"><span>Get Pro</span></a>
-      </div>
-    </div>
-  </div>
-</section>
+    <p class="terms">Yours forever · 30-day refund · Updates included</p>
 
-<!-- Pricing: Single focal point with stronger anchor -->
-<section class="projects-section animate-on-scroll" id="pricing">
-  <h2>Pricing</h2>
-  <div class="pricing-card">
-    <h3 class="pricing-title">LeanOS Pro</h3>
-    <p class="pricing-amount">$500</p>
-    <p class="pricing-anchor">Not $3,450/month in SaaS tools. Not $300k/year in specialists.</p>
-    <p class="pricing-note">One payment. Yours forever. No subscription.</p>
-    <p class="pricing-guarantee">30-day money back guarantee.</p>
-    <a href="{{ gumroad_url }}" class="btn btn-primary"><span>Get Pro</span></a>
-    <p class="social-proof">Built in 2 months. Running 2 businesses daily. Every skill tested in production.</p>
+    <a href="{{ gumroad_url }}" class="btn-block">Get LeanOS Pro</a>
+    <p class="free-note">Try first: <a href="https://github.com/BellaBe/lean-os" target="_blank" rel="noopener">15 skills free on GitHub</a></p>
   </div>
-</section>
 
-<!-- For Whom: 3 bullet points with specific scenarios -->
-<section class="projects-section animate-on-scroll">
-  <h2>Who It's For</h2>
-  <div class="about-content">
-    <ul>
-      <li><strong>Solo founders</strong> who need team-level capabilities — you can't afford $150k/year hires but you need to ship like a 10-person team</li>
-      <li><strong>Technical operators</strong> who think in systems — you want AI that compounds knowledge, not fragments it across tools</li>
-      <li><strong>Claude power users</strong> who want reusable skills — you're tired of rewriting the same prompts every session</li>
-    </ul>
-  </div>
-</section>
+  <!-- Divider -->
+  <div class="divider"></div>
 
-<!-- Final CTA: One primary action -->
-<section class="cta-section animate-on-scroll">
-  <h2>Start Building</h2>
-  <p>Core is free. Pro is yours forever.</p>
-  <div class="cta-primary">
-    <a href="https://github.com/BellaBe/lean-os" class="btn btn-secondary" target="_blank" rel="noopener">Try Core Free</a>
-    <a href="#pricing" class="btn btn-primary"><span>Get Pro — $500</span></a>
-  </div>
-</section>
-
-<!-- Subtle CTA: Cross-link -->
-<section class="subtle-cta animate-on-scroll">
-  <p>Non-technical founder? <a href="{{ '/services' | relative_url }}">Fractional CTO services</a> available for select clients.</p>
-</section>
+  <!-- Footer note -->
+  <p class="footer-note">Built in 2 months. Running Chromly and Detekta daily.</p>
+</div>

@@ -1,80 +1,56 @@
 ---
 layout: default
 title: Home
-description: "LeanOS — Stop losing context across fragmented tools. One AI system for your entire business. $500 once."
+description: "Technical founder building AI-native systems. LeanOS and Fractional CTO services."
 ---
 
-<!-- Hero: Problem-Agitation-Solution structure -->
-<section class="hero">
-  <p class="hero-label">For Technical Founders</p>
-  <h1>Your AI starts from scratch every time.</h1>
-  <p class="tagline">10+ tools. Context lost between each one. $3,450/month for a stack that fragments your thinking.</p>
-  <p class="hero-mono">LeanOS connects your entire business. Claude finally has the context to actually help.</p>
-  <div class="hero-links cta-primary">
-    <a href="{{ '/leanos' | relative_url }}" class="btn btn-primary"><span>See How It Works</span></a>
+<div class="minimal-main">
+  <!-- Personal Header -->
+  <div class="personal-header">
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Bella Belgarokova" class="profile-photo">
+    <div class="personal-header-text">
+      <h1>Bella Belgarokova</h1>
+      <p class="tagline">Technical founder building AI-native systems. Dubai.</p>
+    </div>
   </div>
-  <p class="hero-proof">$500 once. 30-day money back. Built in 2 months, running 2 businesses daily.</p>
-</section>
 
-<!-- Value Props: What changes -->
-<section class="projects-section animate-on-scroll">
-  <h2>One System. Full Context.</h2>
-  <div class="mini-about">
-    <p class="solution-headline">Product. Engineering. Sales. Marketing. Customer Success.</p>
-    <p>All connected in one place. When Claude sees your whole business, it produces dramatically better results. No more starting from scratch.</p>
-  </div>
-  <div class="featured-grid">
-    <div class="featured-item">
-      <h3>Build</h3>
-      <p>Spec → code. Design systems. Product specs. Engineering handoffs. All from natural language.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Sell</h3>
-      <p>Outbound sequences. Lead scoring. Personalized outreach. Pipeline that doesn't require a sales team.</p>
-    </div>
-    <div class="featured-item">
-      <h3>Operate</h3>
-      <p>Customer health. Churn prevention. Content creation. The 95% of work that doesn't need your judgment.</p>
-    </div>
-  </div>
-  <div class="section-cta">
-    <a href="{{ '/leanos' | relative_url }}" class="btn btn-primary"><span>See All 181 Skills</span></a>
-  </div>
-</section>
+  <!-- Project Cards -->
+  <div class="stacked-cards">
+    <a href="{{ '/leanos' | relative_url }}" class="stacked-card">
+      <div class="card-top">
+        <span class="card-title">LeanOS</span>
+        <span class="card-price">$499 once</span>
+      </div>
+      <p class="card-desc">AI operating system for tech-savvy founders. Runs in VSCode.</p>
+      <span class="card-arrow">→ See LeanOS</span>
+    </a>
 
-<!-- Recent Writing Section: 3 items (odd number) -->
-<section class="featured-section animate-on-scroll">
-  <h2>Recent Writing</h2>
-  {% if site.posts.size > 0 %}
-  <div class="featured-list">
-    {% for post in site.posts limit:3 %}
-    <div class="featured-item">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    </div>
-    {% endfor %}
-  </div>
-  {% if site.posts.size > 3 %}
-  <p class="section-link"><a href="{{ '/writing' | relative_url }}">Browse all articles</a></p>
-  {% endif %}
-  {% else %}
-  <div class="mini-about">
-    <p>Building in public. Articles coming soon.</p>
-  </div>
-  {% endif %}
-</section>
+    <a href="{{ '/services' | relative_url }}" class="stacked-card">
+      <div class="card-top">
+        <span class="card-title">Fractional CTO</span>
+        <span class="card-price">from $5k</span>
+      </div>
+      <p class="card-desc">Technical strategy for non-technical founders. AI-native execution.</p>
+      <span class="card-arrow">→ See Services</span>
+    </a>
 
-<!-- Connect Section: 3 links (odd number) -->
-<section class="projects-section animate-on-scroll">
-  <h2>Connect</h2>
-  <div class="connect-links">
+    <a href="{{ '/writing' | relative_url }}" class="stacked-card">
+      <div class="card-top">
+        <span class="card-title">Writing</span>
+        <span class="card-price"></span>
+      </div>
+      <p class="card-desc">Building in public. AI systems, technical leadership, founder lessons.</p>
+      <span class="card-arrow">→ Read</span>
+    </a>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Social Links -->
+  <div class="links-row">
     <a href="https://github.com/BellaBe" target="_blank" rel="noopener">GitHub</a>
     <a href="https://linkedin.com/in/bellabelgarokova/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://x.com/bellabelga" target="_blank" rel="noopener">X</a>
   </div>
-</section>
-
-<!-- Subtle cross-link: Services (passive positioning) -->
-<section class="subtle-cta animate-on-scroll">
-  <p>Non-technical founder? <a href="{{ '/services' | relative_url }}">Fractional CTO services</a> available for select clients.</p>
-</section>
+</div>
