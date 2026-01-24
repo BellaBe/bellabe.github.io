@@ -3,47 +3,38 @@
    Bella Belgarokova · bellabe.github.io
 
    Generated from: /artifacts/design-system/tokens/
-   Font: Fira Code · Base: 4px · Scale: 1.25
+   Base: 4px · Scale: 1.25
    ============================================================================= */
-
-/* Fallback font with metric adjustments */
-@font-face {
-  font-family: 'Fira Code Fallback';
-  src: local('SF Mono'), local('Monaco'), local('Consolas'), local('Liberation Mono');
-  ascent-override: 93%;
-  descent-override: 27%;
-  line-gap-override: 0%;
-}
 
 :root {
   /* ---------------------------------------------------------------------------
-     COLORS - Dark Theme (Default)
+     COLORS - Dark Theme (Default) - Mint/Teal Palette
      --------------------------------------------------------------------------- */
 
-  /* Background */
-  --color-bg-primary: #0a0a0b;
-  --color-bg-secondary: #111113;
-  --color-bg-tertiary: #18181b;
-  --color-bg-elevated: #1f1f23;
+  /* Background - greenish tint */
+  --color-bg-primary: #0a0f0d;
+  --color-bg-secondary: #111916;
+  --color-bg-tertiary: #1a2420;
+  --color-bg-elevated: #1f2d27;
 
-  /* Text */
-  --color-text-primary: #f4f4f5;
-  --color-text-secondary: #a1a1aa;
-  --color-text-tertiary: #71717a;
+  /* Text - warm whites */
+  --color-text-primary: #e8eeeb;
+  --color-text-secondary: #9ca89f;
+  --color-text-tertiary: #7a8a82;
 
-  /* Accent - Electric Cyan */
-  --color-accent-primary: #22d3ee;
-  --color-accent-secondary: #06b6d4;
-  --color-accent-glow: rgba(34, 211, 238, 0.15);
+  /* Accent - Mint/Teal */
+  --color-accent-primary: #3de8c3;
+  --color-accent-secondary: #2bc4a3;
+  --color-accent-glow: rgba(61, 232, 195, 0.15);
 
   /* Accent - Amber (warm) */
   --color-accent-warm: #f59e0b;
   --color-accent-warm-glow: rgba(245, 158, 11, 0.1);
 
-  /* Border */
-  --color-border-subtle: rgba(255, 255, 255, 0.06);
-  --color-border-medium: rgba(255, 255, 255, 0.1);
-  --color-border-accent: rgba(34, 211, 238, 0.3);
+  /* Border - green tinted */
+  --color-border-subtle: #1f2d27;
+  --color-border-medium: #2a3d35;
+  --color-border-accent: rgba(61, 232, 195, 0.3);
 
   /* Semantic */
   --color-success: #10b981;
@@ -53,13 +44,45 @@
 
   /* ---------------------------------------------------------------------------
      TYPOGRAPHY
-     Font: Fira Code everywhere · Scale: Major Third (1.25)
+     Display: Space Grotesk · Body/Mono: IBM Plex Mono
      --------------------------------------------------------------------------- */
 
   /* Font Families */
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'IBM Plex Mono', 'SF Mono', Monaco, Consolas, monospace;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', Monaco, Consolas, monospace;
+
+  /* ===========================================================================
+     OLD THEME (COMMENTED OUT FOR COMPARISON)
+     ===========================================================================
+
+  ** Background - neutral **
+  --color-bg-primary: #0a0a0b;
+  --color-bg-secondary: #111113;
+  --color-bg-tertiary: #18181b;
+  --color-bg-elevated: #1f1f23;
+
+  ** Text - cool whites **
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-tertiary: #71717a;
+
+  ** Accent - Electric Cyan **
+  --color-accent-primary: #22d3ee;
+  --color-accent-secondary: #06b6d4;
+  --color-accent-glow: rgba(34, 211, 238, 0.15);
+
+  ** Border - white opacity **
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-medium: rgba(255, 255, 255, 0.1);
+  --color-border-accent: rgba(34, 211, 238, 0.3);
+
+  ** Font Families - Fira Code everywhere **
   --font-display: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
   --font-body: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
   --font-mono: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
+
+  =========================================================================== */
 
   /* Font Sizes */
   --font-size-xs: 0.75rem;      /* 12px */

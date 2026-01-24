@@ -10,28 +10,18 @@
        FONT LOADING STRATEGY
 
        1. Preconnect to Google Fonts (DNS, TCP, TLS handshake)
-       2. Preload critical font files for immediate rendering
-       3. Load full font CSS with font-display: swap
-       4. Fallback fonts have metric adjustments in design-tokens.css
-
-       This eliminates FOUT by:
-       - Starting font downloads as early as possible
-       - Using metric-matched fallbacks to prevent layout shift
-       - swap ensures text remains visible during font load
+       2. Load fonts with font-display: swap
+       3. Space Grotesk for display/headlines
+       4. IBM Plex Mono for body/code
        ========================================================================== -->
 
   <!-- Preconnect to font origins - must come first -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload critical font files - Fira Code (all weights used) -->
-  <link rel="preload" as="font" type="font/woff2"
-        href="https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7MOzlojwUKQ.woff2"
-        crossorigin>
-
-  <!-- Load Fira Code from Google Fonts -->
+  <!-- Load Space Grotesk + IBM Plex Mono from Google Fonts -->
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
 
   <!-- Design system tokens (includes fallback font definitions) -->
   <link rel="stylesheet" href="{{ '/assets/css/design-tokens.css' | relative_url }}">
@@ -44,9 +34,13 @@
 
   <!-- Inline critical font-display override for extra safety -->
   <style>
-    /* Ensure Fira Code displays immediately with fallback, then swap */
+    /* Ensure fonts display immediately with fallback, then swap */
     @font-face {
-      font-family: 'Fira Code';
+      font-family: 'Space Grotesk';
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'IBM Plex Mono';
       font-display: swap;
     }
   </style>
