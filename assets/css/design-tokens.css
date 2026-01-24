@@ -8,33 +8,33 @@
 
 :root {
   /* ---------------------------------------------------------------------------
-     COLORS - Dark Theme (Default) - Mint/Teal Palette
+     COLORS - Dark Theme (Default) - Neutral/Cyan
      --------------------------------------------------------------------------- */
 
-  /* Background - greenish tint */
-  --color-bg-primary: #0a0f0d;
-  --color-bg-secondary: #111916;
-  --color-bg-tertiary: #1a2420;
-  --color-bg-elevated: #1f2d27;
+  /* Background - neutral */
+  --color-bg-primary: #0a0a0b;
+  --color-bg-secondary: #111113;
+  --color-bg-tertiary: #18181b;
+  --color-bg-elevated: #1f1f23;
 
-  /* Text - warm whites */
-  --color-text-primary: #e8eeeb;
-  --color-text-secondary: #9ca89f;
-  --color-text-tertiary: #7a8a82;
+  /* Text - cool whites */
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-tertiary: #71717a;
 
-  /* Accent - Mint/Teal */
-  --color-accent-primary: #3de8c3;
-  --color-accent-secondary: #2bc4a3;
-  --color-accent-glow: rgba(61, 232, 195, 0.15);
+  /* Accent - Electric Cyan */
+  --color-accent-primary: #22d3ee;
+  --color-accent-secondary: #06b6d4;
+  --color-accent-glow: rgba(34, 211, 238, 0.15);
 
   /* Accent - Amber (warm) */
   --color-accent-warm: #f59e0b;
   --color-accent-warm-glow: rgba(245, 158, 11, 0.1);
 
-  /* Border - green tinted */
-  --color-border-subtle: #1f2d27;
-  --color-border-medium: #2a3d35;
-  --color-border-accent: rgba(61, 232, 195, 0.3);
+  /* Border - white opacity */
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-medium: rgba(255, 255, 255, 0.1);
+  --color-border-accent: rgba(34, 211, 238, 0.3);
 
   /* Semantic */
   --color-success: #10b981;
@@ -44,43 +44,43 @@
 
   /* ---------------------------------------------------------------------------
      TYPOGRAPHY
-     Display: Space Grotesk · Body/Mono: IBM Plex Mono
+     Font: Fira Code everywhere · Scale: Major Third (1.25)
      --------------------------------------------------------------------------- */
 
   /* Font Families */
-  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'IBM Plex Mono', 'SF Mono', Monaco, Consolas, monospace;
-  --font-mono: 'IBM Plex Mono', 'SF Mono', Monaco, Consolas, monospace;
-
-  /* ===========================================================================
-     OLD THEME (COMMENTED OUT FOR COMPARISON)
-     ===========================================================================
-
-  ** Background - neutral **
-  --color-bg-primary: #0a0a0b;
-  --color-bg-secondary: #111113;
-  --color-bg-tertiary: #18181b;
-  --color-bg-elevated: #1f1f23;
-
-  ** Text - cool whites **
-  --color-text-primary: #f4f4f5;
-  --color-text-secondary: #a1a1aa;
-  --color-text-tertiary: #71717a;
-
-  ** Accent - Electric Cyan **
-  --color-accent-primary: #22d3ee;
-  --color-accent-secondary: #06b6d4;
-  --color-accent-glow: rgba(34, 211, 238, 0.15);
-
-  ** Border - white opacity **
-  --color-border-subtle: rgba(255, 255, 255, 0.06);
-  --color-border-medium: rgba(255, 255, 255, 0.1);
-  --color-border-accent: rgba(34, 211, 238, 0.3);
-
-  ** Font Families - Fira Code everywhere **
   --font-display: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
   --font-body: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
   --font-mono: 'Fira Code', 'Fira Code Fallback', 'SF Mono', Monaco, Consolas, monospace;
+
+  /* ===========================================================================
+     MINT/TEAL THEME (COMMENTED OUT FOR COMPARISON)
+     ===========================================================================
+
+  ** Background - greenish tint **
+  --color-bg-primary: #0a0f0d;
+  --color-bg-secondary: #111916;
+  --color-bg-tertiary: #1a2420;
+  --color-bg-elevated: #1f2d27;
+
+  ** Text - warm whites **
+  --color-text-primary: #e8eeeb;
+  --color-text-secondary: #9ca89f;
+  --color-text-tertiary: #7a8a82;
+
+  ** Accent - Mint/Teal **
+  --color-accent-primary: #3de8c3;
+  --color-accent-secondary: #2bc4a3;
+  --color-accent-glow: rgba(61, 232, 195, 0.15);
+
+  ** Border - green tinted **
+  --color-border-subtle: #1f2d27;
+  --color-border-medium: #2a3d35;
+  --color-border-accent: rgba(61, 232, 195, 0.3);
+
+  ** Font Families - Space Grotesk + IBM Plex Mono **
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'IBM Plex Mono', 'SF Mono', Monaco, Consolas, monospace;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', Monaco, Consolas, monospace;
 
   =========================================================================== */
 
