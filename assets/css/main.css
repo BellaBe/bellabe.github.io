@@ -2330,12 +2330,30 @@ body.light .icon-sun { display: inline; }
 .stacked-post .post-badge {
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-wide);
-  color: var(--color-accent-primary);
-  background: var(--color-accent-glow);
-  padding: var(--space-1) var(--space-2);
+  text-transform: capitalize;
+  padding: 2px var(--space-2);
   border-radius: var(--radius-sm);
+}
+
+/* Badge color variants - cycling through design system colors */
+.stacked-post .post-badge:nth-child(4n+1) {
+  color: var(--color-accent-primary);
+  background: rgba(34, 211, 238, 0.1);
+}
+
+.stacked-post .post-badge:nth-child(4n+2) {
+  color: var(--color-accent-warm);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.stacked-post .post-badge:nth-child(4n+3) {
+  color: var(--color-success);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.stacked-post .post-badge:nth-child(4n) {
+  color: var(--color-info);
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .stacked-post .post-reading-time {
