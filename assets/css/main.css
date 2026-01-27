@@ -2314,6 +2314,30 @@ body.light .icon-sun { display: inline; }
   color: var(--color-accent-primary);
 }
 
+.stacked-post .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.stacked-post .post-badge {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-accent-primary);
+  background: var(--color-accent-glow);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.stacked-post .post-reading-time {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
 .stacked-post .post-title {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
@@ -2322,10 +2346,10 @@ body.light .icon-sun { display: inline; }
   transition: color var(--duration-normal) var(--ease-out);
 }
 
-.stacked-post .post-date {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-xs);
-  color: var(--color-text-tertiary);
+.stacked-post .post-excerpt {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-snug);
 }
 
 /* Empty state for no posts */
