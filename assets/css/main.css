@@ -1665,54 +1665,47 @@ body.light .icon-sun { display: inline; }
 
 .stacked-card {
   background: var(--color-bg-secondary);
-  padding: var(--space-6);
+  padding: var(--space-5);
   text-decoration: none;
   color: inherit;
-  display: flex;
-  flex-direction: column;
-  transition: all var(--duration-normal) var(--ease-out);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "title arrow"
+    "desc arrow";
+  gap: var(--space-1) var(--space-4);
+  transition: background var(--duration-normal) var(--ease-out);
 }
 
 .stacked-card:hover {
   background: var(--color-bg-tertiary);
-  box-shadow: var(--shadow-glow-warm-subtle);
 }
 
 .stacked-card:hover .card-arrow {
-  color: var(--color-accent-primary);
-}
-
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: var(--space-2);
+  color: var(--color-accent-warm);
 }
 
 .card-title {
+  grid-area: title;
   font-family: var(--font-display);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   color: var(--color-text-primary);
 }
 
-.card-price {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
-  color: var(--color-accent-primary);
-}
-
 .card-desc {
+  grid-area: desc;
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
-  line-height: var(--line-height-relaxed);
-  margin-bottom: var(--space-4);
+  line-height: var(--line-height-snug);
 }
 
 .card-arrow {
+  grid-area: arrow;
   font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
-  color: var(--color-text-tertiary);
+  font-size: var(--font-size-base);
+  color: var(--color-accent-primary);
+  align-self: center;
   transition: color var(--duration-normal) var(--ease-out);
 }
 
