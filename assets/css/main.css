@@ -2325,17 +2325,12 @@ body.light .icon-sun { display: inline; }
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
   color: var(--color-text-tertiary);
-  display: none;
 }
 
 .stacked-post .post-badges {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-1);
-}
-
-.stacked-post .post-badges--mobile {
-  display: none;
   margin-top: var(--space-3);
 }
 
@@ -2397,21 +2392,6 @@ body.light .icon-sun { display: inline; }
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-md);
-}
-
-/* Mobile: date + reading time in header, badges as footer */
-@media (max-width: 640px) {
-  .stacked-post .post-date {
-    display: block;
-  }
-
-  .stacked-post .post-badges--desktop {
-    display: none;
-  }
-
-  .stacked-post .post-badges--mobile {
-    display: flex;
-  }
 }
 
 /* -----------------------------------------------------------------------------
