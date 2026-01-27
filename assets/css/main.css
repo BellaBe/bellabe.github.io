@@ -1951,8 +1951,12 @@ body.light .icon-sun { display: inline; }
 }
 
 /* When section only has a label (followed by card), reduce margin */
-.minimal-section:has(.label:only-child) {
+.minimal-section--label-only {
   margin-bottom: var(--space-3);
+}
+
+.minimal-section--label-only .label {
+  margin-bottom: 0;
 }
 
 .minimal-section .label {
@@ -1962,11 +1966,6 @@ body.light .icon-sun { display: inline; }
   letter-spacing: var(--letter-spacing-widest);
   color: var(--color-text-tertiary);
   margin-bottom: var(--space-3);
-}
-
-/* When label is only child, no bottom margin needed */
-.minimal-section .label:only-child {
-  margin-bottom: 0;
 }
 
 .minimal-section p:not([class]) {
