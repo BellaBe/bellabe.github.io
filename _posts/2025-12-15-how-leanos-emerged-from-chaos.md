@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How LeanOS Emerged From Chaos"
+title: "How LeanOS emerged from chaos"
 date: 2025-12-15
 description: "From a failed London startup in 2014 to building LeanOS in Dubai - the journey from scattered operations to a system that actually runs"
 reading_time: 7
@@ -14,7 +14,7 @@ This is the story of how LeanOS emerged.
 
 ---
 
-## London, 2014: The First Lesson
+## London, 2014: the first lesson
 
 I moved to London with a startup idea and zero technical skills. Completely naive about what building a company actually meant.
 
@@ -28,7 +28,7 @@ I parked the startup dream and decided to learn coding myself.
 
 ---
 
-## Dubai, 2025: Round Two
+## Dubai, 2025: round two
 
 Two years ago I moved to Dubai. It's a place where you should build a business. The energy is different here.
 
@@ -48,7 +48,7 @@ Or so I thought.
 
 ---
 
-## The Wake-Up Call
+## The wake-up call
 
 One conversation changed everything.
 
@@ -66,7 +66,7 @@ We weren't just not selling. We weren't prepared to sell. Things that seem obvio
 
 ---
 
-## When Systems Replace People
+## When systems replace people
 
 I couldn't get what I needed from my co-founder. So I switched to generative AI. Read books. Watched podcasts. Started building the knowledge myself.
 
@@ -86,7 +86,7 @@ The system isn't perfect. But it exists. It's operational. It helps me build and
 
 ---
 
-## What I Actually Learned
+## What I actually learned
 
 **2014 taught me:** Execution and people are bottlenecks. Having co-founders doesn't solve this. Sometimes it creates new bottlenecks.
 
@@ -100,7 +100,7 @@ Sounds bureaucratic. Actually faster. Because I stopped re-deciding the same thi
 
 ---
 
-## The System That Emerged
+## The system that emerged
 
 LeanOS is now open source. It's a methodology implemented as Claude skills and markdown files - a way of thinking about decisions encoded into structure.
 

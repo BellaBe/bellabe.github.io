@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LeanOS Pro is Live"
+title: "LeanOS Pro is live"
 date: 2026-01-27
 description: "I spent 2 months building the AI system I wish existed. Today it's available."
 reading_time: 4
@@ -11,7 +11,7 @@ I spent 2 months building the AI system I wish existed. Today it's available.
 
 ---
 
-## The Problem I Was Solving
+## The problem I was solving
 
 You're probably stacking AI subscriptions. Writing tools. Sales tools. Support tools. Planning tools. Code assistants.
 
@@ -23,7 +23,7 @@ I was drowning in this. Two products to build. No team. Scattered context across
 
 ---
 
-## What I Built Instead
+## What I built instead
 
 LeanOS is one AI that sees your whole business. 181 skills. 44 agents. Strategy to execution, all connected.
 
@@ -31,7 +31,7 @@ Build. Sell. Serve. Plan. Grow. Think. One system. Every function. Full context.
 
 ---
 
-## Know Your Agent. Own Your Agent.
+## Know your agent. Own your agent.
 
 Most AI tools are black boxes. You pay monthly. You can't see the prompts. You can't change them. You're renting access to someone else's decisions about how AI should work.
 
@@ -41,7 +41,7 @@ Transparency isn't a feature. It's the point.
 
 ---
 
-## Why Now
+## Why now
 
 Hit a wall with a co-founder partnership. Instead of waiting for someone else to execute, I built a system that lets me operate solo.
 
@@ -51,7 +51,7 @@ Not a theoretical framework. The actual operating system I use daily. Every skil
 
 ---
 
-## Get Started
+## Get started
 
 **LeanOS Core is free.** 14 skills, 2 agents. Clone the repo, copy `.claude/` to your project, start using it immediately. [github.com/BellaBe/lean-os](https://github.com/BellaBe/lean-os)
 

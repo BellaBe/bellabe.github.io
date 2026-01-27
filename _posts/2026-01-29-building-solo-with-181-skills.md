@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I Run a Business with 181 Skills and 0 Employees"
+title: "How I run a business with 181 skills and 0 employees"
 date: 2026-01-29
 description: "Hit a wall with a co-founder. Built a system instead. Here's what solo + AI leverage actually looks like."
 reading_time: 6
@@ -15,7 +15,7 @@ This isn't theoretical. It's how I actually work.
 
 ---
 
-## The Co-Founder Wall
+## The co-founder wall
 
 Earlier this year, I hit a wall with a co-founder partnership. Different expectations. Different execution speeds. Different definitions of "ready."
 
@@ -25,7 +25,7 @@ I tried a different approach: solve it with systems.
 
 ---
 
-## Two Months
+## Two months
 
 I spent two months building LeanOS Pro. Not as a product to sell — as a system to use.
 
@@ -37,7 +37,7 @@ Each function became skills. Skills got orchestrated by agents. Agents got conne
 
 ---
 
-## What It Actually Looks Like
+## What it actually looks like
 
 Monday morning. I need to write a blog post about AI transparency.
 
@@ -49,7 +49,7 @@ Still need to edit. Still need my judgment. But the blank page problem is gone.
 
 ---
 
-## The Functions
+## The functions
 
 **Sales.** I don't cold email manually anymore. The prospect-researching skill finds relevant companies. The outreach-personalizing skill drafts messages that actually reference their situation. I review, adjust, send.
 
@@ -61,7 +61,7 @@ Still need to edit. Still need my judgment. But the blank page problem is gone.
 
 ---
 
-## What I'm Not Saying
+## What I'm not saying
 
 I'm not saying AI replaces human judgment. It doesn't.
 
@@ -71,7 +71,7 @@ What AI replaces: the blank page. The context assembly. The repetitive research.
 
 ---
 
-## The Solo Founder Bottleneck
+## The solo founder bottleneck
 
 The conventional wisdom about solo founders: you can't scale. You need a team. One person can't do sales AND marketing AND engineering AND operations.
 
@@ -93,7 +93,7 @@ LeanOS Core is free. 14 skills, 2 agents. Clone the repo, copy `.claude/` to you
 
 ---
 
-## For Those Who Want More
+## For those who want more
 
 LeanOS Pro is 181 skills and 44 agents. The complete system. $249 for early adopters (first 50), then $499. Not a subscription. Yours forever.
 

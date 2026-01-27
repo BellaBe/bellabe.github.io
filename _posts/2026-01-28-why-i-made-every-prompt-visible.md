@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why I Made Every Prompt Visible"
+title: "Why I made every prompt visible"
 date: 2026-01-28
 description: "Most AI tools are black boxes. LeanOS isn't. Here's why transparency is the whole point."
 reading_time: 5
@@ -15,7 +15,7 @@ This isn't a feature. It's the philosophy.
 
 ---
 
-## Know Your Agent
+## Know your agent
 
 There's an emerging principle in AI: **Know Your Agent.**
 
@@ -27,7 +27,7 @@ I don't trust magic. Neither should you.
 
 ---
 
-## What "Visible" Actually Means
+## What "visible" actually means
 
 In LeanOS, every skill is a markdown file. Open it. Read it. The prompt is right there.
 
@@ -39,7 +39,7 @@ This isn't possible with SaaS tools. Their prompts are proprietary. Their logic 
 
 ---
 
-## Why This Matters
+## Why this matters
 
 **Debugging becomes possible.** When an AI gives bad output, you can trace it. Was the prompt wrong? Was the context missing? Was the instruction unclear? With black box tools, you just try again and hope.
 
@@ -49,7 +49,7 @@ This isn't possible with SaaS tools. Their prompts are proprietary. Their logic 
 
 ---
 
-## Own Your Agent
+## Own your agent
 
 Visibility is half the equation. Ownership is the other half.
 
@@ -59,7 +59,7 @@ Your business, your AI system, your rules.
 
 ---
 
-## The Tradeoff
+## The tradeoff
 
 Transparency has a cost: complexity is visible too.
 
@@ -71,7 +71,7 @@ If you want to actually know what your AI is doing, it is.
 
 ---
 
-## See For Yourself
+## See for yourself
 
 LeanOS Core is free and open source. Clone it. Open the skills. Read the prompts.
 
