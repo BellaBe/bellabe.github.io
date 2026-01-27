@@ -1591,7 +1591,7 @@ body.light .icon-sun { display: inline; }
    ----------------------------------------------------------------------------- */
 
 /* Minimal container for centered personal pages */
-.main-content:has(.minimal-main) {
+.main-content--minimal {
   padding: 0;
   max-width: none;
 }

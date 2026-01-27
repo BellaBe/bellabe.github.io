@@ -34,7 +34,7 @@
   <!-- Geometric background pattern -->
   <div class="bg-pattern" aria-hidden="true"></div>
 
-  <main class="main-content">
+  <main class="main-content{% if page.minimal %} main-content--minimal{% endif %}">
     {{ content }}
   </main>
 
