@@ -1147,6 +1147,11 @@ body.light .icon-sun { display: inline; }
    SINGLE POST
    ----------------------------------------------------------------------------- */
 
+.post-wrapper {
+  max-width: var(--container-prose);
+  margin: 0 auto;
+}
+
 .post {
   max-width: var(--container-prose);
   margin: 0 auto;
