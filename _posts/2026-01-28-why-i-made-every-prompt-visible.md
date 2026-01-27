@@ -64,7 +64,7 @@ You can't trust what you can't inspect. Full stop.
 
 Visibility is half the equation. Ownership is the other half.
 
-LeanOS Pro is $500 once. Not a subscription. You get the full system — 181 skills, 30+ agents — and it's yours. Forever.
+LeanOS Pro is $249 for early adopters (first 50), then $499. Not a subscription. You get the full system — 181 skills, 44 agents — and it's yours. Forever.
 
 No recurring charges. No "we're sunsetting this feature." No vendor deciding to change how your workflows work.
 
@@ -94,4 +94,4 @@ Know Your Agent. Own Your Agent.
 
 ---
 
-*Ready for the full system? [LeanOS Pro](/leanos) — 181 skills, $500 once.*
+*Ready for the full system? [LeanOS Pro](/leanos) — 181 skills, 44 agents.*

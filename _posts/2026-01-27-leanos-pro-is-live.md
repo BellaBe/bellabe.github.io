@@ -27,7 +27,7 @@ I was drowning in this. Two products to build. No team. Scattered context across
 
 LeanOS is one AI that sees your whole business.
 
-181 skills. 30+ agents. Strategy to execution, all connected.
+181 skills. 44 agents. Strategy to execution, all connected.
 
 Build · Sell · Serve · Plan · Grow · Think
 
@@ -52,18 +52,19 @@ Transparency isn't a feature. It's the point.
 ## What's Included
 
 **LeanOS Core (Free)**
-- 15 skills, 3 agents
+- 14 skills, 2 agents
 - Reasoning, goals, foundations
 - Everything you need to start
 - [Get it on GitHub](https://github.com/BellaBe/lean-os)
 
 **LeanOS Pro ($249 Early Adopter — first 50 only)**
-- 181 skills, 30+ agents
+- 181 skills, 44 agents
 - Full stack: sales, marketing, engineering, product, research
 - Private repo access
 - All future updates
 - 30-day money back guarantee
 - After 50 buyers: $499
+- [Get LeanOS Pro](https://bellabe.gumroad.com/l/leanos-pro)
 
 ---
 

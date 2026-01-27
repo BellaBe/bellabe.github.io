@@ -9,7 +9,7 @@ tags: [leanos, solo-founder, ai, startup]
 
 I don't have a team. I have a system.
 
-181 skills. 30+ agents. One AI that handles strategy, sales, marketing, engineering, and operations.
+181 skills. 44 agents. One AI that handles strategy, sales, marketing, engineering, and operations.
 
 This isn't theoretical. It's how I actually work.
 
@@ -91,7 +91,7 @@ The bottleneck isn't capability. It's context. Assemble the context correctly, a
 
 I'm not asking you to believe me. I'm asking you to try it.
 
-LeanOS Core is free. 15 skills, 3 agents. Clone the repo, copy `.claude/` to your project, run a skill.
+LeanOS Core is free. 14 skills, 2 agents. Clone the repo, copy `.claude/` to your project, run a skill.
 
 See if it changes how you work.
 
@@ -101,9 +101,9 @@ See if it changes how you work.
 
 ## For Those Who Want More
 
-LeanOS Pro is 181 skills and 30+ agents. The complete system.
+LeanOS Pro is 181 skills and 44 agents. The complete system.
 
-$500 once. Not a subscription. Yours forever.
+$249 for early adopters (first 50), then $499. Not a subscription. Yours forever.
 
 I built it for myself. Now it's available for anyone hitting the same wall I hit.
 

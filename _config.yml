@@ -1,6 +1,6 @@
 # Site settings
 title: Bella Belgarokova
-description: Building LeanOS — AI Operating System for Founders. 181 skills, 30+ agents. Know Your Agent. Own Your Agent.
+description: Building LeanOS — AI Operating System for Founders. 181 skills, 44 agents. Know Your Agent. Own Your Agent.
 url: "https://bellabe.github.io"
 baseurl: ""
 
@@ -30,6 +30,9 @@ defaults:
     values:
       layout: "post"
       author: "Bella Belgarokova"
+
+# Show future-dated posts
+future: true
 
 # Plugins (GitHub Pages supported)
 plugins:
