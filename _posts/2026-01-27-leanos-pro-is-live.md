@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LeanOS Pro is Live — 181 Skills, $249 Early Adopter"
+title: "LeanOS Pro is Live"
 date: 2026-01-27
 description: "I spent 2 months building the AI system I wish existed. Today it's available."
 reading_time: 4
@@ -25,13 +25,9 @@ I was drowning in this. Two products to build. No team. Scattered context across
 
 ## What I Built Instead
 
-LeanOS is one AI that sees your whole business.
+LeanOS is one AI that sees your whole business. 181 skills. 44 agents. Strategy to execution, all connected.
 
-181 skills. 44 agents. Strategy to execution, all connected.
-
-Build · Sell · Serve · Plan · Grow · Think
-
-One system. Every function. Full context.
+Build. Sell. Serve. Plan. Grow. Think. One system. Every function. Full context.
 
 ---
 
@@ -39,32 +35,9 @@ One system. Every function. Full context.
 
 Most AI tools are black boxes. You pay monthly. You can't see the prompts. You can't change them. You're renting access to someone else's decisions about how AI should work.
 
-LeanOS is different:
-
-- **Every prompt readable.** See exactly what's being sent to Claude.
-- **Every skill modifiable.** Don't like how something works? Change it.
-- **You own it.** $249 Early Adopter (first 50 buyers). Then $499. Not a subscription. Yours forever.
+LeanOS is different. **Every prompt is readable.** See exactly what's being sent to Claude. **Every skill is modifiable.** Don't like how something works? Change it. **You own it.** Not a subscription. Yours forever.
 
 Transparency isn't a feature. It's the point.
-
----
-
-## What's Included
-
-**LeanOS Core (Free)**
-- 14 skills, 2 agents
-- Reasoning, goals, foundations
-- Everything you need to start
-- [Get it on GitHub](https://github.com/BellaBe/lean-os)
-
-**LeanOS Pro ($249 Early Adopter — first 50 only)**
-- 181 skills, 44 agents
-- Full stack: sales, marketing, engineering, product, research
-- Private repo access
-- All future updates
-- 30-day money back guarantee
-- After 50 buyers: $499
-- [Get LeanOS Pro](https://bellabe.gumroad.com/l/leanos-pro)
 
 ---
 
@@ -80,11 +53,9 @@ Not a theoretical framework. The actual operating system I use daily. Every skil
 
 ## Get Started
 
-**Core is free.** Clone the repo, copy `.claude/` to your project, start using 15 skills immediately.
+**LeanOS Core is free.** 14 skills, 2 agents. Clone the repo, copy `.claude/` to your project, start using it immediately. [github.com/BellaBe/lean-os](https://github.com/BellaBe/lean-os)
 
-**Pro is $249 for Early Adopters (first 50).** Not $3,450/month in SaaS subscriptions. Not a recurring charge. Yours forever. After 50 buyers, price goes to $499.
-
-[Get LeanOS Pro](https://bellabe.github.io/leanos)
+**LeanOS Pro is $249 for early adopters** (first 50 buyers, then $499). 181 skills, 44 agents. Private repo access. All future updates. 30-day money back guarantee. [bellabe.github.io/leanos](/leanos)
 
 ---
 

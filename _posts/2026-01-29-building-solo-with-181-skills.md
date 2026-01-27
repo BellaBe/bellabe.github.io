@@ -31,11 +31,7 @@ I spent two months building LeanOS Pro. Not as a product to sell — as a system
 
 The goal: handle everything a small team would handle, but without the team.
 
-- **Strategy:** Market research, competitive analysis, positioning
-- **Sales:** Prospect research, outreach personalization, pipeline management
-- **Marketing:** Content strategy, narrative creation, campaign execution
-- **Engineering:** Specs, code generation, testing
-- **Operations:** Goal tracking, decision frameworks, learning capture
+**Strategy:** Market research, competitive analysis, positioning. **Sales:** Prospect research, outreach personalization, pipeline management. **Marketing:** Content strategy, narrative creation, campaign execution. **Engineering:** Specs, code generation, testing. **Operations:** Goal tracking, decision frameworks, learning capture.
 
 Each function became skills. Skills got orchestrated by agents. Agents got connected through a shared context — the Canvas that holds business strategy.
 
@@ -55,13 +51,13 @@ Still need to edit. Still need my judgment. But the blank page problem is gone.
 
 ## The Functions
 
-**Sales:** I don't cold email manually anymore. The prospect-researching skill finds relevant companies. The outreach-personalizing skill drafts messages that actually reference their situation. I review, adjust, send.
+**Sales.** I don't cold email manually anymore. The prospect-researching skill finds relevant companies. The outreach-personalizing skill drafts messages that actually reference their situation. I review, adjust, send.
 
-**Marketing:** Content comes from the narrative-creator pipeline. It reads my positioning, my personas, my objection library. Outputs are on-brand because the brand is in the system.
+**Marketing.** Content comes from the narrative-creator pipeline. It reads my positioning, my personas, my objection library. Outputs are on-brand because the brand is in the system.
 
-**Engineering:** Product specs get generated from requirements. The intentir-agent transforms them into structured implementation plans. Code generation follows.
+**Engineering.** Product specs get generated from requirements. The intentir-agent transforms them into structured implementation plans. Code generation follows.
 
-**Strategy:** Every decision goes through a 6-stage flow. Input → Hypothesis → Implication → Decision → Actions → Learning. The learning feeds back. The system remembers.
+**Strategy.** Every decision goes through a 6-stage flow. Input → Hypothesis → Implication → Decision → Actions → Learning. The learning feeds back. The system remembers.
 
 ---
 
@@ -91,9 +87,7 @@ The bottleneck isn't capability. It's context. Assemble the context correctly, a
 
 I'm not asking you to believe me. I'm asking you to try it.
 
-LeanOS Core is free. 14 skills, 2 agents. Clone the repo, copy `.claude/` to your project, run a skill.
-
-See if it changes how you work.
+LeanOS Core is free. 14 skills, 2 agents. Clone the repo, copy `.claude/` to your project, run a skill. See if it changes how you work.
 
 [github.com/BellaBe/lean-os](https://github.com/BellaBe/lean-os)
 
@@ -101,9 +95,7 @@ See if it changes how you work.
 
 ## For Those Who Want More
 
-LeanOS Pro is 181 skills and 44 agents. The complete system.
-
-$249 for early adopters (first 50), then $499. Not a subscription. Yours forever.
+LeanOS Pro is 181 skills and 44 agents. The complete system. $249 for early adopters (first 50), then $499. Not a subscription. Yours forever.
 
 I built it for myself. Now it's available for anyone hitting the same wall I hit.
 
@@ -111,4 +103,4 @@ I built it for myself. Now it's available for anyone hitting the same wall I hit
 
 ---
 
-*Values: Proof over promises. Execution over ideas. Transparency over black boxes.*
+*Proof over promises. Execution over ideas. Transparency over black boxes.*

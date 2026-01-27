@@ -19,10 +19,7 @@ This isn't a feature. It's the philosophy.
 
 There's an emerging principle in AI: **Know Your Agent.**
 
-The idea is simple. If you're delegating decisions to an AI system, you should understand:
-- What instructions it's following
-- What context it's working with
-- Why it produces certain outputs
+The idea is simple. If you're delegating decisions to an AI system, you should understand what instructions it's following, what context it's working with, and why it produces certain outputs.
 
 Most AI tools fail this test. They wrap Claude or GPT in a UI and hide everything. You're supposed to trust the magic.
 
@@ -44,19 +41,11 @@ This isn't possible with SaaS tools. Their prompts are proprietary. Their logic 
 
 ## Why This Matters
 
-**1. Debugging is possible.**
+**Debugging becomes possible.** When an AI gives bad output, you can trace it. Was the prompt wrong? Was the context missing? Was the instruction unclear? With black box tools, you just try again and hope.
 
-When an AI gives bad output, you can trace it. Was the prompt wrong? Was the context missing? Was the instruction unclear?
+**Improvement becomes possible.** See a skill that's 80% right? Fix the 20%. Iterate on your own system instead of waiting for a vendor to maybe update their prompts someday.
 
-With black box tools, you just... try again and hope.
-
-**2. Improvement is possible.**
-
-See a skill that's 80% right? Fix the 20%. Iterate on your own system instead of waiting for a vendor to maybe update their prompts someday.
-
-**3. Trust is possible.**
-
-You can't trust what you can't inspect. Full stop.
+**Trust becomes possible.** You can't trust what you can't inspect. Full stop.
 
 ---
 
@@ -64,9 +53,7 @@ You can't trust what you can't inspect. Full stop.
 
 Visibility is half the equation. Ownership is the other half.
 
-LeanOS Pro is $249 for early adopters (first 50), then $499. Not a subscription. You get the full system — 181 skills, 44 agents — and it's yours. Forever.
-
-No recurring charges. No "we're sunsetting this feature." No vendor deciding to change how your workflows work.
+LeanOS Pro is yours forever. Not a subscription. No recurring charges. No "we're sunsetting this feature." No vendor deciding to change how your workflows work.
 
 Your business, your AI system, your rules.
 
