@@ -2321,6 +2321,12 @@ body.light .icon-sun { display: inline; }
   margin-bottom: var(--space-2);
 }
 
+.stacked-post .post-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
 .stacked-post .post-badge {
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);

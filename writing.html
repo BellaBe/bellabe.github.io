@@ -24,7 +24,9 @@ minimal: true
     {% for post in site.posts %}
     <a href="{{ post.url | relative_url }}" class="stacked-post">
       <div class="post-header">
-        {% if post.tags.first %}<span class="post-badge">{{ post.tags.first }}</span>{% endif %}
+        <div class="post-badges">
+          {% for tag in post.tags %}<span class="post-badge">{{ tag }}</span>{% endfor %}
+        </div>
         {% if post.reading_time %}<span class="post-reading-time">{{ post.reading_time }} min</span>{% endif %}
       </div>
       <div class="post-title">{{ post.title }}</div>
