@@ -43,7 +43,7 @@ Monday morning. I need to write a blog post about AI transparency.
 
 Old way: Open a doc. Stare at blank page. Research competitors. Draft something. Revise. Two hours minimum.
 
-LeanOS way: Run the content-strategizing skill. It pulls from my positioning docs, my brand voice, my proof library. Suggests angles I hadn't considered. Draft comes out aligned with everything else I've written.
+LeanOS way: Run the mkt-content-strategizing skill. It pulls from my positioning docs, my brand voice, my proof library. Suggests angles I hadn't considered. Draft comes out aligned with everything else I've written.
 
 Still need to edit. Still need my judgment. But the blank page problem is gone.
 
@@ -51,7 +51,7 @@ Still need to edit. Still need my judgment. But the blank page problem is gone.
 
 ## The functions
 
-**Sales.** I don't cold email manually anymore. The prospect-researching skill finds relevant companies. The outreach-personalizing skill drafts messages that actually reference their situation. I review, adjust, send.
+**Sales.** I don't cold email manually anymore. The sls-prospect-researching skill finds relevant companies. The sls-outreach-personalizing skill drafts messages that actually reference their situation. I review, adjust, send.
 
 **Marketing.** Content comes from the narrative-creator pipeline. It reads my positioning, my personas, my objection library. Outputs are on-brand because the brand is in the system.
 

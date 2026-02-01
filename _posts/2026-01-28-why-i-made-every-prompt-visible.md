@@ -31,7 +31,7 @@ I don't trust magic. Neither should you.
 
 In LeanOS, every skill is a markdown file. Open it. Read it. The prompt is right there.
 
-Want to know how the `sales-outreach` skill works? Open `.claude/skills/sales/outreach-personalizing.md`. The system prompt, the instructions, the output format — all visible.
+Want to know how the `sales-outreach` skill works? Open `.claude/skills/sales/sls-outreach-personalizing.md`. The system prompt, the instructions, the output format — all visible.
 
 Don't like something? Change it. It's your system.
 
