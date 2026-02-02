@@ -38,3 +38,4 @@ future: true
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
