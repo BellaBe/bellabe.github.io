@@ -1216,15 +1216,6 @@ body.light .icon-sun { display: inline; }
   background: rgba(59, 130, 246, 0.1);
 }
 
-.post-cover {
-  margin-top: var(--space-8);
-}
-
-.post-cover img {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border-medium);
-}
 
 /* -----------------------------------------------------------------------------
    POST CONTENT
@@ -1358,40 +1349,32 @@ body.light .icon-sun { display: inline; }
 
 /* LeanOS Reference Box */
 .leanos-reference {
-  background: var(--gradient-card);
-  border: 1px solid var(--color-border-accent);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-6) var(--space-8);
   margin: var(--space-12) 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.leanos-reference::before {
-  content: '>';
-  position: absolute;
-  top: var(--space-6);
-  left: var(--space-5);
-  font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
-  color: var(--color-accent-primary);
 }
 
 .leanos-reference h3 {
   font-family: var(--font-mono);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-accent-primary);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-wider);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-2);
-  padding-left: var(--space-6);
 }
 
 .leanos-reference p {
   margin: 0;
   font-size: var(--font-size-sm);
-  padding-left: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.leanos-reference a:first-child {
+  color: var(--color-accent-primary);
+}
+
+.leanos-reference a:last-child {
+  color: var(--color-accent-warm);
 }
 
 /* Post Footer */
