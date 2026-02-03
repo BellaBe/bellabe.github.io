@@ -1322,6 +1322,7 @@ body.light .icon-sun { display: inline; }
   max-width: 100%;
   border-radius: var(--radius-lg);
   margin: var(--space-8) 0;
+  border: 1px solid var(--color-border-medium);
 }
 
 .post-content hr {
