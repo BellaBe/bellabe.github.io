@@ -1369,12 +1369,20 @@ body.light .icon-sun { display: inline; }
   color: var(--color-text-secondary);
 }
 
-.leanos-reference a:first-child {
+.leanos-reference p a:first-of-type {
+  color: var(--color-text-secondary);
+}
+
+.leanos-reference p a:first-of-type:hover {
   color: var(--color-accent-primary);
 }
 
-.leanos-reference a:last-child {
+.leanos-reference p a:last-of-type {
   color: var(--color-accent-warm);
+}
+
+.leanos-reference p a:last-of-type:hover {
+  color: var(--color-accent-primary);
 }
 
 /* Post Footer */
