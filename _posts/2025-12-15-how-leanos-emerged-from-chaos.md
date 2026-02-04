@@ -90,7 +90,7 @@ The integration layer disappeared because there was nothing to integrate. The pr
 - **RevOps:** Signals, scoring, allocation, measurement
 - **Operations:** Thread execution, goal tracking, daily operations
 
-Every skill is a readable markdown file. The architecture is Canvas (strategy), Threads (decisions through 6 causal stages), Skills (execution), Artifacts (outputs). Everything references, nothing duplicates.
+Every skill is a readable markdown file. The architecture is Strategy (business context), Goals (strategic objectives), Threads (execution context), Artifacts (generated outputs), and Research (knowledge discovery) -- all operated by Agents and Skills. Everything references, nothing duplicates.
 
 Today's session alone: built 110 persuasion patterns, mapped a PLG funnel, scored 8 distribution channels, allocated a time-based budget, and planned 32 content posts. From a terminal. Not chasing hype. Producing actual outputs that run the business.
 
