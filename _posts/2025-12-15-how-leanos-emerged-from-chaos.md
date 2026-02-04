@@ -71,9 +71,11 @@ Then Claude Code shipped Skills. An AI that reads files in a repository, execute
 
 The hypothesis was simple: what if every business function was a skill file in the same repo? Not a SaaS integration. A directory. Not a product layer on top of AI. Plain markdown that the AI reads natively.
 
-First skill: generating a weekly report from plain-text data. It worked.
+First skills: business foundations. In software engineering, you spend serious time defining foundations because they shape everything built on top. The early skills structured business model, segments, positioning, and goals. Not perfect, but the strategy structure was already lining up -- clean, organized, and referenced from one place.
 
-Second skill: drafting customer responses using context from the customer file and the product roadmap. It worked -- because both files lived in the same repo. No integration needed. Context was shared by default.
+Then came software architecture and product shaping. Requirements, specs, design system. Familiar territory for an engineer.
+
+Then marketing and sales. Territory most software engineers avoid -- and for good reason. But the skills covered it: content strategy, channel scoring, outreach sequences, qualification frameworks. Functions I would not have built well on my own, operating from the same repo with full context.
 
 The integration layer disappeared because there was nothing to integrate. The product layer disappeared because there was no product between me and the model.
 
