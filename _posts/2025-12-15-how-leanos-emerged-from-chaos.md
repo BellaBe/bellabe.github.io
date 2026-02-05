@@ -47,7 +47,7 @@ This is where most people stop the analysis. They frame AI as "assistance." AI h
 
 AI that assists is still you doing the work, with help. AI that *operates* runs business functions end-to-end with shared context. The difference: one computes what you ask, the other manages the function.
 
-Nobody was building that. The "AI Business OS" category -- a system that covers strategy, product, engineering, sales, marketing, customer success, RevOps, and operations in one place -- did not exist.
+Nobody was building that. The "AI Business OS" category -- a system that covers strategy, product, engineering, sales, marketing, customer success, orchestration, and operations in one place -- did not exist.
 
 ---
 
@@ -89,7 +89,7 @@ The integration layer disappeared because there was nothing to integrate. The pr
 - **Sales:** Prospecting, outreach, qualification, pipeline
 - **Marketing:** Content, channels, campaigns, pattern library
 - **Customer success:** Onboarding, health monitoring, retention, expansion
-- **RevOps:** Signals, scoring, allocation, measurement
+- **Orchestration:** Goals, briefs, cross-vertical coordination, tracking
 - **Operations:** Thread execution, goal tracking, daily operations
 
 Every skill is a readable markdown file. The architecture is Strategy (business context), Goals (strategic objectives), Threads (execution context), Artifacts (generated outputs), and Research (knowledge discovery) -- all operated by Agents and Skills. Everything references, nothing duplicates.
