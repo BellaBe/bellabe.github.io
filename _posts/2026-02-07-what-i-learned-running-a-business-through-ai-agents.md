@@ -18,11 +18,13 @@ This is not a success story. This is a field report. Four days, multiple session
 
 It does not mean "I asked Claude for advice."
 
-It means structured agents — each with defined inputs, outputs, skills, and responsibilities — that execute business functions. A marketing strategist agent that reads goals and produces channel strategies. A content manager agent that reads strategies and produces content. A goal tracker that reads execution logs and reports progress against targets.
+It means a systematic approach: every business function has agents that know the process, receive specific inputs, follow instructions, and produce specific outputs. The agents are connected — one agent's output becomes another's input. Operations stay coordinated because every agent reads from the same context.
 
-Each agent reads files, reasons about what to do, produces files, and hands off to the next agent. The coordination medium is the file system. Shared state is markdown files in a repo.
+Here is what that looks like concretely. Take marketing strategy. A marketing strategist agent needs to know the process of defining a marketing strategy. But knowing the process is not enough — it needs context. It reads: what are the active business goals? Who are the customers? What is the value proposition? Which channels do we distribute through? What is the go-to-market strategy? Who are the ideal customers? What brand voice should it use? How should it position?
 
-As of today, the system has 40+ agents and 180+ skills across 8 business domains: strategy, product, engineering, marketing, sales, customer success, orchestration, and operations.
+It reads all of that from files in the same repo. Then it produces a strategy: which channels to prioritize, which content to create, through which funnel stages, and with what budget. That output becomes the input for the next agent — the content manager — who reads the strategy and produces the actual content.
+
+Every function works this way. Sales reads goals and customer segments, produces outreach sequences. Product reads customer feedback and strategy, produces feature priorities. Engineering reads product specs, produces code. The coordination happens through shared files — not meetings, not Slack, not memory.
 
 Here is what happened when I actually used it.
 
