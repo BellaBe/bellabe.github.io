@@ -1372,6 +1372,14 @@ body.light .icon-sun { display: inline; }
   margin-bottom: 0;
 }
 
+.leanos-arrow {
+  color: var(--color-text-tertiary);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  margin-right: var(--space-2);
+  letter-spacing: -0.05em;
+}
+
 .leanos-link-core {
   color: var(--color-text-primary);
 }
