@@ -5,7 +5,7 @@ date: 2026-02-05
 description: "The operations gap every technical founder hits after shipping -- and why 'figure it out later' compounds against you"
 reading_time: 7
 tags: [founder, operations, solo-founder, startup, build-in-public]
-image: /assets/images/a2-cover.png
+image: ../assets/images/a2-cover.png
 ---
 
 You shipped the product. Maybe an MVP. Maybe a working beta. Probably using AI for most of the code. The hard part is over, right?
@@ -22,7 +22,7 @@ The other 70% is operations. And most technical founders are not prepared for ho
 
 After shipping, a solo founder runs at minimum seven business functions:
 
-![The 7 business functions a solo founder runs: Strategy, Product, Engineering, Marketing, Sales, Customer Success -- all connected through Operations](/assets/images/a2-functions-map.png)
+![The 7 business functions a solo founder runs: Strategy, Product, Engineering, Marketing, Sales, Customer Success -- all connected through Operations](../assets/images/a2-functions-map.png)
 
 1. **Strategy.** Market positioning, competitive analysis, pricing, business model. Not a one-time exercise. Your strategy changes when you get real user data, and the decisions cascade into everything else.
 
