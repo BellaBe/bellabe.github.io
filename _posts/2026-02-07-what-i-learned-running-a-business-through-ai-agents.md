@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What I learned running an entire business through AI agents"
-date: 2026-02-10
+date: 2026-02-07
 description: "4 days, 40+ agents, 3 goals, 11 execution threads. Here is what actually happened -- including the parts that broke."
 reading_time: 8
 tags: [ai, agents, operations, solo-founder, build-in-public]
@@ -31,6 +31,8 @@ Here is what happened when I actually used it.
 ## Day 1: Canvas to execution in one session
 
 I started with a completed business canvas — 16 sections covering business model, segments, positioning, channels, pricing, and go-to-market. I pointed the goal-definition agent at it.
+
+![What a business canvas actually contains: who you serve, what you offer, how you grow, what you track — 16 sections, one file each](../assets/images/a3-canvas-grid.png)
 
 The system derived 3 parent goals from the canvas data. Then the goal-decomposition skill broke them into 11 subgoals using derivation formulas — each with target values, measurement methods, and dependency chains. Then the goal-activation skill created 11 execution threads across 4 domains, each with the 6-stage structure the system uses for every piece of work.
 
