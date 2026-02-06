@@ -1347,50 +1347,90 @@ body.light .icon-sun { display: inline; }
   margin: var(--space-12) 0;
 }
 
-/* LeanOS Reference Box */
-.leanos-reference {
+/* Post Footer */
+.post-footer {
+  margin-top: var(--space-12);
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-8);
+}
+
+/* Footer CTA Block */
+.footer-cta {
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-6) var(--space-8);
-  margin: var(--space-12) 0;
+  margin-bottom: var(--space-8);
+  background: var(--color-bg-secondary, rgba(255, 255, 255, 0.02));
 }
 
-.leanos-reference h3 {
+.footer-cta-label {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-3);
+}
+
+.footer-cta-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 var(--space-4) 0;
+}
+
+.footer-cta-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.footer-link {
   font-family: var(--font-mono);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-primary);
-  margin-bottom: var(--space-2);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.leanos-reference p {
-  margin: 0;
-  font-size: var(--font-size-sm);
+.footer-link--core {
   color: var(--color-text-secondary);
 }
 
-.leanos-reference p a:first-of-type {
-  color: var(--color-text-secondary);
-}
-
-.leanos-reference p a:first-of-type:hover {
+.footer-link--core:hover {
   color: var(--color-accent-primary);
 }
 
-.leanos-reference p a:last-of-type {
+.footer-link--pro {
   color: var(--color-accent-warm);
 }
 
-.leanos-reference p a:last-of-type:hover {
+.footer-link--pro:hover {
   color: var(--color-accent-primary);
 }
 
-/* Post Footer */
-.post-footer {
-  padding-top: var(--space-8);
-  border-top: 1px solid var(--color-border-subtle);
+.footer-link-separator {
+  color: var(--color-text-tertiary);
+}
+
+/* Footer Connect */
+.footer-connect {
   color: var(--color-text-tertiary);
   font-size: var(--font-size-sm);
+}
+
+.footer-connect p {
+  margin: 0;
+}
+
+.footer-connect a {
+  color: var(--color-text-secondary);
+  transition: color 0.2s;
+}
+
+.footer-connect a:hover {
+  color: var(--color-accent-primary);
 }
 
 /* -----------------------------------------------------------------------------

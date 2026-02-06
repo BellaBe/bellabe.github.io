@@ -26,15 +26,19 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.leanos_ref %}
-    <div class="leanos-reference">
-      <h3>LeanOS</h3>
-      <p><a href="https://github.com/BellaBe/lean-os" target="_blank" rel="noopener">Core (free, MIT)</a> · <a href="https://bellabe.gumroad.com/l/leanos-pro" target="_blank" rel="noopener">Pro — 190+ skills, 40+ agents</a></p>
-    </div>
-    {% endif %}
-
     <footer class="post-footer">
-      <p>Questions or thoughts? <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+      <div class="footer-cta">
+        <div class="footer-cta-label">// LeanOS</div>
+        <p class="footer-cta-description">AI-native operating system for solo founders. Strategy, marketing, sales, engineering — one repo, shared context.</p>
+        <div class="footer-cta-links">
+          <a href="https://github.com/BellaBe/lean-os" target="_blank" rel="noopener" class="footer-link footer-link--core">Core — free, MIT</a>
+          <span class="footer-link-separator">·</span>
+          <a href="https://bellabe.gumroad.com/l/leanos-pro" target="_blank" rel="noopener" class="footer-link footer-link--pro">Pro — full system</a>
+        </div>
+      </div>
+      <div class="footer-connect">
+        <p>Building in public. Follow the journey on <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or <a href="https://x.com/ArtificialBella" target="_blank" rel="noopener">X</a>.</p>
+      </div>
     </footer>
   </article>
 </div>

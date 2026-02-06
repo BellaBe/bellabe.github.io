@@ -6,7 +6,6 @@ description: "From fragmented tools to one system -- how building two products s
 reading_time: 6
 tags: [founder, leanos, ai, startup, build-in-public]
 image: /assets/images/a1-cover.png
-leanos_ref: "README.md"
 ---
 
 I am building two products from Dubai. Detekta (breach reporting for GCC financial institutions) and Chromly. Both in build stage. No employees. My previous co-founder was not executing, so I went solo.
