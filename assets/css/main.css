@@ -1374,6 +1374,7 @@ body.light .icon-sun { display: inline; }
 
 .leanos-arrow {
   color: var(--color-text-tertiary);
+  opacity: 0.5;
   font-family: var(--font-mono);
   font-size: var(--font-size-sm);
   margin-right: var(--space-2);
