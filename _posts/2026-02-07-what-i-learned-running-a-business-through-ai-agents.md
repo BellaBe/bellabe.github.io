@@ -114,8 +114,6 @@ I deleted all four agents and all fourteen skills. Then audited the remaining ag
 
 ---
 
-![Four days of AI agent lessons: cross-referencing, systematic failures, building blocks, delete early](../assets/images/a3-lessons-timeline.png)
-
 ## The pattern across four days
 
 Day 1: Cross-referencing catches what linear thinking misses.
@@ -127,9 +125,9 @@ The common thread: AI agents are not magic. They are systems with predictable fa
 
 Running a business through AI agents works. It means thinking systematically — defining precise inputs and outputs, letting AI do what it is capable of doing, and watching your business become more autonomous every day. The failures teach you where the boundaries are. The successes compound.
 
----
+![Four days of AI agent lessons: cross-referencing, systematic failures, building blocks, delete early](../assets/images/a3-lessons-timeline.png)
 
-![5-step process: understand, map human to AI, build and test, constrain and restart, reach clean process](../assets/images/a3-process-flow.png)
+---
 
 ## How to do it
 
@@ -142,6 +140,8 @@ Running a business through AI agents works. It means thinking systematically —
 4. **Add constraints and start over.** Separate concerns. Define precise inputs and outputs. Remove what does not belong. The second version will be cleaner. The third will be repeatable.
 
 5. **Reach the clean process.** You will soon have a repeatable workflow that produces outputs you were not capable of producing in the pre-generative-AI era. Not because the AI is magic — because you defined the process clearly enough for it to execute.
+
+![5-step process: understand, map human to AI, build and test, constrain and restart, reach clean process](../assets/images/a3-process-flow.png)
 
 ---
 
