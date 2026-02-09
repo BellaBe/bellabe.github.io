@@ -34,6 +34,8 @@ Here is what happened when I actually used it.
 
 I started with a completed business canvas — 16 sections covering business model, segments, positioning, channels, pricing, and go-to-market.
 
+![What a business canvas contains: who you serve, what you offer, how you grow, what you track](../assets/images/a3-canvas-grid.png)
+
 ![Canvas to execution flow: canvas → goals → subgoals → threads → 6-stage causal flow](../assets/images/a3-canvas-to-execution.png)
 
 The process goes like this: canvas → goals → subgoals → execution threads.

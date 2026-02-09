@@ -56,6 +56,8 @@ Each reactive decision is locally reasonable. Together, they create a business t
 
 The compounding effect: every month you operate reactively, the cost of aligning these functions increases. The longer you wait, the more decisions you need to unwind.
 
+![Compounding cascade: reactive decision → locally reasonable → internally contradictory → increasing alignment cost](../assets/images/a2-compounding-cascade.png)
+
 ---
 
 ## Why engineers struggle with this specifically
@@ -71,6 +73,8 @@ Engineers in unfamiliar domains tend to do one of two things:
 **Under-invest in the thinking.** Skip strategy, skip research, skip positioning. Go straight to tactics. Write social posts without knowing who you are writing for. Build a landing page without testing the value proposition. Launch on Product Hunt before understanding your segment.
 
 Both failure modes come from the same root: applying engineering intuitions to domains that do not work like engineering.
+
+![Engineering feedback loops vs business feedback loops: seconds to know vs weeks to months](../assets/images/a2-feedback-loops.png)
 
 ---
 
@@ -89,6 +93,8 @@ When I decomposed "launch and get first sales" into subgoals, I found five disti
 **Write the thinking down.** Not the output. The thinking. Why this channel and not that one. Why this price point. Why this positioning. The thinking is the context that makes future decisions coherent with past ones. It is also the thing most founders keep in their heads and lose when they context-switch.
 
 I have 4 days of session logs. Each one captures what was built, what broke, what was learned. When I need to make a decision about marketing strategy, I do not rebuild context from memory. I read the log.
+
+![Three-part framework: shared context, goal decomposition, written thinking](../assets/images/a2-framework.png)
 
 ---
 
