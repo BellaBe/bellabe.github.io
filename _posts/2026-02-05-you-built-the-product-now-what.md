@@ -20,9 +20,9 @@ The other 70% is operations. And most technical founders are not prepared for ho
 
 ## The seven functions nobody warned you about
 
-After shipping, a solo founder runs at minimum seven business functions:
-
 ![The 7 business functions a solo founder runs: Strategy, Product, Engineering, Marketing, Sales, Customer Success -- all connected through Operations](../assets/images/a2-functions-map.png)
+
+After shipping, a solo founder runs at minimum seven business functions:
 
 1. **Strategy.** Market positioning, competitive analysis, pricing, business model. Not a one-time exercise. Your strategy changes when you get real user data, and the decisions cascade into everything else.
 
