@@ -2,7 +2,7 @@
 layout: post
 title: "How LeanOS emerged from chaos"
 date: 2026-02-03
-description: "From fragmented tools to one system -- how building two products solo led to 40+ agents, 190+ skills, and an AI that operates a business"
+description: "From fragmented tools to one system -- how building two products solo led to 40+ agents, 190+ skills, and an AI that operates business"
 reading_time: 6
 tags: [founder, leanos, ai, startup, build-in-public]
 image: /assets/images/a1-cover.png
@@ -109,9 +109,9 @@ The hypothesis proven over months of daily use: if everything lives in one repo 
 
 I built this for myself because I needed it. I still build on this system every day.
 
-Core is free. MIT license. 15 skills covering reasoning and foundations. Clone the repo, read every skill file, decide for yourself.
+**Start with Core.** Free. MIT license. 15 skills covering reasoning and foundations. [Clone the repo](https://github.com/bellabe/leanos-core), read every skill file, decide for yourself.
 
-Pro is the full system. 190+ skills. 40+ agents. 8 domains. $499 once. Not $5,000 per year.
+**Upgrade to Pro** when you need the full system. 190+ skills. 40+ agents. 8 domains. $499 once. [Get LeanOS Pro](https://leanos.dev).
 
 If you are a founder spending more time moving context between tools than actually building -- this is what it looks like when you stop.
 

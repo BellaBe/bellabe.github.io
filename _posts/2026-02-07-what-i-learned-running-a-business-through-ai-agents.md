@@ -147,6 +147,10 @@ Four days, four patterns. The failures teach you where the boundaries are. The s
 
 ![5-step process: understand, map human to AI, build and test, constrain and restart, reach clean process](../assets/images/a3-process-flow.png)
 
+The process keeps evolving, but the system is production-ready today.
+
+**Want to see how it works?** [LeanOS Core is free](https://github.com/bellabe/leanos-core) — read the agent and skill files, try the reasoning system, decide if the architecture fits your workflow.
+
 ---
 
-*This is a live system. I will keep publishing what works, what breaks, and what I learn. The process is more interesting than the output.*
+*This is a live system. I operate my business through these agents daily.*
