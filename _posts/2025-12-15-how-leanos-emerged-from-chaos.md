@@ -38,6 +38,8 @@ There is always a layer between you and the model. The product interface. The pr
 
 ![Opaque vs Transparent: How different systems handle AI operations](/assets/images/a1-comparison.png)
 
+Notice how traditional AI products add layers between you and the model. Each layer reduces what you can extract. Direct access removes the friction.
+
 Generative AI incorporates global knowledge. It has read the papers, the frameworks, the case studies. Extracting that knowledge at the quality level required to actually run a business -- not generate filler content, but produce analysis you can act on -- is high cognitive effort. It depends on how much context you can feed, how precisely you can direct the model, and how few layers sit between your intent and the output.
 
 Most AI products optimize for ease of use. Lower the barrier. Simplify the interface. That works when you want a quick draft or a summary. It does not work when you need the AI to understand your business model, your customer segments, your competitive positioning, and your current strategic context -- all at once, in the same session.
@@ -79,6 +81,8 @@ Then marketing and sales. Territory most software engineers avoid -- and for goo
 The integration layer disappeared because there was nothing to integrate. The product layer disappeared because there was no product between me and the model.
 
 ![LeanOS Architecture: Agents and Skills operating across Strategy, Goals, Threads, Artifacts, and Research](/assets/images/a1-architecture.png)
+
+This structure keeps every function operating from the same context. When strategy changes, it cascades automatically through goals and threads. No manual updates across separate tools.
 
 190+ skills and growing. 40+ agents. 8 business domains:
 

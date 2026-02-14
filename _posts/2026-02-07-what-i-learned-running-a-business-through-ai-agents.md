@@ -129,6 +129,8 @@ Running a business through AI agents works. It means thinking systematically —
 
 ![Four days of AI agent lessons: cross-referencing, systematic failures, building blocks, delete early](../assets/images/a3-lessons-timeline.png)
 
+Four days, four patterns. The failures teach you where the boundaries are. The successes compound into workflows you could not have executed manually.
+
 ---
 
 ## How to do it
