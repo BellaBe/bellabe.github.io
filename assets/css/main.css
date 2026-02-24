@@ -2063,7 +2063,7 @@ body.light .icon-sun { display: inline; }
 
 .minimal-section p:not([class]) {
   font-size: var(--font-size-base);
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
 }
 
