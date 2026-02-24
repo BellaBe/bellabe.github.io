@@ -8,7 +8,7 @@ tags: [founder, leanos, ai, startup, build-in-public]
 image: /assets/images/a1-cover.png
 ---
 
-I am building two products from Dubai. Detekta (breach reporting for GCC financial institutions) and Chromly. Both in build stage. No employees. My previous co-founder was not executing, so I went solo.
+I am building from Dubai. Two ventures in parallel — Detekta (breach reporting for GCC financial institutions) and Chromly — both paused while I focus on launching LeanOS. No employees. My previous co-founder was not executing, so I went solo.
 
 When you build alone, you do not just write code. You run strategy, product, engineering, marketing, sales, and operations. All of it. And for each function, there is a tool. Confluence for documentation. Jira for project tracking. Linear for product. Notion for everything else.
 

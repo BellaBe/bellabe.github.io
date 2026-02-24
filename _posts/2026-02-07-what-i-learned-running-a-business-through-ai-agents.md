@@ -5,7 +5,7 @@ date: 2026-02-07
 description: "Three insights from operating a business through 15 agents and 172 skills — what breaks, why it matters, and what it reveals about programming operations in human language."
 reading_time: 6
 tags: [ai, agents, operations, solo-founder, build-in-public]
-image: ../assets/images/a3-cover.png
+image: /assets/images/a3-cover.png
 ---
 
 I run my business through AI agents. Strategy, market, revenue, intelligence — all operating through 15 agents and 172 skills. Not as a demo. As the production system.
