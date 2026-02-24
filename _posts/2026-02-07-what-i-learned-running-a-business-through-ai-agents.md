@@ -38,6 +38,8 @@ The canvas defines the business model. The execution flow transforms it into tra
 
 **Why it matters:** Linear thinking builds each piece correctly. Goals referenced pricing. Execution referenced goals. But nobody checked if the product existed. Cross-referencing catches what should connect but does not. When everything lives in one repository, consistency checks run across layers. When they live in separate tools, gaps stay hidden.
 
+![Linear thinking vs cross-referencing: linear builds each layer correctly but misses gaps between layers](/assets/images/a3-cross-referencing.png)
+
 ---
 
 ## Insight 2: Building blocks determine output more than instructions do
@@ -51,6 +53,8 @@ A content manager agent used the library to draft social posts. The strategy sai
 **Why it matters:** This is the same principle as a design system. You cannot build good UI from bad components. You cannot write authority content from conversion atoms. Prompt instructions do not override structural constraints. The infrastructure you build — the atoms, the components, the building blocks — constrains what the AI can produce.
 
 Fix the building blocks, not the prompt. Choose carefully. They shape everything built on top.
+
+![Building blocks constrain AI output regardless of instructions — fix the blocks, not the prompt](/assets/images/a3-building-blocks.png)
 
 ---
 
@@ -71,6 +75,8 @@ I deleted all four agents and all fourteen skills.
 **Why it matters:** Market categories describe solutions to human-organization problems. RevOps is a patch for coordination failure. AI systems with shared state do not have that failure. Before importing a pattern, ask whether the problem exists in your system. If agents share state and you have reconciliation and validation — you already have coordination. Adding a layer on top adds hops without adding value.
 
 Imported patterns can create complexity where none is needed.
+
+![Human organizations need RevOps to bridge silos. AI systems with shared state don't have the problem.](/assets/images/a3-market-categories.png)
 
 ---
 

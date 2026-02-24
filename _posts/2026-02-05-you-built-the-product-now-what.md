@@ -20,7 +20,7 @@ The other 70% is operations. And most technical founders are not prepared for ho
 
 ## The seven functions nobody warned you about
 
-![The 7 business functions a solo founder runs: Strategy, Product, Engineering, Marketing, Sales, Customer Success -- all connected through Operations](/assets/images/a2-functions-map.png)
+![The 7 business functions a solo founder runs after shipping — all connected through operations](/assets/images/a2-functions-map.png)
 
 These seven functions do not run in isolation. They cascade. A marketing decision without strategy context targets the wrong audience. A sales page without product positioning makes claims the product cannot support.
 
@@ -58,7 +58,7 @@ Each reactive decision is locally reasonable. Together, they create a business t
 
 The compounding effect: every month you operate reactively, the cost of aligning these functions increases. The longer you wait, the more decisions you need to unwind.
 
-![Compounding cascade: reactive decision → locally reasonable → internally contradictory → increasing alignment cost](/assets/images/a2-compounding-cascade.png)
+![Compounding cost of reactive decisions: month one you fix contradictions, month six you rebuild the foundation](/assets/images/a2-compounding-cascade.png)
 
 The longer you wait to align these functions, the more decisions you need to unwind. Month one, you fix three contradictions. Month six, you are rebuilding the foundation.
 
@@ -78,7 +78,7 @@ Engineers in unfamiliar domains tend to do one of two things:
 
 Both failure modes come from the same root: applying engineering intuitions to domains that do not work like engineering.
 
-![Engineering feedback loops vs business feedback loops: seconds to know vs weeks to months](/assets/images/a2-feedback-loops.png)
+![Engineering feedback loops: seconds. Business feedback loops: weeks to months.](/assets/images/a2-feedback-loops.png)
 
 This is why engineers over-engineer infrastructure or skip strategy entirely. The feedback does not match what they are trained for. Code tells you immediately if you are wrong. Markets take months.
 
@@ -100,7 +100,7 @@ When I decomposed "launch and get first sales" into subgoals, I found five disti
 
 I keep session logs. Each one captures what was built, what broke, what was learned. When I need to make a decision about marketing strategy, I do not rebuild context from memory. I read the log.
 
-![Three-part framework: shared context, goal decomposition, written thinking](/assets/images/a2-framework.png)
+![Three-part framework: shared context, explicit goal decomposition, written thinking](/assets/images/a2-framework.png)
 
 When these three pieces are in place, decisions stop contradicting each other. Every function reads from the same source. Every goal breaks into trackable work. Every decision leaves a trace you can reference later.
 
