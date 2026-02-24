@@ -5,7 +5,7 @@ date: 2026-02-07
 description: "Four things that actually determine whether AI-operated business works — instructions, architecture, system thinking, and where the real bottleneck is."
 reading_time: 6
 tags: [ai, agents, operations, solo-founder, build-in-public]
-image: /assets/images/a3-cover.png
+image: /assets/images/a3-cover-v2.png
 ---
 
 I operate my business through 15 agents and 172 skills. Not as a test. As the production system. Strategy, market, revenue, intelligence — all running through agents daily.
