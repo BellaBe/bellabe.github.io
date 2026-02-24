@@ -1819,7 +1819,7 @@ body.light .icon-sun { display: inline; }
   font-size: var(--font-size-xs);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-widest);
-  color: var(--color-text-tertiary);
+  color: var(--color-accent-warm);
   margin-bottom: var(--space-4);
 }
 
@@ -1965,6 +1965,11 @@ body.light .icon-sun { display: inline; }
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
   margin: 0;
+}
+
+/* Orphan handling: span full width when odd card is last in 2-col grid */
+.capability-card:last-child:nth-child(odd) {
+  grid-column: span 2;
 }
 
 /* Minimal section */
