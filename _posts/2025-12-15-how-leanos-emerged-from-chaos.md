@@ -26,6 +26,8 @@ Founders spend $4,700 to $22,000 per year on fragmented SaaS tools, according to
 
 There is a growing market of vertical OS products trying to solve this. Vertical CRMs, vertical marketing platforms, vertical project management. But each one covers a single function. And each one requires significant investment to build, maintain, and scale. For a solo founder, buying five vertical OS products to replace five generic tools does not solve the architecture problem. It just changes the vendors.
 
+![The fragmentation tax: founder as human middleware between disconnected tools](/assets/images/a1-fragmentation.png)
+
 ---
 
 ## AI changed the equation, but not the way people think
@@ -36,7 +38,7 @@ But here is what most people miss about working with generative AI.
 
 There is always a layer between you and the model. The product interface. The prompt template. The system instructions. The context window limitations. Every AI product adds layers, and every layer reduces your ability to extract what you need from the model.
 
-![Opaque vs Transparent: How different systems handle AI operations](/assets/images/a1-comparison.png)
+![Traditional AI products add layers between you and the model. LeanOS removes them.](/assets/images/a1-comparison.png)
 
 Notice how traditional AI products add layers between you and the model. Each layer reduces what you can extract. Direct access removes the friction.
 
@@ -80,9 +82,9 @@ Then marketing and sales. Territory most software engineers avoid -- and for goo
 
 The integration layer disappeared because there was nothing to integrate. The product layer disappeared because there was no product between me and the model.
 
-![LeanOS Architecture: Agents and Skills operating across Strategy, Goals, Threads, Artifacts, and Research](/assets/images/a1-architecture.png)
+![How LeanOS operates: Human governor, orchestrator, 14 function agents, shared filesystem](/assets/images/a1-architecture.png)
 
-This structure keeps every function operating from the same context. When strategy changes, it cascades automatically through goals and threads. No manual updates across separate tools.
+This structure keeps every function operating from the same context. When strategy changes, every downstream agent sees it immediately — they all read from the same files. No manual updates across separate tools.
 
 172 skills. 15 agents. 5 domains:
 
@@ -92,7 +94,7 @@ This structure keeps every function operating from the same context. When strate
 - **Revenue:** Prospecting, outreach, qualification, pipeline, customer success
 - **Intelligence:** Research synthesis, knowledge extraction, playbooks
 
-Every skill is a readable markdown file. The architecture is Strategy (business context), Goals (strategic objectives), Threads (execution context), Artifacts (generated outputs), and Research (knowledge discovery) -- all operated by Agents and Skills. Everything references, nothing duplicates.
+Every skill is a readable markdown file. The architecture is simple: strategy and state live in one shared filesystem. An orchestrator reads it, reasons, and writes work orders. Fourteen function agents execute. Everything references, nothing duplicates.
 
 Today's session alone: built 110 persuasion patterns, mapped a PLG funnel, scored 8 distribution channels, allocated a time-based budget, and planned 32 content posts. From a terminal. Not chasing hype. Producing actual outputs that run the business.
 
