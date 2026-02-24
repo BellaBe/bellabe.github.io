@@ -1986,7 +1986,7 @@ body.light .icon-sun { display: inline; }
   font-size: var(--font-size-xs);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-widest);
-  color: var(--color-text-tertiary);
+  color: var(--color-accent-warm);
   margin-bottom: var(--space-3);
 }
 
