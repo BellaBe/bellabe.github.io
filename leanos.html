@@ -1,7 +1,7 @@
 ---
 layout: default
 title: LeanOS
-description: "AI operating system for building and running a business. 41 agents, 186 skills. One person, 5-10x output."
+description: "AI operating system for building and running a business. 15 agents, 172 skills. One person, five-person output."
 minimal: true
 ---
 
@@ -11,14 +11,13 @@ minimal: true
   <!-- Top bar -->
   <div class="top-bar">
     <a href="{{ '/' | relative_url }}">← Home</a>
-    <span class="version">v1.2</span>
-  </div>
+    </div>
 
   <!-- Hero -->
   <div class="minimal-hero">
     <div class="hero-label">LeanOS Pro</div>
-    <h1>One person.<br><span class="accent">Full business output.</span></h1>
-    <p class="hero-sub">Strategize. Build. Sell. Grow. Retain. 186 AI skills that understand your entire business context.</p>
+    <h1>One person.<br><span class="accent">Five-person output.</span></h1>
+    <p class="hero-sub">Strategize. Sell. Grow. Retain. 172 skills that understand your entire business context.</p>
   </div>
 
   <!-- Proof bar -->
@@ -36,10 +35,10 @@ minimal: true
 
   <!-- Terminal -->
   <div class="terminal">
-    <span class="terminal-comment"># Clone and start working</span><br>
-    <span class="terminal-prompt">$</span> <span class="terminal-cmd">cp -r lean-os-pro your-project</span><br>
+    <span class="terminal-comment"># Copy skills into your project and run</span><br>
+    <span class="terminal-prompt">$</span> <span class="terminal-cmd">cp -r .claude/ your-project/</span><br>
     <span class="terminal-prompt">$</span> <span class="terminal-cmd">cd your-project</span><br>
-    <span class="terminal-prompt">$</span> <span class="terminal-cmd">claude</span>
+    <span class="terminal-prompt">$</span> <span class="terminal-cmd">claude --agent orchestrator</span>
   </div>
 
   <!-- What It Does -->
@@ -51,10 +50,6 @@ minimal: true
     <div class="capability-card">
       <div class="capability-title">Strategize</div>
       <p>Size markets. Define segments. Validate problems. Analyze competitors. Model unit economics. Plan go-to-market.</p>
-    </div>
-    <div class="capability-card">
-      <div class="capability-title">Create</div>
-      <p>Natural language to production Python/FastAPI. React frontends. Shopify apps. Full design systems from intent to Figma specs.</p>
     </div>
     <div class="capability-card">
       <div class="capability-title">Grow</div>
@@ -84,7 +79,7 @@ minimal: true
     <br>
     <span class="terminal-prompt">You</span> <span class="terminal-cmd">"Get me 10 qualified leads in financial services"</span><br>
     <br>
-    <span class="terminal-comment"># sls-outbound-manager activates</span><br>
+    <span class="terminal-comment"># cnv-prospecting activates</span><br>
     <span class="terminal-comment"># → researches prospects</span><br>
     <span class="terminal-comment"># → finds decision-makers</span><br>
     <span class="terminal-comment"># → drafts personalized sequences</span><br>
@@ -94,7 +89,7 @@ minimal: true
   </div>
 
   <div class="minimal-section">
-    <p class="subtle-note">41 agents orchestrate 186 skills across 16 domains. Goals drive threads. Threads follow a 6-stage causal flow. Low-impact actions auto-execute. High-impact decisions come to you.</p>
+    <p class="subtle-note">15 agents orchestrate 172 skills across strategy, product, market, revenue, and intelligence. Goals drive threads. Low-impact actions auto-execute. High-impact decisions come to you.</p>
   </div>
 
   <!-- Pricing -->
@@ -106,12 +101,11 @@ minimal: true
       <div class="pricing-row">
         <div class="pricing-title-row">
           <span class="pricing-title">LeanOS Pro</span>
-          <span class="pricing-badge">Early Adopter</span>
         </div>
-        <span class="price-amount">$249</span>
+        <span class="price-amount">$499</span>
       </div>
       <div class="pricing-row">
-        <p class="pricing-subtitle">Yours forever · 30-day refund</p>
+        <p class="pricing-subtitle">Yours forever · one-time</p>
         <span class="price-period">one-time</span>
       </div>
     </div>
@@ -121,14 +115,13 @@ minimal: true
     <div class="pricing-features">
       <div class="pricing-features-label">Includes</div>
       <ul class="pricing-features-list">
-        <li>186 skills across 16 domains</li>
-        <li>41 orchestrator agents</li>
+        <li>172 skills across strategy, product, market, revenue, intelligence</li>
+        <li>15 agents + orchestrator</li>
         <li>Every skill readable and editable</li>
-        <li>Updates included</li>
       </ul>
     </div>
 
-    <a href="{{ gumroad_url }}" class="btn-block">Get LeanOS Pro</a>
+    <a href="https://gumroad.com/l/leanos" class="btn-block">Get LeanOS Pro</a>
   </div>
 
   <!-- Get Free -->
@@ -153,13 +146,48 @@ minimal: true
     <div class="pricing-features">
       <div class="pricing-features-label">Includes</div>
       <ul class="pricing-features-list">
-        <li>15 skills (goals, reasoning, market research)</li>
-        <li>3 orchestrator agents</li>
-        <li>Full documentation and workflows</li>
+        <li>29 skills — research, strategy, validation</li>
+        <li>3 agents (strategist, researcher, planner)</li>
+        <li>The validation layer — decide before you build</li>
       </ul>
     </div>
 
     <a href="https://github.com/BellaBe/lean-os" target="_blank" rel="noopener" class="btn-block btn-block--secondary">View on GitHub</a>
+  </div>
+
+  <!-- Canvas Setup -->
+  <div class="minimal-section minimal-section--label-only">
+    <div class="label">Need a running start?</div>
+  </div>
+  <div class="pricing-box pricing-box--secondary">
+    <div class="pricing-header">
+      <div class="pricing-row">
+        <div class="pricing-title-row">
+          <span class="pricing-title">Canvas Setup</span>
+        </div>
+        <span class="price-amount">$2,000</span>
+      </div>
+      <div class="pricing-row">
+        <p class="pricing-subtitle">Includes LeanOS Pro · flat fee</p>
+        <span class="price-period">one-time</span>
+      </div>
+    </div>
+
+    <div class="pricing-divider"></div>
+
+    <div class="pricing-features">
+      <div class="pricing-features-label">What you get</div>
+      <ul class="pricing-features-list">
+        <li>LeanOS Pro installed in your repo</li>
+        <li>Complete 16-section business canvas built for your business</li>
+        <li>Foundations: ICP, positioning, brand voice, design system, channels</li>
+        <li>Active goals defined and tracked</li>
+        <li>One revision round</li>
+      </ul>
+    </div>
+
+    <p class="subtle-note">Up to 10 hours. Discovery → canvas → foundations → goals → revision. 5 slots/month. Inbound only.</p>
+    <a href="https://cal.com/bellabe/discovery-call" class="btn-block btn-block--secondary" target="_blank" rel="noopener">Book Discovery Call</a>
   </div>
 
   <!-- Divider -->

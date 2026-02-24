@@ -116,7 +116,7 @@ The founders who struggle are not incompetent. They are applying single-function
 
 If you just shipped and feel like the hard part is starting, not ending — you are reading the situation correctly.
 
-**The system I use to run all seven functions:** LeanOS operates strategy, product, engineering, marketing, sales, and customer success from one repo with shared context. [Start with Core (free)](https://github.com/bellabe/leanos-core) to see if this architecture fits how you operate.
+**The system I use to run all seven functions:** LeanOS operates strategy, product, market, revenue, and intelligence from one repo with shared context. [Start with Core (free)](https://github.com/bellabe/lean-os) to see if this architecture fits how you operate.
 
 ---
 

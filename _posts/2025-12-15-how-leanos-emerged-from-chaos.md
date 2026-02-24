@@ -2,7 +2,7 @@
 layout: post
 title: "How LeanOS emerged from chaos"
 date: 2026-02-03
-description: "From fragmented tools to one system -- how building two products solo led to 40+ agents, 190+ skills, and an AI that operates business"
+description: "From fragmented tools to one system -- how building two products solo led to 15 agents, 172 skills, and an AI that operates business"
 reading_time: 6
 tags: [founder, leanos, ai, startup, build-in-public]
 image: /assets/images/a1-cover.png
@@ -84,16 +84,13 @@ The integration layer disappeared because there was nothing to integrate. The pr
 
 This structure keeps every function operating from the same context. When strategy changes, it cascades automatically through goals and threads. No manual updates across separate tools.
 
-190+ skills and growing. 40+ agents. 8 business domains:
+172 skills. 15 agents. 5 domains:
 
-- **Strategy:** Canvas holds business model, goals, reasoning
+- **Strategy:** Canvas, market research, validation, competitive analysis
 - **Product:** Requirements, specs, prioritization, design system
-- **Engineering:** Frontend, backend, testing, architecture
-- **Sales:** Prospecting, outreach, qualification, pipeline
-- **Marketing:** Content, channels, campaigns, pattern library
-- **Customer success:** Onboarding, health monitoring, retention, expansion
-- **Orchestration:** Goals, briefs, cross-vertical coordination, tracking
-- **Operations:** Thread execution, goal tracking, daily operations
+- **Market:** Content, channels, campaigns, persuasion patterns
+- **Revenue:** Prospecting, outreach, qualification, pipeline, customer success
+- **Intelligence:** Research synthesis, knowledge extraction, playbooks
 
 Every skill is a readable markdown file. The architecture is Strategy (business context), Goals (strategic objectives), Threads (execution context), Artifacts (generated outputs), and Research (knowledge discovery) -- all operated by Agents and Skills. Everything references, nothing duplicates.
 
@@ -109,9 +106,9 @@ The hypothesis proven over months of daily use: if everything lives in one repo 
 
 I built this for myself because I needed it. I still build on this system every day.
 
-**Start with Core.** Free. MIT license. 15 skills covering reasoning and foundations. [Clone the repo](https://github.com/bellabe/leanos-core), read every skill file, decide for yourself.
+**Start with Core.** Free. MIT license. 29 skills covering research, strategy, and validation. [Clone the repo](https://github.com/bellabe/lean-os), read every skill file, decide for yourself.
 
-**Upgrade to Pro** when you need the full system. 190+ skills. 40+ agents. 8 domains. $499 once. [Get LeanOS Pro](https://leanos.dev).
+**Upgrade to Pro** when you need the full system. 172 skills. 15 agents. $499 once. [Get LeanOS Pro](https://bellabe.github.io/leanos).
 
 If you are a founder spending more time moving context between tools than actually building -- this is what it looks like when you stop.
 

@@ -8,7 +8,7 @@ tags: [ai, agents, operations, solo-founder, build-in-public]
 image: ../assets/images/a3-cover.png
 ---
 
-I run my business through AI agents. Strategy, marketing, sales, engineering — all operating through 40+ agents and 190+ skills. Not as a demo. As the production system.
+I run my business through AI agents. Strategy, market, revenue, intelligence — all operating through 15 agents and 172 skills. Not as a demo. As the production system.
 
 Three insights emerged from operating this way. Not from building the system. From running real business operations through it.
 
@@ -115,7 +115,7 @@ Programming business operations in human language is becoming a paradigm. This m
 
 Tune your information sources for value, not hype.
 
-**Want to see how it works?** [LeanOS Core is free](https://github.com/bellabe/leanos-core) — read the agent and skill files, try the reasoning system, decide if the architecture fits your workflow.
+**Want to see how it works?** [LeanOS Core is free](https://github.com/bellabe/lean-os) — read the agent and skill files, try the reasoning system, decide if the architecture fits your workflow.
 
 ---
 
