@@ -1662,12 +1662,6 @@ body.light .icon-sun { display: inline; }
   margin-bottom: var(--space-16);
 }
 
-/* Buttons: constrain width on desktop, full-width on mobile */
-@media (min-width: 640px) {
-  .minimal-main--wide .btn-block {
-    max-width: 320px;
-  }
-}
 
 @media (max-width: 960px) {
   .minimal-main--wide {
@@ -1925,6 +1919,7 @@ body.light .icon-sun { display: inline; }
   font-family: var(--font-mono);
   font-size: var(--font-size-sm);
   overflow-x: auto;
+  white-space: nowrap;
   animation: fadeSlideUp var(--duration-slowest) var(--ease-out-expo) 0.15s both;
 }
 
@@ -2363,6 +2358,15 @@ body.light .icon-sun { display: inline; }
 
 .cta-box .btn-block:hover {
   opacity: 0.9;
+}
+
+/* Desktop: buttons are content-width, not full-width — only in wide layout */
+@media (min-width: 640px) {
+  .minimal-main--wide .pricing-box .btn-block,
+  .minimal-main--wide .cta-box .btn-block {
+    width: fit-content;
+    min-width: 220px;
+  }
 }
 
 /* Footer note */
