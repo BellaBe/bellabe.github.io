@@ -56,7 +56,7 @@ Do not be afraid to delete and restart. Deleting what does not work is not failu
 
 What gets rebuilt is always better because the understanding is deeper. The willingness to restart is what separates systems that improve from systems that accumulate debt.
 
-![Human organizations need RevOps to bridge silos. AI systems with shared state don't have the problem.](/assets/images/a3-market-categories.png)
+![Building automation is an art — build, run, find the gap, delete, rebuild better. Each iteration deepens understanding.](/assets/images/a3-rebuild-cycle.png)
 
 ---
 
