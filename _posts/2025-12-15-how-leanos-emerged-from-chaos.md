@@ -108,7 +108,7 @@ I built this for myself because I needed it. I still build on this system every 
 
 **Start with Core.** Free. MIT license. 29 skills covering research, strategy, and validation. [Clone the repo](https://github.com/bellabe/lean-os), read every skill file, decide for yourself.
 
-**Upgrade to Pro** when you need the full system. 172 skills. 15 agents. $499 once. [Get LeanOS Pro](https://bellabe.github.io/leanos).
+**Upgrade to Pro** when you need the full system. 172 skills. 15 agents. $499 once. [Get LeanOS Pro](https://gumroad.com/l/leanos).
 
 If you are a founder spending more time moving context between tools than actually building -- this is what it looks like when you stop.
 
