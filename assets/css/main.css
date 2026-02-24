@@ -1995,6 +1995,31 @@ body.light .icon-sun { display: inline; }
   margin-bottom: var(--space-3);
 }
 
+/* Callout section: cost anchors and persuasion moments */
+.minimal-section--callout {
+  border-left: 2px solid var(--color-accent-warm);
+  padding-left: var(--space-5);
+}
+
+/* Service header: service name + price on same row */
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-3);
+}
+
+.service-header .label {
+  margin-bottom: 0;
+}
+
+.service-price {
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-warm);
+}
+
 .minimal-section p:not([class]) {
   font-size: var(--font-size-base);
   color: var(--color-text-primary);
