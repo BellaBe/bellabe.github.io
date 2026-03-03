@@ -1967,6 +1967,23 @@ body.light .icon-sun { display: inline; }
 @media (max-width: 640px) {
   .capability-grid {
     grid-template-columns: 1fr;
+    gap: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .capability-card {
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+  }
+
+  .capability-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .capability-card:last-child:nth-child(odd) {
+    grid-column: span 1;
   }
 }
 
