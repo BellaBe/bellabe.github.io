@@ -8,7 +8,7 @@ tags: [ai, agents, operations, solo-founder, build-in-public]
 image: /assets/images/a3-cover-v2.png
 ---
 
-I operate my business through 15 agents and 172 skills. Not as a test. As the production system. Strategy, market, revenue, intelligence — all running through agents daily.
+I operate my business through 20+ agents and 150+ skills. Not as a test. As the production system. Strategy, market, revenue, intelligence — all running through agents daily.
 
 Four things emerged from operating this way. Not from building the system. From actually running a business through it.
 
@@ -36,7 +36,7 @@ We are entering the era of human language as the programming medium. Canvas file
 
 The quality of your AI operations is almost entirely determined by how you architect this. Fragmented context produces fragmented operations. Coherent, structured context produces coherent, structured execution.
 
-In LeanOS, this is the repository structure. `strategy/`, `state/`, `execution/`, `information/` — not just folders. The structural grammar of how the business thinks, stores decisions, and shares state across all 15 agents. Every agent reads from the same files. When context changes, every agent sees it immediately.
+In LeanOS, this is the repository structure. `strategy/`, `state/`, `execution/`, `information/` — not just folders. The structural grammar of how the business thinks, stores decisions, and shares state across all 20+ agents. Every agent reads from the same files. When context changes, every agent sees it immediately.
 
 Architecting a business in human language is harder than architecting software because the inputs are less precise. But the discipline is the same: decide what goes where, enforce the structure, and make every agent read from the same source of truth. If you skip this, the system will produce inconsistent work because each agent will operate from partial or stale context. The architecture is not optional.
 

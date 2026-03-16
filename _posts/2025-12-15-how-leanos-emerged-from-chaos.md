@@ -2,7 +2,7 @@
 layout: post
 title: "How LeanOS emerged from chaos"
 date: 2026-02-03
-description: "From fragmented tools to one system -- how building two products solo led to 15 agents, 172 skills, and an AI that operates business"
+description: "From fragmented tools to one system -- how building two products solo led to 20+ agents, 150+ skills, and an AI that operates business"
 reading_time: 6
 tags: [founder, leanos, ai, startup, build-in-public]
 image: /assets/images/a1-cover.png
@@ -86,7 +86,7 @@ The integration layer disappeared because there was nothing to integrate. The pr
 
 This structure keeps every function operating from the same context. When strategy changes, every downstream agent sees it immediately — they all read from the same files. No manual updates across separate tools.
 
-172 skills. 15 agents. 5 domains:
+150+ skills. 20+ agents. 5 domains:
 
 - **Strategy:** Canvas, market research, validation, competitive analysis
 - **Product:** Requirements, specs, prioritization, design system
@@ -110,7 +110,7 @@ I built this for myself because I needed it. I still build on this system every 
 
 **Start with Core.** Free. MIT license. 29 skills covering research, strategy, and validation. [Clone the repo](https://github.com/bellabe/lean-os), read every skill file, decide for yourself.
 
-**Upgrade to Pro** when you need the full system. 172 skills. 15 agents. $499 once. [Get LeanOS Pro](https://gumroad.com/l/leanos).
+**Upgrade to Pro** when you need the full system. 150+ skills. 20+ agents. $499 once. [Get LeanOS Pro](https://gumroad.com/l/leanos).
 
 If you are a founder spending more time moving context between tools than actually building -- this is what it looks like when you stop.
 
