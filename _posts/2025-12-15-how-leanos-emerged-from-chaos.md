@@ -108,7 +108,7 @@ The hypothesis proven over months of daily use: if everything lives in one repo 
 
 I built this for myself because I needed it. I still build on this system every day.
 
-**Start with Core.** Free. MIT license. 29 skills covering research, strategy, and validation. [Clone the repo](https://github.com/bellabe/lean-os), read every skill file, decide for yourself.
+**Start with Core.** Free. MIT license. 29 skills covering research, strategy, and validation. [Clone the repo](https://github.com/BellaBe/strategy-os), read every skill file, decide for yourself.
 
 **Upgrade to Pro** when you need the full system. 150+ skills. 20+ agents. $499 once. [Get LeanOS Pro](https://gumroad.com/l/leanos).
 

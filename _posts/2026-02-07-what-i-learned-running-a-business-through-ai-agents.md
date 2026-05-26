@@ -78,7 +78,7 @@ These four things are not features of LeanOS. They are properties of any serious
 
 The failures teach you where the limits are. The operating experience teaches you what the work actually is. It is not automation of tasks. It is precision in definition.
 
-**Want to see how it works?** [LeanOS Core is free](https://github.com/bellabe/lean-os) — read the agent and skill files, try the reasoning system, decide if the architecture fits your workflow.
+**Want to see how it works?** [StrategyOS is free](https://github.com/BellaBe/strategy-os) — read the agent and skill files, try the reasoning system, decide if the architecture fits your workflow.
 
 ---
 

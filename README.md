@@ -51,5 +51,5 @@ Push to `master` branch. GitHub Pages builds automatically.
 
 ## Links
 
-- [LeanOS](https://github.com/BellaBe/lean-os)
+- [LeanOS](https://github.com/BellaBe/strategy-os)
 - [LinkedIn](https://www.linkedin.com/in/bellabelgarokova/)
